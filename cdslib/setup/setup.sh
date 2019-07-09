@@ -68,6 +68,7 @@ if [ ! -f ${PWD}/.runset.calibre.pex ]; then
   echo "Copying .runset.calibre.pex"
 fi
 
-export MGC_CALIBRE_DRC_RUNSET_FILE=./runsets/.runset.calibre.drc
-export MGC_CALIBRE_LVS_RUNSET_FILE=./runsets/.runset.calibre.lvs
-export MGC_CALIBRE_PEX_RUNSET_FILE=./runsets/.runset.calibre.pex
+if [ ! -f ${PWD}/launch_tigfet10nm.sh ]; then
+  cp ${PDK_DIR}/cdslib/setup/runset.calibre.pex ${PWD}/launch_tigfet10nm.sh
+  echo "Copying launch_tigfet10nm.sh"
+fi

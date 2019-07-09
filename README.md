@@ -5,7 +5,6 @@ Copyright (c) [2019] [Laboratory for NanoIntegrated Systems]
 This is physical design kit for TIGFET 10nm Silicon Nanowire Device. The design kit is derived using TCAD based device simulations and realistic assumptions made for largescale
 production of TIGFET-based systems.
 
-
 This kit consists of a SPICE model
 and full custom physical design files including a Design Rule
 Manual, a Design Rule Check, and a Layout Versus Schematic
@@ -20,7 +19,7 @@ decks for Calibre®. Repository also hosts implmentation of basic logic gates an
 
 For more detail about the key assumptions made while designing this PDK please refer following publication
 
-[*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", VLSI-SOC-2019*]()
+[*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", VLSI-SOC-2019*](https://ieeexplore.ieee.org/Xplore/home.jsp) [*Not published on IEEE Xplore yet*]
 
 ### Design Kit Installation and Usage
 
@@ -30,12 +29,12 @@ For more detail about the key assumptions made while designing this PDK please r
      cds.lib, and Calibre runset files) to the current working directory
      if they do not already exist.
 
-  2) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre,     and Synopsys HSPICE and launch Cadence Virtuoso using script *./launch_tigfet10nm*
+  2) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre, and Synopsys HSPICE and launch Cadence Virtuoso using script *./launch_tigfet10nm*
 
   ```bash
    cd <Directory_directory>
    $PDK_DIR/cdslib/setup/setup.sh $PDK_DIR
-   ./launch_tigfet10nm
+   ./launch_tigfet10nm.sh
    ```
 
-> In case of any doubts/questions/suggestions, pleae raise issue on GitHub or send email to pierre-emmanuel.gaillardon@utah.edu. ganeshgore@utah.edu
+> In case of any doubts/questions/suggestions, please raise issue on GitHub or send email to pierre-emmanuel.gaillardon@utah.edu or ganeshgore@utah.edu.
