@@ -50,7 +50,7 @@ procedure( pdkAppendTechfile( @key (libname "TIGFET10nm") )
 ) ;procedure pdkAppendTechfile
 
 
-procedure( pdkCompileTechfile( @key (libname "TIGFET10nm_002") )
+procedure( pdkCompileTechfile( @key (libname "TIGFET10nm") )
   prog( (libID techFileID ret )
     printf("Begin pdkCompileTechfile\n")
 

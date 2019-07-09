@@ -13,31 +13,29 @@ decks for Calibre®. Repository also hosts implmentation of basic logic gates an
 
 ### TIGFET10nm PDK Directory Structure
 
-cdslib/           Technology libraires for Cadence Virtuoso
+* cdslib/ -> Technology libraires for Cadence Virtuoso
+* calibre/ -> SVRF rules for Mentor Graphics Calibre
+* hspice/ -> Simulation models for Synopsys HSPICE
+* docs/ -> Documentation
 
-calibre/          SVRF rules for Mentor Graphics Calibre
+For more detail about the key assumptions made while designing this PDK please refer following publication
 
-hspice/           Simulation models for Synopsys HSPICE
+[*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", VLSI-SOC-2019*]()
 
-docs/             Documentation
+### Design Kit Installation and Usage
 
-For more detail about the key assumption made while designing this PDK please refer following publications
-<Yet to publish on IEEE>
-
-### Quick Design Kit Usage Instructions
-
-  1) Change the environment variable $PDK_DIR in the file
-     $PDK_DIR/cdslib/setup/setup.csh to reflect the FreePDK
-     installation path.
-
-  2) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre, and Synopsys HSPICE
-
-  3) Change to the directory where you want to start Virtuoso and
-     source the file $PDK_DIR/cdslib/setup/setup.csh.  Note that
+  1) Change to the directory where you want to start Virtuoso and
+     source the file $PDK_DIR/cdslib/setup/setup.sh.  Note that
      this script copies all of the required user files (.cdsinit,
      cds.lib, and Calibre runset files) to the current working directory
      if they do not already exist.
 
-  4) Start Cadence Virtuoso ( % virtuoso &  for example )
+  2) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre,     and Synopsys HSPICE and launch Cadence Virtuoso using script *./launch_tigfet10nm*
 
-***** In case of any doubts/questions/suggestions, pleae raise issue on GitHub or send email to pierre-emmanuel.gaillardon@utah.edu *****
+  ```bash
+   cd <Directory_directory>
+   $PDK_DIR/cdslib/setup/setup.sh $PDK_DIR
+   ./launch_tigfet10nm
+   ```
+
+> In case of any doubts/questions/suggestions, pleae raise issue on GitHub or send email to pierre-emmanuel.gaillardon@utah.edu. ganeshgore@utah.edu
