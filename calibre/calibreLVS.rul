@@ -1,0 +1,47 @@
+
+
+LVS POWER NAME VDD
+LVS GROUND NAME VSS
+LVS REDUCE PARALLEL MOS yes
+LVS REDUCE SERIES MOS yes
+LVS REDUCE SEMI SERIES MOS yes
+LVS FILTER UNUSED MOS no
+LVS RECOGNIZE GATES all
+LVS COMPONENT TYPE PROPERTY element
+LVS COMPONENT SUBTYPE PROPERTY model
+LVS IGNORE PORTS no
+LVS SOFTCHK gate_conn ALL
+LVS Report Option S
+
+/* ------------------------- Layer Stack File ------------------------- */
+include $PDK_DIR/calibre/layers.inc
+
+
+/* ------------------------- Connectivity Extraction ------------------------- */
+/* Back End of Line Layers For connectivity to pass from one layer to the other
+all the respective  layers must appear in the 'connect' statements.            */
+
+connect M1  IL by VM0
+connect M2  M1 by VM1
+connect M3  M2 by VM2
+connect M4  M3 by VM3
+connect M5  M4 by VM4
+connect M6  M5 by VM5
+connect M7  M6 by VM6
+connect M8  M7 by VM7
+connect M9  M8 by VM8
+connect M10 M9 by VM9
+
+/* -------------------- Extracting TIGFET Teminals -------------------- */
+ngate = ACT and GATE
+nfins = ACT not ngate
+
+/* Following are the Middle-end-of-line connections */
+connect IL SDC
+connect IL GC
+
+tgate = area(ACT not SDC) > 0.002
+gate_conn = tgate and GATE
+sconnect GC gate_conn
+
+device tigfet1 tgate SDC (d) gate_conn (pgs) gate_conn (g) gate_conn (pgd) SDC (s)

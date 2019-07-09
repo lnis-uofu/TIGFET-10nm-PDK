@@ -1,4 +1,4 @@
-TIGFET10nm Open Source Predictive Process Design Kit v1.0  [MIT License]
+## TIGFET10nm Open Source Predictive Process Design Kit v1.0  [MIT License]
 
 Copyright (c) [2019] [Laboratory for NanoIntegrated Systems]
 
@@ -11,16 +11,20 @@ and full custom physical design files including a Design Rule
 Manual, a Design Rule Check, and a Layout Versus Schematic
 decks for Calibre®. Repository also hosts implmentation of basic logic gates and Full Adder design using TIGFET devices
 
-***** Directory Structure *****
+### TIGFET10nm PDK Directory Structure
 
 cdslib/           Technology libraires for Cadence Virtuoso
+
 calibre/          SVRF rules for Mentor Graphics Calibre
+
 hspice/           Simulation models for Synopsys HSPICE
+
+docs/             Documentation
 
 For more detail about the key assumption made while designing this PDK please refer following publications
 <Yet to publish on IEEE>
 
-***** Quick Design Kit Usage Instructions *****
+### Quick Design Kit Usage Instructions
 
   1) Change the environment variable $PDK_DIR in the file
      $PDK_DIR/cdslib/setup/setup.csh to reflect the FreePDK
