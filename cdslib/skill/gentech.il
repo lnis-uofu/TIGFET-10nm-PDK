@@ -28,11 +28,11 @@
 ; (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 ; OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-procedure( pdkAppendTechfile( @key (libname "NCSU_TechLib_FreePDK15") )
+procedure( pdkAppendTechfile( @key (libname "TIGFET10nm") )
   prog( (libID techFileID ret )
     printf("Begin pdkAppendTechfile\n")
 
-    filename = strcat( getShellEnvVar( "PDK_DIR" ) "/cdslib/build/cds/FreePDK.tf")
+    filename = strcat( getShellEnvVar( "PDK_DIR" ) "/cdslib/build/cds/TIGFET10nm_Tech.tf")
     path = strcat( getShellEnvVar( "PDK_DIR" ) "/cdslib/" libname )
     printf("Loading %L into %L..." filename path )
     techFileID = techOpenTechFile( libname "tech.db" "a" )
@@ -45,16 +45,12 @@ procedure( pdkAppendTechfile( @key (libname "NCSU_TechLib_FreePDK15") )
     ) ;if
     printf("Techfile successfully appended.\n")
 
-    ; Update the CDF for the NCSU_Devices_FreePDK45 library
-    ;loadi( strcat( getShellEnvVar("PDK_DIR") "/ncsu_basekit/skill/cdf/loadSkill.il"))
-    ;logf(LOG_INFO "CDF Data for Devices library successfully updated." )
-
     printf("Finished pdkAppendTechfile")
   ) ;prog
 ) ;procedure pdkAppendTechfile
 
 
-procedure( pdkCompileTechfile( @key (libname "NCSU_TechLib_FreePDK15") )
+procedure( pdkCompileTechfile( @key (libname "TIGFET10nm_002") )
   prog( (libID techFileID ret )
     printf("Begin pdkCompileTechfile\n")
 
@@ -64,7 +60,7 @@ procedure( pdkCompileTechfile( @key (libname "NCSU_TechLib_FreePDK15") )
         return( nil )
     ) ;if
 
-    filename = strcat( getShellEnvVar( "PDK_DIR" ) "/cdslib/build/cds/FreePDK.tf")
+    filename = strcat( getShellEnvVar( "PDK_DIR" ) "/cdslib/build/cds/TIGFET10nm_Tech.tf")
     path = strcat( getShellEnvVar( "PDK_DIR" ) "/cdslib/" libname )
     printf("Loading %L into %L..." filename path )
     techFileID = techOpenTechFile( libname "tech.db" "w" )
@@ -75,11 +71,7 @@ procedure( pdkCompileTechfile( @key (libname "NCSU_TechLib_FreePDK15") )
         printf("ERROR: Aborting tech file compilation...\n" )
         return( nil )
     ) ;if
-    printf("Techfile successfully appended.\n")
-
-    ; Update the CDF for the NCSU_Devices_FreePDK45 library
-    ;loadi( strcat( getShellEnvVar("PDK_DIR") "/ncsu_basekit/skill/cdf/loadSkill.il"))
-    ;logf(LOG_INFO "CDF Data for Devices library successfully updated." )
+    printf("Techfile successfully compiled.\n")
 
     printf("Finished pdkCompileTechfile")
   ) ;prog

@@ -31,28 +31,43 @@
 ###############################################################################
 
 # Set the PDK_DIR variable to the root directory of the project
-export PDK_DIR=../
+
+if [ -n "$1" ]; then
+  PDK_DIR=$1
+  echo "Using $PDK_DIR as PDK_DIR Directory"
+else
+  echo "Looking for PDK_DIR enviroment variable"
+  if [ ! -n "$PDK_DIR" ]; then
+    echo "Not found exiting "
+    exit
+  fi
+fi
 
 if [ ! -f ${PWD}/.cdsinit ]; then
   cp ${PDK_DIR}/cdslib/setup/cdsinit ${PWD}/.cdsinit
+  echo "Copying .cdsinit"
 fi
 
 if [ ! -f ${PWD}/cds.lib ]; then
   cp ${PDK_DIR}/cdslib/setup/cds.lib ${PWD}/cds.lib
+  echo "Copying cds.lib"
 fi
 
 if [ ! -f ${PWD}/.runset.calibre.drc ]; then
   cp ${PDK_DIR}/cdslib/setup/runset.calibre.drc ${PWD}/.runset.calibre.drc
+  echo "Copying .runset.calibre.drc"
 fi
 
 if [ ! -f ${PWD}/.runset.calibre.lvs ]; then
   cp ${PDK_DIR}/cdslib/setup/runset.calibre.lvs ${PWD}/.runset.calibre.lvs
+  echo "Copying .runset.calibre.lvs"
 fi
 
 if [ ! -f ${PWD}/.runset.calibre.pex ]; then
   cp ${PDK_DIR}/cdslib/setup/runset.calibre.pex ${PWD}/.runset.calibre.pex
+  echo "Copying .runset.calibre.pex"
 fi
 
-export MGC_CALIBRE_DRC_RUNSET_FILE=./.runset.calibre.drc
-export MGC_CALIBRE_LVS_RUNSET_FILE=./.runset.calibre.lvs
-export MGC_CALIBRE_PEX_RUNSET_FILE=./.runset.calibre.pex
+export MGC_CALIBRE_DRC_RUNSET_FILE=./runsets/.runset.calibre.drc
+export MGC_CALIBRE_LVS_RUNSET_FILE=./runsets/.runset.calibre.lvs
+export MGC_CALIBRE_PEX_RUNSET_FILE=./runsets/.runset.calibre.pex
