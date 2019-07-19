@@ -1,0 +1,11 @@
+*~
+*.o
+.*.sw?
+*.tar.bz2
+*.tar.gz
+*.pyc
+.runlog
+*.*0
+*.pvadir
+*.lis
+*.valog
