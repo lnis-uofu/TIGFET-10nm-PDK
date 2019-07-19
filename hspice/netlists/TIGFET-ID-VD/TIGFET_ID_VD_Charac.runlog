@@ -1,0 +1,18 @@
+netlist TIGFET_ID_VD_Charac.sp
+Using: /uusoc/facility/cad_tools/Synopsys/lnis_tools/hspice/O-2018.09-SP1-1/hspice/linux64/hspice  -o TIGFET_ID_VD_Charac.lis -i 'TIGFET_ID_VD_Charac.sp'
+
+
+>info:         ***** hspice job concluded
+Reading from TIGFET_ID_VD_Charac.sw0
+Creating file TIGFET_ID_VD_Charac.dat 
+- - - - - - - - - - - - - - - - - - - - - 
+VOLTS, type = 2, first_row = 0, num_rows = 1
+isub_xnmos_d, type = 0, first_row = 1, num_rows = 1
+isub_xpmos_d, type = 0, first_row = 2, num_rows = 1
+num_signals = 3,num_data_rows = 3, num_data_cols = 141, 
+num_sweeps = 8, num_sweep_vars = 1, num_sweep_names = 1
+- - - - - - - - - - - - - - - - - - - - - 
+ 0->VOLTS 
+ 1->isub_xnmos_d 
+ 2->isub_xpmos_d 
+No measure file

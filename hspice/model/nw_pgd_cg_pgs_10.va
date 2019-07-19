@@ -1,0 +1,21 @@
+`include "disciplines.vams"
+ 
+module nw_pgd_cg_pgs_10(d,pgd,cg,pgs,s);
+    inout d,pgd,cg,pgs,s;
+    electrical d,pgd,cg,pgs,s;
+    parameter integer n = 4;
+
+    analog begin 
+            I(d,s)  <+ n * $table_model(V(pgd,s),V(pgs,s),V(cg,s),V(d,s),"Id_NW10n4G.tbl","1,1,1,1");
+    end
+endmodule
+
+module NW_PGD_CG_PGS(d,pgd,cg,pgs,s);
+    inout d,pgd,cg,pgs,s;
+    electrical d,pgd,cg,pgs,s;
+    parameter integer n = 4;
+
+    analog begin 
+            I(d,s)  <+ n * $table_model(V(pgd,s),V(pgs,s),V(cg,s),V(d,s),"Id_NW22n4G.tbl","1,1,1,1");
+    end
+endmodule

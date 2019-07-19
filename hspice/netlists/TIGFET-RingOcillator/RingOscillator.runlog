@@ -1,0 +1,23 @@
+netlist RingOscillator.sp
+Using: /uusoc/facility/cad_tools/Synopsys/lnis_tools/hspice/O-2018.09-SP1-1/hspice/linux64/hspice  -o RingOscillator.lis -i 'RingOscillator.sp'
+
+
+>info:         ***** hspice job concluded
+Reading from RingOscillator.tr0
+Creating file RingOscillator.dat 
+- - - - - - - - - - - - - - - - - - - - - 
+TIME, type = 1, first_row = 0, num_rows = 1
+v_out09, type = 2, first_row = 1, num_rows = 1
+num_signals = 2,num_data_rows = 2, num_data_cols = 1052, 
+num_sweeps = 1, num_sweep_vars = 0, num_sweep_names = 0
+- - - - - - - - - - - - - - - - - - - - - 
+ 1->TIME 
+ 2->v_out09 
+Reading from RingOscillator.mt0
+Creating file RingOscillator.mdat 
+1 1 period 
+1 2 freqghz 
+1 3 risetime_psec 
+1 4 temper 
+1 5 alter# 
+No of Parameters = 5 
