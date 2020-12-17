@@ -12,10 +12,10 @@ decks for Calibre®. The repository also hosts implementation of basic logic gat
 
 ### TIGFET10nm PDK Directory Structure
 
-* calibre/ -> SVRF rules for Mentor Graphics Calibre
-* cdslib/  -> Technology libraires for Cadence Virtuoso
-* hspice/  -> Simulation models for Synopsys HSPICE
-* docs/    -> Documentation
+* calibre/ -> SVRF rules for Mentor Graphics Calibre®
+* cdslib/  -> Technology libraires for Cadence Virtuoso and setup scripts
+* hspice/  -> Simulation models for Synopsys HSPICE®
+* doc/    -> Documentation
 
 For more detail about the key assumptions made while designing this PDK, please refer to the following publication:
 
