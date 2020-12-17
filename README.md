@@ -19,7 +19,7 @@ decks for Calibre®. The repository also hosts implementation of basic logic gat
 
 For more detail about the key assumptions made while designing this PDK, please refer following publication.
 
-[*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", VLSI-SoC, 2019.*](https://ieeexplore.ieee.org/abstract/document/8920358/)
+[*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", 2019 IFIP/IEEE 27th International Conference on Very Large Scale Integration (VLSI-SoC), 6-9 October 2019.*](https://ieeexplore.ieee.org/abstract/document/8920358/)
 
 ### Design Kit Installation and Usage
   1) Set the variable PDK_DIR to where the PDK folder is.
