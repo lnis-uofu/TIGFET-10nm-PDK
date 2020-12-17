@@ -1,5 +1,3 @@
-DEFINE analogLib $CDS/IC/tools/dfII/etc/cdslib/artist/analogLib
-DEFINE US_8ths   $CDS/IC/tools/dfII/etc/cdslib/sheets/US_8ths
-DEFINE basic     $CDS/IC/tools/dfII/etc/cdslib/basic
-DEFINE cdsDefTechLib $CDS/IC/tools/dfII/etc/cdsDefTechLib
-DEFINE TIGFET10nm  $PDK_DIR/cdslib/TIGFET10nm
+DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic 
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE TIGFET10nm  $PDK_DIR/TIGFET10nm
