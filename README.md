@@ -31,7 +31,7 @@ For more detail about the key assumptions made while designing this PDK, please 
      cds.lib, and Calibre runset files) to the current working directory
      if they do not already exist.
 
-  3) In the current directory, edit the PDK_DIR variable in the launch_tigfet10nm.sh script to point to where PDK folder is located (as in 1)). 
+  3) In the current directory, edit the PDK_DIR variable in the launch_tigfet10nm.sh script to point to where PDK folder is located (as in step 1). 
 	
   4) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre, and Synopsys HSPICE and launch Cadence Virtuoso using the script *./launch_tigfet10nm.sh*
 
