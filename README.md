@@ -22,9 +22,8 @@ For more detail about the key assumptions made while designing this PDK, please 
 [*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", VLSI-SoC, 2019.*](https://ieeexplore.ieee.org/abstract/document/8920358/)
 
 ### Design Kit Installation and Usage
-
-	1) Set the variable PDK_DIR to where the PDK folder is.
-		 setenv PDK_DIR "../TIGFET-10nm-PDK-master" (for a csh/tcsh shell)
+  1) Set the variable PDK_DIR to where the PDK folder is.
+  setenv PDK_DIR "../TIGFET-10nm-PDK" (for a csh/tcsh shell)
 		 
   2) Change to the directory where you want to start Virtuoso and do:
      source $PDK_DIR/cdslib/setup/setup.csh
@@ -32,7 +31,7 @@ For more detail about the key assumptions made while designing this PDK, please 
      cds.lib, and Calibre runset files) to the current working directory
      if they do not already exist.
 
-	3) In the current directory, edit the PDK_DIR variable in the launch_tigfet10nm.sh script to point to where PDK folder is located (as in 1)). 
+  3) In the current directory, edit the PDK_DIR variable in the launch_tigfet10nm.sh script to point to where PDK folder is located (as in 1)). 
 	
   4) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre, and Synopsys HSPICE and launch Cadence Virtuoso using the script *./launch_tigfet10nm.sh*
 
