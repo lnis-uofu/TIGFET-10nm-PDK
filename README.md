@@ -17,7 +17,7 @@ decks for Calibre®. The repository also hosts implementation of basic logic gat
 * hspice/  -> Simulation models for Synopsys HSPICE
 * docs/    -> Documentation
 
-For more detail about the key assumptions made while designing this PDK, please refer following publication.
+For more detail about the key assumptions made while designing this PDK, please refer to the following publication:
 
 [*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", 2019 IFIP/IEEE 27th International Conference on Very Large Scale Integration (VLSI-SoC), 6-9 October 2019.*](https://ieeexplore.ieee.org/abstract/document/8920358/)
 
