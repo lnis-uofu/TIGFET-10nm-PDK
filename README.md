@@ -19,22 +19,27 @@ decks for Calibre®. The repository also hosts implementation of basic logic gat
 
 For more detail about the key assumptions made while designing this PDK, please refer following publication.
 
-[*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", VLSI-SOC-2019*](https://ieeexplore.ieee.org/Xplore/home.jsp) [*Not published on IEEE Xplore yet*]
+[*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", VLSI-SoC, 2019.*](https://ieeexplore.ieee.org/abstract/document/8920358/)
 
 ### Design Kit Installation and Usage
 
-  1) Change to the directory where you want to start Virtuoso and
-     source the file $PDK_DIR/cdslib/setup/setup.sh.  Note that
-     this script copies all of the required user files (.cdsinit,
+	1) Set the variable PDK_DIR to where the PDK folder is.
+		 setenv PDK_DIR "../TIGFET-10nm-PDK-master" (for a csh/tcsh shell)
+		 
+  2) Change to the directory where you want to start Virtuoso and do:
+     source $PDK_DIR/cdslib/setup/setup.csh
+     Note that this script copies all of the required user files (.cdsinit,
      cds.lib, and Calibre runset files) to the current working directory
      if they do not already exist.
 
-  2) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre, and Synopsys HSPICE and launch Cadence Virtuoso using script *./launch_tigfet10nm*
+	3) In the current directory, edit the PDK_DIR variable in the launch_tigfet10nm.sh script to point to where PDK folder is located (as in 1)). 
+	
+  4) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre, and Synopsys HSPICE and launch Cadence Virtuoso using the script *./launch_tigfet10nm.sh*
 
   ```bash
    cd <Directory_directory>
-   $PDK_DIR/cdslib/setup/setup.sh $PDK_DIR
-   ./launch_tigfet10nm.sh
+   source $PDK_DIR/cdslib/setup/setup.sh
+   source launch_tigfet10nm.sh
    ```
 
 > In case of any doubts/questions/suggestions, please raise issue on GitHub or send email to pierre-emmanuel.gaillardon@utah.edu or ganesh.gore@utah.edu.
