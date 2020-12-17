@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/csh
 # TIGFET10nm Open Source Predictive Process Design Kit
 # Copyright (c) [2019] [Laboratory for NanoIntegrated Systems]
 #
@@ -30,45 +30,44 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ###############################################################################
 
-# Set the PDK_DIR variable to the root directory of the project
 
-if [ -n "$1" ]; then
+if ( $1 != "" ) then
   PDK_DIR=$1
   echo "Using $PDK_DIR as PDK_DIR Directory"
 else
   echo "Looking for PDK_DIR enviroment variable"
-  if [ ! -n "$PDK_DIR" ]; then
-    echo "Not found exiting "
+  if ( $PDK_DIR == "" ) then
+    echo "Not found exiting"
     exit
-  fi
-fi
+  endif
+endif
 
-if [ ! -f ${PWD}/.cdsinit ]; then
+if (! -f ${PWD}/.cdsinit) then
   cp ${PDK_DIR}/cdslib/setup/cdsinit ${PWD}/.cdsinit
   echo "Copying .cdsinit"
-fi
+endif
 
-if [ ! -f ${PWD}/cds.lib ]; then
+if (! -f ${PWD}/cds.lib) then
   cp ${PDK_DIR}/cdslib/setup/cds.lib ${PWD}/cds.lib
   echo "Copying cds.lib"
-fi
+endif
 
-if [ ! -f ${PWD}/.runset.calibre.drc ]; then
+if (! -f ${PWD}/.runset.calibre.drc) then
   cp ${PDK_DIR}/cdslib/setup/runset.calibre.drc ${PWD}/.runset.calibre.drc
   echo "Copying .runset.calibre.drc"
-fi
+endif
 
-if [ ! -f ${PWD}/.runset.calibre.lvs ]; then
+if (! -f ${PWD}/.runset.calibre.lvs) then
   cp ${PDK_DIR}/cdslib/setup/runset.calibre.lvs ${PWD}/.runset.calibre.lvs
   echo "Copying .runset.calibre.lvs"
-fi
+endif
 
-if [ ! -f ${PWD}/.runset.calibre.pex ]; then
+if (! -f ${PWD}/.runset.calibre.pex) then
   cp ${PDK_DIR}/cdslib/setup/runset.calibre.pex ${PWD}/.runset.calibre.pex
   echo "Copying .runset.calibre.pex"
-fi
+endif
 
-if [ ! -f ${PWD}/launch_tigfet10nm.sh ]; then
-  cp ${PDK_DIR}/cdslib/setup/runset.calibre.pex ${PWD}/launch_tigfet10nm.sh
+if (! -f ${PWD}/launch_tigfet10nm.sh) then
+  cp ${PDK_DIR}/cdslib/setup/launch_tigfet10nm.sh ${PWD}/launch_tigfet10nm.sh
   echo "Copying launch_tigfet10nm.sh"
-fi
+endif
