@@ -4,7 +4,7 @@
 echo "\nYour working directory is" $PWD "\n"
 setenv CDS_Netlisting_Mode "Analog"
 
-setenv PDK_DIR "$PWD/TIGFET-10nm-PDK"
+setenv PDK_DIR "$PWD"
 
 setenv MGC_CALIBRE_DRC_RUNSET_FILE "./.runset.calibre.drc"
 setenv MGC_CALIBRE_LVS_RUNSET_FILE "./.runset.calibre.lvs"
