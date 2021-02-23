@@ -2,13 +2,10 @@
 
 Copyright (c) [2019] [Laboratory for NanoIntegrated Systems]
 
-This is a physical design kit for TIGFET 10nm Silicon Nanowire Device. The design kit is derived using TCAD based device simulations and realistic assumptions made for largescale
-production of TIGFET-based systems.
+This is a physical design kit for TIGFET 10nm Silicon Nanowire Device. The design kit is derived using TCAD based device simulations and realistic assumptions made for largescale production of TIGFET-based systems.
 
-This kit consists of a SPICE model
-and full custom physical design files including a Design Rule
-Manual, a Design Rule Check, and a Layout Versus Schematic
-decks for Calibre®. The repository also hosts implementation of basic logic gates and Full Adder design using TIGFET devices
+This kit consists of a SPICE model and full custom physical design files including a Design Rule Manual, a Design Rule Check, and a Layout Versus Schematic
+decks for Calibre®.
 
 ### TIGFET10nm PDK Directory Structure
 
@@ -33,14 +30,14 @@ For more detail about the key assumptions made while designing this PDK, please 
   setenv PDK_DIR "$PWD"
   ```
 		 
-  3) Copy the required user files to where yo uwant to start Virtuoso. It is assumed here that Virtuoso is started in the Github folder itself.
+  3) Copy the required user files to where you want to start Virtuoso®. It is assumed here that Virtuoso is started in the Github folder itself.
   ```bash
   source $PDK_DIR/cdslib/setup/setup.csh
   ```
      
-  Note that this script copies all of the required user files (.cdsinit, cds.lib, and Calibre runset files) to the current working directory if they do not already exist.
+  Note that this script copies all of the required user files (.cdsinit, cds.lib, and Calibre® runset files) to the current working directory if they do not already exist.
 	
-  4) Source your setup scripts for Cadence Virtuoso, Mentor Graphics Calibre, and Synopsys HSPICE and launch Cadence Virtuoso using the provided script: 
+  4) Source your setup scripts for Cadence Virtuoso®, Mentor Graphics Calibre®, and Synopsys HSPICE® and launch Cadence Virtuoso® using the provided script: 
   ```bash 
   launch_tigfet10nm.sh
   ```
