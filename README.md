@@ -42,4 +42,4 @@ For more detail about the key assumptions made while designing this PDK, please 
   source launch_tigfet10nm.sh
   ```
 
-> In case of any doubts/questions/suggestions, please raise issue on GitHub or send email to pierre-emmanuel.gaillardon@utah.edu or ganesh.gore@utah.edu.
+> In case of any doubts/questions/suggestions, please raise issue on GitHub or send an email to pierre-emmanuel.gaillardon@utah.edu or ganesh.gore@utah.edu.
