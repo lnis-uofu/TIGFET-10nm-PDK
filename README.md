@@ -21,7 +21,7 @@ For more detail about the key assumptions made while designing this PDK, please 
 
 [*Ganesh Gore, Patsy Cadareanu, Edouard Giacomin, and Pierre-Emmanuel Gaillardon "A Predictive Process Design Kit for Three-Independent-Gate Field-Effect Transistors", 2019 IFIP/IEEE 27th International Conference on Very Large Scale Integration (VLSI-SoC), 6-9 October 2019.*](https://ieeexplore.ieee.org/abstract/document/8920358/)
 
-### Design Kit Installation and Usage
+### Design Kit Installation and Usage (assuming a csh/tcsh shell)
   1) Clone the github repository.
   ```bash
   git clone https://github.com/LNIS-Projects/TIGFET-10nm-PDK.git
@@ -30,7 +30,7 @@ For more detail about the key assumptions made while designing this PDK, please 
   
   2) Set the variable PDK_DIR to where the PDK folder is.
   ```bash
-  setenv PDK_DIR "$PWD" (for a csh/tcsh shell)
+  setenv PDK_DIR "$PWD"
   ```
 		 
   3) Copy the required user files to where yo uwant to start Virtuoso. It is assumed here that Virtuoso is started in the Github folder itself.
