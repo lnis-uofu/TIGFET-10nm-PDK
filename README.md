@@ -39,7 +39,7 @@ For more detail about the key assumptions made while designing this PDK, please 
 	
   4) Source your setup scripts for Cadence Virtuoso®, Mentor Graphics Calibre®, and Synopsys HSPICE® and launch Cadence Virtuoso® using the provided script: 
   ```bash 
-  launch_tigfet10nm.sh
+  source launch_tigfet10nm.sh
   ```
 
 > In case of any doubts/questions/suggestions, please raise issue on GitHub or send email to pierre-emmanuel.gaillardon@utah.edu or ganesh.gore@utah.edu.
