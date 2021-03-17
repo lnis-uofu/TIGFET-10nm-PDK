@@ -2,10 +2,10 @@
 
 Copyright (c) [2019] [Laboratory for NanoIntegrated Systems]
 
-This is a physical design kit for TIGFET 10nm Silicon Nanowire Device. The design kit is derived using TCAD based device simulations and realistic assumptions made for largescale production of TIGFET-based systems.
+This repository is a process design kit for Cadence Virtuoso® describing a TIGFET 10nm silicon nanowire device technology. The design kit is derived using Synopsys Sentaurus TCAD® based device simulations.
 
 This kit consists of a SPICE model and full custom physical design files including a Design Rule Manual, a Design Rule Check, and a Layout Versus Schematic
-decks for Calibre®.
+decks for Mentor Graphics Calibre®.
 
 ### TIGFET10nm PDK Directory Structure
 
