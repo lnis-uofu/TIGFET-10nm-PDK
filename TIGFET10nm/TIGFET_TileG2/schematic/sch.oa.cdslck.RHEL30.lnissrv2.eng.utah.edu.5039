@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      u6035054
+HostName                       lnissrv2.eng.utah.edu
+ProcessIdentifier              5039
+ProcessCreationTime_UTC        1627338540
+ProcessCreationTime_Readable   Mon Jul 26 16:29:00 2021 MDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /research/ece/lnis/USERS/maitre/TIGFET_DNN/MAC_Unit/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_TileG2/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu Jul 29 15:08:20 2021 MDT
