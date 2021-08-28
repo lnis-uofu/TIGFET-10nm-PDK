@@ -1,3 +1,6 @@
 .vscode
 dump
 cdlForForum
+
+cdslib/setup/.cadence/
+cdslib/setup/libManager.log.cdslck
