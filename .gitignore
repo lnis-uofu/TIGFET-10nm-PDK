@@ -1,3 +1,12 @@
 .vscode
 dump
 cdlForForum
+*.log
+*.log.*
+*.cdslck
+*.cdslck.*
+*.txt
+*.jpg
+.cadence/
+*.oa-
+*.bak
