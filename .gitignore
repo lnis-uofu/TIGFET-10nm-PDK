@@ -1,6 +1,12 @@
 .vscode
 dump
 cdlForForum
-
-cdslib/setup/.cadence/
-cdslib/setup/libManager.log.cdslck
+*.log
+*.log.*
+*.cdslck
+*.cdslck.*
+*.txt
+*.jpg
+.cadence/
+*.oa-
+*.bak

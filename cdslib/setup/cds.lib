@@ -1,5 +1,0 @@
-DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic 
-DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
-DEFINE TIGFET10nm  $PDK_DIR/TIGFET10nm
-DEFINE Logic $PDK_DIR/Logic
-
