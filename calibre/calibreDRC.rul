@@ -124,7 +124,7 @@ SDC_OVERLAP     = SDC AND IL
 ////////////////////////////////////////////////////////////////////////////////////
 CONNECT SDC IL
 CONNECT GC IL
-CONNECT Il M1 by VM0
+CONNECT IL M1 by VM0
 CONNECT M1 M2 by VM1
 CONNECT M2 M3 by VM2
 CONNECT M3 M4 by VM3
@@ -146,9 +146,9 @@ CONNECT M9 M10 by VM9
 // ________RULE_ACT001
 RULE_ACT001{
  @ RULE_ACT001
- @ Minimum vertical width of ACT layer is 48nm
+ @ Minimum vertical width of ACT layer is 128nm
  ACT_HORIZONTAL_EDGES = ACT ANGLE == 0
- INTERNAL ACT_HORIZONTAL_EDGES < 0.048
+ INTERNAL ACT_HORIZONTAL_EDGES < 0.128
 }
 
 // ________RULE_ACT002
@@ -185,33 +185,31 @@ RULE_ACT002{
 // ________ RULE_ACT003
 RULE_ACT003{
  @ RULE_ACT003
- @ Minimum vertical spacing of ACT is 62nm
+ @ Minimum vertical spacing of ACT is 80nm
  ACT_HORIZONTAL_EDGES = ACT ANGLE == 0
- EXTERNAL ACT_HORIZONTAL_EDGES < 0.062
+ EXTERNAL ACT_HORIZONTAL_EDGES < 0.080
 }
 //________ RULE_ACT004
 RULE_ACT004{
  @ RULE_ACT004
- @ Minimum horizontal width of ACT is 96nm
+ @ Minimum horizontal width of ACT is 166nm
  ACT_VERTICAL_EDGES = ACT ANGLE == 90
- INTERNAL ACT_VERTICAL_EDGES < 0.096
+ INTERNAL ACT_VERTICAL_EDGES < 0.166
 }
 
 //________ RULE_ACT005
 RULE_ACT005{
  @ RULE_ACT005
- @ Horizontal spacing of ACT  must be 32nm, 96nm or >= 160nm
+ @ Horizontal spacing of ACT  must be 80nm
  ACT_VERTICAL_EDGES = ACT ANGLE == 90
- EXTERNAL ACT_VERTICAL_EDGES > 0 < 0.032 OPPOSITE
- EXTERNAL ACT_VERTICAL_EDGES > 0.032 < 0.096 OPPOSITE
- EXTERNAL ACT_VERTICAL_EDGES > 0.096 < 0.16 OPPOSITE
+ EXTERNAL ACT_VERTICAL_EDGES < 0.080
 }
 
 //________ RULE_ACT006
 RULE_ACT006{
  @ RULE_ACT006
- @ Minimum notch of ACT is 112nm
- EXTERNAL ACT < 0.112 NOTCH
+ @ Minimum notch of ACT is 166nm
+ EXTERNAL ACT < 0.166 NOTCH
 }
 
 //________ RULE_ACT008A
@@ -238,17 +236,16 @@ GATE_horizontal_edges = GATE ANGLE ==0
 //________ RULE_GATE001
 RULE_GATE001{
  @ RULE_GATE001
- @ Exact horizontal width of GATE is 20, 16 or 14 nm
- INTERNAL GATE_vertical_edges < 0.014
- INTERNAL GATE_vertical_edges > 0.014 < 0.016
- INTERNAL GATE_vertical_edges > 0.016 < 0.020
- INTERNAL GATE_vertical_edges > 0.020 < 0.200
+ @ Exact horizontal width of GATE is 20nm
+ INTERNAL GATE_vertical_edges < 0.020
+
+ 
 }
 
 //________ RULE_GATE002
 RULE_GATE002{
  @ RULE_GATE002
- @ Min horizontal pitch of GATE is 34 nm
+ @ Horizontal pitch of GATE is 35 nm
  //select vertical edge pairs on same polygons, constraint is 1 to include all edge pairs
  x = INT GATE_vertical_edges < 1
  //derive centerlines between edge pairs
@@ -256,8 +253,8 @@ RULE_GATE002{
  //expand the centerlines by a very small value to form very thin polygons
  y_copy = EXPAND EDGE y INSIDE BY 0.0001
  y_copy_vertical_edge =  y_copy ANGLE == 90
- //output gate polygons that have a horizontal pitch less than 128nm
- EXT y_copy_vertical_edge < 0.033 OPPOSITE
+ //output gate polygons that have a horizontal pitch less than 35nm
+ EXT y_copy_vertical_edge < 0.035 OPPOSITE
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -272,8 +269,8 @@ RULE_GATE004{
 //________ RULE_GATE005
 RULE_GATE005{
  @ RULE_GATE005
- @ Minimum extension of ACT past GATE is 38nm
- ENCLOSURE GATE ACT < 0.038
+ @ Minimum extension of ACT past GATE is 15nm
+ ENCLOSURE GATE ACT < 0.015
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -288,8 +285,8 @@ RULE_GATE006{
 // ________ RULE_GATE007A
 RULE_GATE007A{
 @ RULE_GATE007A
-@ Minimum length of Gate 200nm
-LENGTH GATE_vertical_edges < 0.200
+@ Minimum length of Gate 168nm
+LENGTH GATE_vertical_edges < 0.168
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -330,9 +327,9 @@ RULE_SDC004{
 // ______RULE_SDC005
 RULE_SDC005{
  @ RULE_SDC005
- @ Minimum Vertical length of SDC is 58nm
+ @ Minimum Vertical length of SDC is 128nm
  SDC_HORIZONTAL_EDGES = SDC ANGLE == 0
- INTERNAL SDC_HORIZONTAL_EDGES < 0.058
+ INTERNAL SDC_HORIZONTAL_EDGES < 0.128
 }
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -375,8 +372,8 @@ RULE_IL002{
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL003A{
  @ RULE_IL003A
- @ Minimum spacing between IL and GATE is 2nm
- EXTERNAL IL GATE < 0.001
+ @ Minimum spacing between IL and GATE is 10nm
+ EXTERNAL IL GATE < 0.010
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -389,17 +386,17 @@ RULE_IL004{
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL005{
  @ RULE_IL005
- @ Minimum Vertical overlap of SDC and IL is 6nm
+ @ Minimum Vertical overlap of SDC and IL is 58nm
  OVERLAP_HORIZONTAL_EDGES = SDC_OVERLAP ANGLE == 0
- INT OVERLAP_HORIZONTAL_EDGES < 0.006
+ INT OVERLAP_HORIZONTAL_EDGES < 0.058
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL006{
  @ RULE_IL006
- @ Vertical length of IL is 24nm
+ @ Vertical length of IL is 68nm
  IL_HORIZ_EDGES = IL ANGLE == 0
- INTERNAL IL_HORIZ_EDGES < 0.024
+ INTERNAL IL_HORIZ_EDGES < 0.068
 }
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL007{
@@ -450,9 +447,9 @@ RULE_GC002{
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC003{
  @ RULE_GC003
- @ Minimum vertical spacing of GC is 32nm
+ @ Minimum vertical spacing of GC is 40nm
  ALL_HORIZ_EDGES = ANGLE GC == 0
- EXTERNAL ALL_HORIZ_EDGES < 0.032
+ EXTERNAL ALL_HORIZ_EDGES < 0.040
 }
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC004{
@@ -478,31 +475,31 @@ RULE_GC006{
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC007{
  @ RULE_GC007
- @ Minimum horizontal space of GC to IL is 8nm
+ @ Minimum horizontal space of GC to IL is 4nm
  GC_VERTICAL_EDGES = GC ANGLE == 90
- EXT GC_VERTICAL_EDGES IL < 0.008 NOT CONNECTED
+ EXT GC_VERTICAL_EDGES IL < 0.004 NOT CONNECTED
 }
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC008{
  @ RULE_GC008
- @ Minimum vertical space of GC to IL is 5nm
+ @ Minimum vertical space of GC to IL is 4nm
  GC_HORIZONTAL_EDGES = GC ANGLE == 0
  EXT GC_HORIZONTAL_EDGES IL < 0.005
 }
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC009A{
  @ RULE_GC009A
- @ Minimum horizontal space of SDC to GATE is 9nm
+ @ Minimum horizontal space of SDC to GATE is 10nm
  SDC_VERTICAL_EDGES = SDC ANGLE == 90
- EXT SDC_VERTICAL_EDGES GATE < 0.008
+ EXT SDC_VERTICAL_EDGES GATE < 0.010
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC010{
  @ RULE_GC010
- @ Minimum horizontal overlap of GC and IL is 2nm
+ @ Minimum horizontal overlap of GC and IL is 24nm
  IL_VERTICAL_EDGES = IL ANGLE == 90
- ENC IL_VERTICAL_EDGES GC < 0.002 CONNECTED
+ ENC IL_VERTICAL_EDGES GC < 0.024 CONNECTED
 }
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC011{
