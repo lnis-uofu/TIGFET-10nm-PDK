@@ -146,11 +146,12 @@ CONNECT M9 M10 by VM9
 // ________RULE_ACT001
 RULE_ACT001{
  @ RULE_ACT001
- @ Minimum vertical width of ACT layer is 128nm
+ @ Minimum vertical width of ACT layer is 24nm
  ACT_HORIZONTAL_EDGES = ACT ANGLE == 0
- INTERNAL ACT_HORIZONTAL_EDGES < 0.128
+ INTERNAL ACT_HORIZONTAL_EDGES < 0.024
 }
 
+/*
 // ________RULE_ACT002
 RULE_ACT002{
  @ RULE_ACT002
@@ -182,6 +183,7 @@ RULE_ACT002{
   INTERNAL ACT_HORIZONTAL_EDGES > 0.928 < 0.968
   INTERNAL ACT_HORIZONTAL_EDGES > 0.968 < 1.008
 }
+*/
 // ________ RULE_ACT003
 RULE_ACT003{
  @ RULE_ACT003
@@ -192,9 +194,9 @@ RULE_ACT003{
 //________ RULE_ACT004
 RULE_ACT004{
  @ RULE_ACT004
- @ Minimum horizontal width of ACT is 166nm
+ @ Minimum horizontal width of ACT is 110nm
  ACT_VERTICAL_EDGES = ACT ANGLE == 90
- INTERNAL ACT_VERTICAL_EDGES < 0.166
+ INTERNAL ACT_VERTICAL_EDGES < 0.110
 }
 
 //________ RULE_ACT005
@@ -216,22 +218,22 @@ RULE_ACT006{
 RULE_ACT008A{
  @ RULE_ACT008A
  @ Minimum area of ACT is 0.004608 um2
- AREA ACT  < 0.004608
+ AREA ACT  < 0.00264
 }
 
 //________ RULE_ACT008B
 RULE_ACT008B{
  @ RULE_ACT008B
  @ Minimum enclosed area of ACT is 0.004608 um2
- HOLES ACT < 0.004608
+ HOLES ACT < 0.00264
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
 //______________ GATE LAYER Rules
 ////////////////////////////////////////////////////////////////////////////////////
 
-GATE_vertical_edges = GATE ANGLE ==90
-GATE_horizontal_edges = GATE ANGLE ==0
+GATE_vertical_edges = GATE ANGLE == 0
+GATE_horizontal_edges = GATE ANGLE == 90
 
 //________ RULE_GATE001
 RULE_GATE001{
@@ -303,16 +305,16 @@ RULE_SDC001{
 // ________ RULE_SDC002
 RULE_SDC002{
  @ RULE_SDC002
- @ Horizontal spacing of SDC is 36nm
+ @ Horizontal spacing of SDC is 110nm
  SDC_VERTICAL_EDGES = SDC ANGLE == 90
- EXTERNAL SDC_VERTICAL_EDGES < 0.036
+ EXTERNAL SDC_VERTICAL_EDGES < 0.110
 }
 ////////////////////////////////////////////////////////////////////////////////////
 // ________ RULE_SDC003A
 RULE_SDC003A{
  @ RULE_SDC003A
- @ Minimum spacing of SDC to GATE is 8nm
- EXTERNAL SDC GATE < 0.008
+ @ Minimum spacing of SDC to GATE is 10nm
+ EXTERNAL SDC GATE < 0.010
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
@@ -327,9 +329,9 @@ RULE_SDC004{
 // ______RULE_SDC005
 RULE_SDC005{
  @ RULE_SDC005
- @ Minimum Vertical length of SDC is 128nm
+ @ Minimum Vertical length of SDC is 44nm
  SDC_HORIZONTAL_EDGES = SDC ANGLE == 0
- INTERNAL SDC_HORIZONTAL_EDGES < 0.128
+ INTERNAL SDC_HORIZONTAL_EDGES < 0.044
 }
 ////////////////////////////////////////////////////////////////////////////////////
 
@@ -440,9 +442,9 @@ RULE_GC001{
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC002{
  @ RULE_GC001B
- @ Minimum horizontal length of GC is 56nm
+ @ Minimum horizontal length of GC is 20nm
  ALL_VERT_EDGES = ANGLE GC == 90
- INTERNAL ALL_VERT_EDGES < 0.056
+ INTERNAL ALL_VERT_EDGES < 0.020
 }
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC003{
@@ -456,7 +458,7 @@ RULE_GC004{
  @ RULE_GC004
  @ Minimum horizontal spacing of GC is 40nm
  ALL_VERT_EDGES = ANGLE GC == 90
- EXTERNAL ALL_VERT_EDGES < 0.040
+ EXTERNAL ALL_VERT_EDGES < 0.015
 }
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC005{
