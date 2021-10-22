@@ -1,0 +1,17 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G2_INV_N1.dv
+dv_start notcompared                              
+dv_global
+dv_discrep 1 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15" at line 27 in file "/home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1/G2_INV_N1.src.net"}
+dv_discrep_line {}
+dv_discrep 2 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15" at line 28 in file "/home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1/G2_INV_N1.src.net"}
+dv_discrep_line {}
+dv_discrep 3 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15" at line 29 in file "/home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1/G2_INV_N1.src.net"}
+dv_discrep_line {}
+dv_discrep 4 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15" at line 30 in file "/home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1/G2_INV_N1.src.net"}
+dv_discrep_line {}
+dv_end

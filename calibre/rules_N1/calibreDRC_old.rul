@@ -18,10 +18,10 @@ RESOLUTION        1
 //                         TIGFET10nm PDK Layers
 ////////////////////////////////////////////////////////////////////////////////////
 layer ACT   1        // Device active region
-layer GC    3        // Gate Connect Layer (Fol Layer)
-layer SDC   4        // Source Drain Connect Layer (FOL Layer)
-layer IL    5        // Interconnect Layer (MOL Layer)
-layer GATE  2        // Gate Layer
+layer GC    2        // Gate Connect Layer (Fol Layer)
+layer SDC   3        // Source Drain Connect Layer (FOL Layer)
+layer IL    4        // Interconnect Layer (MOL Layer)
+layer GATE  5        // Gate Layer
 layer M1    6        // Metal1 Layers
 layer M2    7        // Metal2 Layers
 layer M3    8        // Metal3 Layers
@@ -247,7 +247,7 @@ RULE_GATE001{
 //________ RULE_GATE002
 RULE_GATE002{
  @ RULE_GATE002
- @ Horizontal pitch of GATE (i.e. horizontal width between two gate polygons) is 15 nm
+ @ Horizontal pitch of GATE is 35 nm
  //select vertical edge pairs on same polygons, constraint is 1 to include all edge pairs
  x = INT GATE_vertical_edges < 1
  //derive centerlines between edge pairs
@@ -256,43 +256,41 @@ RULE_GATE002{
  y_copy = EXPAND EDGE y INSIDE BY 0.0001
  y_copy_vertical_edge =  y_copy ANGLE == 90
  //output gate polygons that have a horizontal pitch less than 35nm
- EXT y_copy_vertical_edge < 0.015 OPPOSITE
+ EXT y_copy_vertical_edge < 0.035 OPPOSITE
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
 // ________ RULE_GATE004
-/*
 RULE_GATE004{
  @ RULE_GATE004
  @ GATE can not bend
  CONVEX EDGE GATE ANGLE1 > 90 ANGLE2 > 0
 }
-*/
+
 ////////////////////////////////////////////////////////////////////////////////////
 //________ RULE_GATE005
 RULE_GATE005{
  @ RULE_GATE005
- @ Minimum extension of ACT past GATE is 10nm
- ENCLOSURE GATE ACT < 0.01
+ @ Minimum extension of ACT past GATE is 15nm
+ ENCLOSURE GATE ACT < 0.015
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
 // ________ RULE_GATE006
 RULE_GATE006{
  @ RULE_GATE006
- @ Minimum extension of GATE past ACT is 10nm
- ENCLOSURE ACT GATE < 0.010
+ @ Minimum extension of GATE past ACT is 20nm
+ ENCLOSURE ACT GATE < 0.020
 }
 
 ////////////////////////////////////////////////////////////////////////////////////
 // ________ RULE_GATE007A
-/*
 RULE_GATE007A{
 @ RULE_GATE007A
-@ Minimum length of Gate 166nm
-LENGTH GATE_vertical_edges < 0.166
+@ Minimum length of Gate 168nm
+LENGTH GATE_vertical_edges < 0.168
 }
-*/
+
 ////////////////////////////////////////////////////////////////////////////////////
 // _________________ Source Drain Connect (SDC) LAYER
 ////////////////////////////////////////////////////////////////////////////////////
