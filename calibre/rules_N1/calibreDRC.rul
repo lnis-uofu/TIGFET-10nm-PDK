@@ -232,13 +232,13 @@ RULE_ACT008B{
 //______________ GATE LAYER Rules
 ////////////////////////////////////////////////////////////////////////////////////
 
-GATE_vertical_edges = GATE ANGLE == 0
-GATE_horizontal_edges = GATE ANGLE == 90
+GATE_vertical_edges = GATE ANGLE == 90
+GATE_horizontal_edges = GATE ANGLE == 0
 
 //________ RULE_GATE001
 RULE_GATE001{
  @ RULE_GATE001
- @ Exact horizontal width of GATE is 20nm
+ @ Minimum horizontal width of GATE is 20nm
  INTERNAL GATE_vertical_edges < 0.020
 
  
