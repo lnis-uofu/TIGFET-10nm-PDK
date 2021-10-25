@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Oct 22 14:12:00 2021
+Execution Date/Time:       Mon Oct 25 14:20:39 2021
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/No_Connection/_calibreDRC.rul_
 Rule File Title:           
@@ -31,10 +31,10 @@ Keep Empty Checks:         YES
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER IL ..... TOTAL Original Geometry Count = 6 (6)
-LAYER SDC .... TOTAL Original Geometry Count = 0 (0)
+LAYER SDC .... TOTAL Original Geometry Count = 2 (8)
 LAYER GATE ... TOTAL Original Geometry Count = 7 (16)
 LAYER ACT .... TOTAL Original Geometry Count = 5 (8)
-LAYER GC ..... TOTAL Original Geometry Count = 2 (8)
+LAYER GC ..... TOTAL Original Geometry Count = 0 (0)
 LAYER VM0 .... TOTAL Original Geometry Count = 0 (0)
 LAYER M1 ..... TOTAL Original Geometry Count = 6 (6)
 LAYER VM1 .... TOTAL Original Geometry Count = 0 (0)
@@ -79,7 +79,6 @@ RULECHECK RULE_SDC007 .... TOTAL Result Count = 0 (0)
 RULECHECK RULE_SDC008 .... TOTAL Result Count = 0 (0)
 RULECHECK RULE_IL001 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_IL002 ..... TOTAL Result Count = 0 (0)
-RULECHECK RULE_IL003A .... TOTAL Result Count = 0 (0)
 RULECHECK RULE_IL004 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_IL005 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_IL006 ..... TOTAL Result Count = 0 (0)
@@ -108,5 +107,5 @@ RULECHECK RULE_GC012 ..... TOTAL Result Count = 0 (0)
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
 TOTAL Original Layer Geometries: 32 (50)
-TOTAL DRC RuleChecks Executed:   41
+TOTAL DRC RuleChecks Executed:   40
 TOTAL DRC Results Generated:     0 (0)

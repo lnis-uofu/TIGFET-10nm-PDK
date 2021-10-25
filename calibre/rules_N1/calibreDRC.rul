@@ -18,8 +18,8 @@ RESOLUTION        1
 //                         TIGFET10nm PDK Layers
 ////////////////////////////////////////////////////////////////////////////////////
 layer ACT   1        // Device active region
-layer GC    3        // Gate Connect Layer (Fol Layer)
-layer SDC   4        // Source Drain Connect Layer (FOL Layer)
+layer GC    4        // Gate Connect Layer (Fol Layer)
+layer SDC   3        // Source Drain Connect Layer (FOL Layer)
 layer IL    5        // Interconnect Layer (MOL Layer)
 layer GATE  2        // Gate Layer
 layer M1    6        // Metal1 Layers
@@ -247,7 +247,7 @@ RULE_GATE001{
 //________ RULE_GATE002
 RULE_GATE002{
  @ RULE_GATE002
- @ Horizontal pitch of GATE (i.e. horizontal width between two gate polygons) is 15 nm
+ @ Horizontal pitch of GATE is 15 nm
  //select vertical edge pairs on same polygons, constraint is 1 to include all edge pairs
  x = INT GATE_vertical_edges < 1
  //derive centerlines between edge pairs
@@ -374,12 +374,21 @@ RULE_IL002{
  EXTERNAL IL_VERTICAL_EDGES < 0.040
 }
 ////////////////////////////////////////////////////////////////////////////////////
+/*
 RULE_IL003A{
  @ RULE_IL003A
  @ Minimum spacing between IL and GATE is 10nm
  EXTERNAL IL GATE < 0.010
 }
+*/
+/*
+RULE_IL003{
+IL_VERTICAL_EDGES = IL ANGLE == 90
+GATE_VERTICAL_EDGES = GATE ANGLE == 90
+x = INT IL_VERTICAL_EDGES GATE_VERTICAL_EDGES > 0
 
+}
+*/
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL004{
  @ RULE_IL004
@@ -477,12 +486,14 @@ RULE_GC006{
  ENC GATE GC_VERTICAL_EDGES < 0.002
 }
 ////////////////////////////////////////////////////////////////////////////////////
+
 RULE_GC007{
  @ RULE_GC007
  @ Minimum horizontal space of GC to IL is 4nm
  GC_VERTICAL_EDGES = GC ANGLE == 90
  EXT GC_VERTICAL_EDGES IL < 0.004 NOT CONNECTED
 }
+
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_GC008{
  @ RULE_GC008

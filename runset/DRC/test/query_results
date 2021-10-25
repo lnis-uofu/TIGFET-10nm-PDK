@@ -1,0 +1,3 @@
+mgc_rve_context_lcv "TIGFET10nm" "TEST" "layout" 5000
+me 2 0.037 0.054 0.1 0.054 0.037 0.082 0.1 0.082
+mgc_rve_zoom 0.0236 0.048 0.1134 0.088 1
