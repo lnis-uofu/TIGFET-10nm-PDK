@@ -258,7 +258,13 @@ RULE_GATE002{
  //output gate polygons that have a horizontal pitch less than 35nm
  EXT y_copy_vertical_edge < 0.015 OPPOSITE
 }
-
+/*
+RULE_GATE002{
+ x = EXT GATE_vertical_edges > 0
+ selected_edges = x ANGLE == 90
+ EXT selected_edges < 0.015
+}
+*/
 ////////////////////////////////////////////////////////////////////////////////////
 // ________ RULE_GATE004
 /*
