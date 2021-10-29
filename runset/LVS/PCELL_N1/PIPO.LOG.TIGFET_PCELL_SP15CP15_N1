@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 29-Oct-2021  13:32:20
+Started at: 29-Oct-2021  13:52:05
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -10,32 +10,30 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
-WARNING (XSTRM-20): Output Stream file '/home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1/G2_INV_N1.calibre.db' already exists. It will be overwritten.
+WARNING (XSTRM-20): Output Stream file '/home/u1081888/TIGFET-10nm-PDK/runset/LVS/PCELL_N1/TIGFET_PCELL_SP15CP15_N1.calibre.db' already exists. It will be overwritten.
 INFO (XSTRM-288): Performing automatic layer mapping because either the layer mapping information is not provided or the XST_AUTO_LM  value is used with the -layerMap option. Additionally, the  'xStrmOut_layerMap.txt' file has been generated and the mapping information has been added to it.
 
 Summary of Options :
 library                                 TIGFET10nm
-strmFile                                /home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1/G2_INV_N1.calibre.db
-topCell                                 G2_INV_N1
+strmFile                                /home/u1081888/TIGFET-10nm-PDK/runset/LVS/PCELL_N1/TIGFET_PCELL_SP15CP15_N1.calibre.db
+topCell                                 TIGFET_PCELL_SP15CP15_N1
 view                                    layout
-runDir                                  /home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1/
-logFile                                 PIPO.LOG.G2_INV_N1
-summaryFile                             PIPO.SUM.G2_INV_N1
+runDir                                  /home/u1081888/TIGFET-10nm-PDK/runset/LVS/PCELL_N1/
+logFile                                 PIPO.LOG.TIGFET_PCELL_SP15CP15_N1
+summaryFile                             PIPO.SUM.TIGFET_PCELL_SP15CP15_N1
 case                                    Preserve
 convertDot                              node
 convertPcellPin                         geometry
 
 INFO (XSTRM-223): 1. Translating cellView TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout as STRUCTURE TIGFET_PCELL_SP15CP15_N1.
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
-INFO (XSTRM-223): 2. Translating cellView TIGFET10nm/G2_No_Connection_N1/layout as STRUCTURE G2_No_Connection_N1.
-INFO (XSTRM-223): 3. Translating cellView TIGFET10nm/G2_INV_N1/layout as STRUCTURE G2_INV_N1.
 
 Summary of Objects Translated:
-	Scalar Instances:                       5
+	Scalar Instances:                       0
 	Array Instances:                        0
-	Polygons:                               4
+	Polygons:                               0
 	Paths:                                  0
-	Rectangles:                             80
+	Rectangles:                             6
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -51,9 +49,9 @@ Summary of Objects Translated:
 	Custom Vias:                            0
 	CdsGen Vias:                            0
 	Pathsegs:                               0
-	Text:                                   1
+	Text:                                   0
 	TextDisplay:                            0
-	Cells:                                  3
+	Cells:                                  1
 
-Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5252KB
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 4876KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

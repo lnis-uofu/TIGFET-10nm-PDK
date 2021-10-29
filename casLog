@@ -1,0 +1,10 @@
+
+*** Checking layout cellview 'TIGFET10nm/G2_INV_N1/layout' against source cellview 'TIGFET10nm/TIGFET_TILEG2_SP15CP15_INV/schematic'. - Wed Oct 27 14:28:58 2021 ***
+
+INFO (LX-1018): Schematic pin 'GND' has no corresponding layout pin.
+INFO (LX-1018): Schematic pin 'Vdd' has no corresponding layout pin.
+INFO (LX-1001): Schematic instance 'I0' has no corresponding layout instance.
+INFO (LX-1001): Layout instance 'I1' has no corresponding schematic instance.
+
+*** Check Against Source complete. ***
+

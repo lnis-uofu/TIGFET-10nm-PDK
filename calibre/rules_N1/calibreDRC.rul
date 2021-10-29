@@ -18,10 +18,10 @@ RESOLUTION        1
 //                         TIGFET10nm PDK Layers
 ////////////////////////////////////////////////////////////////////////////////////
 layer ACT   1        // Device active region
-layer GC    4        // Gate Connect Layer (Fol Layer)
-layer SDC   3        // Source Drain Connect Layer (FOL Layer)
-layer IL    5        // Interconnect Layer (MOL Layer)
 layer GATE  2        // Gate Layer
+layer SDC   3        // Source Drain Connect Layer (FOL Layer)
+layer GC    4        // Gate Connect Layer (Fol Layer)
+layer IL    5        // Interconnect Layer (MOL Layer)
 layer M1    6        // Metal1 Layers
 layer M2    7        // Metal2 Layers
 layer M3    8        // Metal3 Layers
@@ -240,14 +240,13 @@ RULE_GATE001{
  @ RULE_GATE001
  @ Minimum horizontal width of GATE is 20nm
  INTERNAL GATE_vertical_edges < 0.020
-
- 
 }
+
 
 //________ RULE_GATE002
 RULE_GATE002{
  @ RULE_GATE002
- @ Horizontal pitch of GATE is 15 nm
+ @ Horizontal pitch of GATE is 35 nm
  //select vertical edge pairs on same polygons, constraint is 1 to include all edge pairs
  x = INT GATE_vertical_edges < 1
  //derive centerlines between edge pairs
@@ -256,15 +255,9 @@ RULE_GATE002{
  y_copy = EXPAND EDGE y INSIDE BY 0.0001
  y_copy_vertical_edge =  y_copy ANGLE == 90
  //output gate polygons that have a horizontal pitch less than 35nm
- EXT y_copy_vertical_edge < 0.015 OPPOSITE
+ EXT y_copy_vertical_edge < 0.035 OPPOSITE
 }
-/*
-RULE_GATE002{
- x = EXT GATE_vertical_edges > 0
- selected_edges = x ANGLE == 90
- EXT selected_edges < 0.015
-}
-*/
+
 ////////////////////////////////////////////////////////////////////////////////////
 // ________ RULE_GATE004
 /*

@@ -1,214 +1,274 @@
 G2_INV_N1 5000
 RULE_ACT001
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_ACT001
 Minimum vertical width of ACT layer is 24nm
 RULE_ACT003
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_ACT003
 Minimum vertical spacing of ACT is 80nm
 RULE_ACT004
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_ACT004
 Minimum horizontal width of ACT is 110nm
 RULE_ACT005
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_ACT005
 Horizontal spacing of ACT  must be 80nm
 RULE_ACT006
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_ACT006
 Minimum notch of ACT is 166nm
 RULE_ACT008A
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_ACT008A
 Minimum area of ACT is 0.004608 um2
 RULE_ACT008B
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_ACT008B
 Minimum enclosed area of ACT is 0.004608 um2
 RULE_GATE001
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GATE001
 Minimum horizontal width of GATE is 20nm
 RULE_GATE002
-4 4 3 Oct 26 16:24:31 2021                     
+24 24 3 Oct 29 13:28:18 2021                   
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GATE002
-Horizontal pitch of GATE is 15 nm
+Horizontal pitch of GATE is 35 nm
 e 1 2
 CN G2_INV_N1 c 1 0 0 1 0 0 0
-735 80 735 420
-739 80 739 420
+390 45 390 420
+564 45 564 420
 e 2 2
+390 850 390 1215
+564 850 564 1215
+e 3 2
+565 45 565 420
+734 45 734 420
+e 4 2
+565 90 565 420
+739 90 739 420
+e 5 2
+565 850 565 1180
+739 850 739 1180
+e 6 2
+565 850 565 1215
+734 850 734 1215
+e 7 2
+735 45 735 420
+909 45 909 420
+e 8 2
+735 90 735 420
+739 90 739 420
+e 9 2
+735 850 735 1215
+909 850 909 1215
+e 10 2
 735 850 735 1180
 739 850 739 1180
-e 3 2
-1080 80 1080 420
-1084 80 1084 420
-e 4 2
+e 11 2
+740 90 740 420
+909 90 909 420
+e 12 2
+740 850 740 1180
+909 850 909 1180
+e 13 2
+910 45 910 420
+1084 45 1084 420
+e 14 2
+910 90 910 420
+1079 90 1079 420
+e 15 2
+910 850 910 1215
+1084 850 1084 1215
+e 16 2
+910 850 910 1180
+1079 850 1079 1180
+e 17 2
+1080 90 1080 420
+1254 90 1254 420
+e 18 2
+1080 90 1080 420
+1084 90 1084 420
+e 19 2
+1080 850 1080 1180
+1254 850 1254 1180
+e 20 2
 1080 850 1080 1180
 1084 850 1084 1180
+e 21 2
+1085 45 1085 420
+1254 45 1254 420
+e 22 2
+1085 850 1085 1215
+1254 850 1254 1215
+e 23 2
+1255 45 1255 420
+1429 45 1429 420
+e 24 2
+1255 850 1255 1215
+1429 850 1429 1215
 RULE_GATE005
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GATE005
 Minimum extension of ACT past GATE is 10nm
 RULE_GATE006
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GATE006
 Minimum extension of GATE past ACT is 10nm
 RULE_SDC001
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC001
 Horizontal Width of SDC is 28nm
 RULE_SDC002
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC002
 Horizontal spacing of SDC is 110nm
 RULE_SDC003A
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC003A
 Minimum spacing of SDC to GATE is 10nm
 RULE_SDC004
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC004
 Minimum extenxion of ACT past SDC in horizontal direction is 2nm
 RULE_SDC005
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC005
 Minimum Vertical length of SDC is 44nm
 RULE_SDC006
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC006
 Minimum Vertical spacing of SDC is 62nm
 RULE_SDC007
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC007
 Minimum Vertical extension of SDC past ACT is 0nm
 RULE_SDC008
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_SDC008
 SDC layer may not bend
 RULE_IL001
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL001
 Horizontal width of IL is 24nm
 RULE_IL002
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL002
 Horizontal spacing of IL is 40nm
 RULE_IL004
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL004
 Minimum horizontal enclosure of SDC around IL is 2 nm
 RULE_IL005
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL005
 Minimum Vertical overlap of SDC and IL is 58nm
 RULE_IL006
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL006
 Vertical length of IL is 68nm
 RULE_IL007
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL007
 Vertical spacing of IL is 48nm
 RULE_IL008
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL008
 IL may not bend
 RULE_IL009
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL009
 Minimum horizontal spacing of SDC and IL is 16nm
 RULE_IL010
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_IL010
 Minimum vertical spacing of SDC and IL is 16nm
 RULE_GC001
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC001A
 Minimum vertical width of GC is 44nm
 RULE_GC002
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC001B
 Minimum horizontal length of GC is 20nm
 RULE_GC003
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC003
 Minimum vertical spacing of GC is 40nm
 RULE_GC004
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC004
 Minimum horizontal spacing of GC is 40nm
 RULE_GC005
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC005
 Minimum vertical spacing of GC to ACT is 6nm
 RULE_GC006
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC006
 Minimum horizontal extension of GC past GATE is 2nm
 RULE_GC007
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC007
 Minimum horizontal space of GC to IL is 4nm
 RULE_GC008
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC008
 Minimum vertical space of GC to IL is 4nm
 RULE_GC009A
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC009A
 Minimum horizontal space of SDC to GATE is 10nm
 RULE_GC010
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC010
 Minimum horizontal overlap of GC and IL is 24nm
 RULE_GC011
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC011
 Minimum vertical extension of IL past GC is 4nm
 RULE_GC012
-0 0 3 Oct 26 16:24:31 2021                     
+0 0 3 Oct 29 13:28:18 2021                     
 Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 RULE_GC012
 GC may not bend

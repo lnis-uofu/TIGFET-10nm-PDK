@@ -1,7 +1,7 @@
 layer ACT   1
 layer GATE  2
-layer SDC   3
-layer GC    4
+layer GC    3
+layer SDC   4
 layer IL    5
 layer VM0   6
 layer M1    7
