@@ -20,6 +20,11 @@
 * View Name:    schematic
 ************************************************************************
 
+.SUBCKT TIGFET_PCELL_SP15CP15_N1 d pgd cg pgs s 
+d pgd cg pgs s
+.ENDS 
+
+
 .SUBCKT G2_No_Connection_N1 cg1 cg2 cg3 cg4 g1 g2 g3 g4 n1 n2 n3 n4 n5 n6
 *.PININFO cg1:I cg2:I cg3:I cg4:I g1:I g2:I g3:I g4:I n1:I n2:I n3:I n4:I n5:I 
 *.PININFO n6:I

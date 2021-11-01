@@ -8,9 +8,9 @@
   netlistDir "/home/u1081888/TIGFET-10nm-PDK/runset/LVS/G2_INV_N1"
  )
 ( model
-( "TIGFET10nm/TIGFET_TILEG2_SP15CP15_NoConnection/schematic" "TIGFET_TILEG2_SP15CP15_NoConnection" )
+( "TIGFET10nm/G2_No_Connection_N1/schematic" "G2_No_Connection_N1" )
 ( "TIGFET10nm/G2_INV_N1/schematic" "G2_INV_N1" )
  )
-( "TIGFET_TILEG2_SP15CP15_NoConnection" "ihnl/cds0/map" )
 ( "G2_INV_N1" "ihnl/cds1/map" )
+( "G2_No_Connection_N1" "ihnl/cds0/map" )
  )

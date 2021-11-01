@@ -1,0 +1,136 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G2_No_Connection_N1.dv
+dv_start unmatched                                
+dv_global
+dv_discrep 1 {Warning: Undefined parameter}
+dv_discrep_line {Undefined parameter "s" ignored in file "/home/u1081888/TIGFET-10nm-PDK/runset/LVS/No_Connection/G2_No_Connection_N1.src.net" at line 24}
+dv_discrep_line {}
+dv_cell {G2_No_Connection_N1} {G2_No_Connection_N1} unmatched
+dv_obj_count -transformed_nets {18 8} -transformed_inst {4 4} -transformed_port {0 8}
+dv_discrep 1 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {1} {                                                     ** no similar net **}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 2 0}
+dv_discrep_line {Net } -lnet {3} {                                                     ** no similar net **}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {2} {                                                     ** no similar net **}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Nets} -inst_count { 2 0}
+dv_discrep_line {Net } -lnet {4} {                                                     ** no similar net **}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {5} {                                                     ** no similar net **}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {6} {                                                     ** no similar net **}
+dv_discrep_line {}
+dv_discrep 7 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X0/3} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 8 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X0/4} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 9 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X0/5} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 10 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X1/3} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 11 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X1/4} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 12 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X1/5} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 13 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X2/3} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 14 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X2/4} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 15 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X2/5} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 16 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X3/3} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 17 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X3/4} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 18 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X3/5} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 19 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {G1} {}
+dv_discrep_line {}
+dv_discrep 20 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {G2} {}
+dv_discrep_line {}
+dv_discrep 21 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {G3} {}
+dv_discrep_line {}
+dv_discrep 22 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {G4} {}
+dv_discrep_line {}
+dv_discrep 23 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N1} {}
+dv_discrep_line {}
+dv_discrep 24 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N3} {}
+dv_discrep_line {}
+dv_discrep 25 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N4} {}
+dv_discrep_line {}
+dv_discrep 26 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** no similar net **                                      } -snet {N6} {}
+dv_discrep_line {}
+dv_discrep 27 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {G1} { on net: } -snet {G1} {}
+dv_discrep_line {}
+dv_discrep 28 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {G2} { on net: } -snet {G2} {}
+dv_discrep_line {}
+dv_discrep 29 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {G3} { on net: } -snet {G3} {}
+dv_discrep_line {}
+dv_discrep 30 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {G4} { on net: } -snet {G4} {}
+dv_discrep_line {}
+dv_discrep 31 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {N1} { on net: } -snet {N1} {}
+dv_discrep_line {}
+dv_discrep 32 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {N3} { on net: } -snet {N3} {}
+dv_discrep_line {}
+dv_discrep 33 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {N4} { on net: } -snet {N4} {}
+dv_discrep_line {}
+dv_discrep 34 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {N6} { on net: } -snet {N6} {}
+dv_discrep_line {}
+dv_discrep 35 {Incorrect Instances}
+dv_discrep_line {} -linst {X0/X0} {} -lloc {(0.030,0.075)} {  tigfet1                               ** missing instance **}
+dv_discrep_line {}
+dv_discrep 36 {Incorrect Instances}
+dv_discrep_line {} -linst {X1/X0} {} -lloc {(0.030,0.181)} {  tigfet1                               ** missing instance **}
+dv_discrep_line {}
+dv_discrep 37 {Incorrect Instances}
+dv_discrep_line {} -linst {X2/X0} {} -lloc {(0.168,0.075)} {  tigfet1                               ** missing instance **}
+dv_discrep_line {}
+dv_discrep 38 {Incorrect Instances}
+dv_discrep_line {} -linst {X3/X0} {} -lloc {(0.168,0.181)} {  tigfet1                               ** missing instance **}
+dv_discrep_line {}
+dv_discrep 39 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XI3/d} {  D(PGS)}
+dv_discrep_line {}
+dv_discrep 40 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XI2/d} {  D(PGS)}
+dv_discrep_line {}
+dv_discrep 41 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XI1/d} {  D(PGS)}
+dv_discrep_line {}
+dv_discrep 42 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {XI0/d} {  D(PGS)}
+dv_discrep_line {}
+dv_end
