@@ -22,26 +22,35 @@ layer GATE  2        // Gate Layer
 layer SDC   3        // Source Drain Connect Layer (FOL Layer)
 layer GC    4        // Gate Connect Layer (Fol Layer)
 layer IL    5        // Interconnect Layer (MOL Layer)
-layer M1    6        // Metal1 Layers
-layer M2    7        // Metal2 Layers
-layer M3    8        // Metal3 Layers
-layer M4    9        // Metal4 Layers
-layer M5    10       // Metal5 Layers
-layer M6    11       // Metal6 Layers
-layer M7    12       // Metal7 Layers
-layer M8    13       // Metal8 Layers
-layer M9    14       // Metal9 Layers
-layer M10   15       // Metal10 Layers
-layer VM0   16       // GC/SDC to Metal1  Contact Layer
-layer VM1   17       // Metal1 to Metal2  Contact Layer
-layer VM2   18       // Metal2 to Metal3  Contact Layer
-layer VM3   19       // Metal3 to Metal4  Contact Layer
-layer VM4   20       // Metal4 to Metal5  Contact Layer
-layer VM5   21       // Metal5 to Metal6  Contact Layer
-layer VM6   22       // Metal6 to Metal7  Contact Layer
-layer VM7   23       // Metal7 to Metal8  Contact Layer
-layer VM8   24       // Metal8 to Metal9  Contact Layer
-layer VM9   25       // Metal9 to Metal10 Contact Layer
+layer VM0   6       // GC/SDC to Metal1  Contact Layer
+layer M1    7        // Metal1 Layers
+layer VM1   8       // Metal1 to Metal2  Contact Layer
+layer M2    9        // Metal2 Layers
+layer VM2   10       // Metal2 to Metal3  Contact Layer
+layer M3    11       // Metal3 Layers
+layer VM3   12       // Metal3 to Metal4  Contact Layer
+layer M4    13       // Metal4 Layers
+layer VM4   14       // Metal4 to Metal5  Contact Layer
+layer M5    15       // Metal5 Layers
+layer VM5   16       // Metal5 to Metal6  Contact Layer
+layer M6    17       // Metal6 Layers
+layer VM6   18       // Metal6 to Metal7  Contact Layer
+layer M7    19       // Metal7 Layers
+layer VM7   20       // Metal7 to Metal8  Contact Layer
+layer M8    21       // Metal8 Layers
+layer VM8   22       // Metal8 to Metal9  Contact Layer
+layer M9    23       // Metal9 Layers
+layer VM9   24       // Metal9 to Metal10 Contact Layer
+layer M10   25       // Metal10 Layers
+
+
+
+
+
+
+
+
+
 
 /*============================== Layer Connectivity graphs ====================================
 
@@ -242,7 +251,7 @@ RULE_GATE001{
  INTERNAL GATE_vertical_edges < 0.020
 }
 
-
+/*
 //________ RULE_GATE002
 RULE_GATE002{
  @ RULE_GATE002
@@ -257,6 +266,8 @@ RULE_GATE002{
  //output gate polygons that have a horizontal pitch less than 35nm
  EXT y_copy_vertical_edge < 0.035 OPPOSITE
 }
+*/
+
 
 ////////////////////////////////////////////////////////////////////////////////////
 // ________ RULE_GATE004
@@ -529,3 +540,45 @@ RULE_GC012{
  @ GC may not bend
  CONVEX EDGE GC ANGLE1 > 90 ANGLE2 > 0
 }
+
+////////////////////////////////////////////////////////////////////////////////////
+//                VM0 Rules
+////////////////////////////////////////////////////////////////////////////////////
+VM0_VE = VM0 ANGLE == 90
+VM0_HE = VM0 ANGLE == 0
+
+RULE_VM001{
+@ RULE_VM001
+@ Minimum horizontal width of VM0 polygons is 28nm
+INTERNAL VM0_VE < 0.028
+}
+
+RULE_VM002{
+@ RULE_VM002
+@VM0 must be fully inside  M1
+NOT INSIDE VM0 M1
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+//                M1 Rules
+////////////////////////////////////////////////////////////////////////////////////
+M1_VE = M1 ANGLE == 90
+M1_HE = M1 ANGLE == 0
+
+RULE_M101{
+@ RULE_M1101
+@ Minimum horizontal width of M1 is 28nm
+INTERNAL M1_VE < 0.028
+}
+
+RULE_M102{
+@ RULE M2
+@ Minimum spacing between M1 polygons is 36nm
+EXT M1 < 0.036
+}
+
+
+

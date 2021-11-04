@@ -1,0 +1,27 @@
+//
+//  Rule file generated on Thu Nov 04 17:27:26 MDT 2021
+//     by Calibre Interactive - DRC (v2021.2_37.20)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "G2_No_Connection_N1.calibre.db"
+LAYOUT PRIMARY "G2_No_Connection_N1"
+LAYOUT SYSTEM GDSII
+
+DRC RESULTS DATABASE "G2_No_Connection_N1.drc.results" ASCII 
+DRC MAXIMUM RESULTS 1000
+DRC MAXIMUM VERTEX 4096
+
+DRC CELL NAME YES CELL SPACE XFORM
+DRC SUMMARY REPORT "G2_No_Connection_N1.drc.summary" REPLACE HIER
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+DRC ICSTATION YES
+
+
+INCLUDE "/home/u1081888/TIGFET-10nm-PDK/calibre/rules_N1/calibreDRC.rul"
+
