@@ -425,33 +425,7 @@ RULE_IL006{
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL007{
  @ RULE_IL007
- @ Vertical spacing of IL is 48nm
- IL_HORIZONTAL_EDGES = IL ANGLE == 0
- EXTERNAL IL_HORIZONTAL_EDGES < 0.048 OPPOSITE
-}
-// Angle made 0 from 90
-////////////////////////////////////////////////////////////////////////////////////
-RULE_IL008{
- @ RULE_IL008
- @ IL may not bend
- CONVEX EDGE IL ANGLE1 > 90 ANGLE2 > 0
-}
-///////////////////////////////////////////////////////////////////////////////////
-RULE_IL009{
- @ RULE_IL009
- @ Minimum horizontal spacing of SDC and IL is 16nm
- SDC_VERTICAL_EDGES = SDC ANGLE == 90
- IL_VERTICAL_EDGES = IL ANGLE == 90
- EXTERNAL SDC_VERTICAL_EDGES IL_VERTICAL_EDGES < 0.016 NOT CONNECTED
-}
-////////////////////////////////////////////////////////////////////////////////////
-RULE_IL010{
- @ RULE_IL010
- @ Minimum vertical spacing of SDC and IL is 16nm
- SDC_HORIZONTAL_EDGES = SDC ANGLE == 0
- IL_HORIZONTAL_EDGES  = IL ANGLE  == 0
- EXTERNAL SDC_HORIZONTAL_EDGES IL_HORIZONTAL_EDGES < 0.016 NOT CONNECTED
-}
+ @ Vertical spacing of IL is 48
 
 
 
@@ -595,15 +569,21 @@ M1_VE = M1 ANGLE == 90
 M1_HE = M1 ANGLE == 0
 
 RULE_M101{
-@ RULE_M1101
+@ RULE_M101
 @ Minimum horizontal width of M1 is 28nm
 INTERNAL M1_VE < 0.028
 }
 
 RULE_M102{
-@ RULE M2
+@ RULE M102
 @ Minimum spacing between M1 polygons is 36nm
 EXT M1 < 0.036
+}
+
+RULE_M103{
+@ RULE M102
+@ Minimum vertical width of M1 is 28nm
+INTERNAL M1_HE < 0.028
 }
 
 
@@ -615,6 +595,54 @@ VM1_HE = VM1 ANGLE == 0
 
 RULE_VM101{
 @ RULE_VM101
-@ VM1 is a square with 28nm edge length
-RECTANGLE VM1 != 0.028 BY != 0.028 ASPECT == 1
+@ Minimum horizontal width of VM1 polygons is 28nm
+INTERNAL VM1_VE < 0.028
+}
+
+RULE_VM102{
+@ RULE_VM102
+@ Minimum vertical width of VM1 poygons is 28nm
+INTERNAL VM1_HE < 0.028
+}
+
+RULE_VM103{
+@ RULE_VM103
+@ VM1 must be fully inside M2
+NOT INSIDE VM1 M2
+}
+
+RULE_VM104{
+@ RULE VM104
+@ Minimum spacing between VM1 polygons is 36nm
+EXT VM1 < 0.036
+}
+
+RULE_VM105{
+@ RULE VM105
+@ Minimum enclosure between VM1 and M1 is 2nm
+ENC VM1 M1 < 0.002 
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                M2 Rules
+////////////////////////////////////////////////////////////////////////////////////
+M2_VE = M2 ANGLE == 90
+M2_HE = M2 ANGLE == 0
+
+RULE_M201{
+@ RULE_M201
+@ Minimum horizontal width of M2 is 28nm
+INTERNAL M1_VE < 0.028
+}
+
+RULE_M202{
+@ RULE M202
+@ Minimum spacing between M2 polygons is 36nm
+EXT M2 < 0.036
+}
+
+RULE_M203{
+@ RULE M202
+@ Minimum vertical width of M2 is 28nm
+INTERNAL M2_HE < 0.028
 }
