@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Thu Nov  4 17:27:27 2021
+Execution Date/Time:       Fri Nov  5 13:39:09 2021
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/DRC/N1/No_Connection/_calibreDRC.rul_
 Rule File Title:           
@@ -35,9 +35,9 @@ LAYER SDC .... TOTAL Original Geometry Count = 2 (8)
 LAYER GATE ... TOTAL Original Geometry Count = 7 (16)
 LAYER VM0 .... TOTAL Original Geometry Count = 6 (6)
 LAYER M1 ..... TOTAL Original Geometry Count = 6 (6)
-LAYER ACT .... TOTAL Original Geometry Count = 4 (7)
-LAYER GC ..... TOTAL Original Geometry Count = 0 (0)
 LAYER VM1 .... TOTAL Original Geometry Count = 0 (0)
+LAYER ACT .... TOTAL Original Geometry Count = 3 (6)
+LAYER GC ..... TOTAL Original Geometry Count = 0 (0)
 LAYER M2 ..... TOTAL Original Geometry Count = 0 (0)
 LAYER VM2 .... TOTAL Original Geometry Count = 0 (0)
 LAYER M3 ..... TOTAL Original Geometry Count = 0 (0)
@@ -99,8 +99,12 @@ RULECHECK RULE_GC011 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_GC012 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_VM001 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_VM002 ..... TOTAL Result Count = 0 (0)
+RULECHECK RULE_VM003 ..... TOTAL Result Count = 0 (0)
+RULECHECK RULE_VM004 ..... TOTAL Result Count = 0 (0)
+RULECHECK RULE_VM005 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_M101 ...... TOTAL Result Count = 0 (0)
 RULECHECK RULE_M102 ...... TOTAL Result Count = 0 (0)
+RULECHECK RULE_VM101 ..... TOTAL Result Count = 0 (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
@@ -109,6 +113,6 @@ RULECHECK RULE_M102 ...... TOTAL Result Count = 0 (0)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 31 (49)
-TOTAL DRC RuleChecks Executed:   43
+TOTAL Original Layer Geometries: 30 (48)
+TOTAL DRC RuleChecks Executed:   47
 TOTAL DRC Results Generated:     0 (0)

@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Thu Nov  4 16:22:07 2021
+Execution Date/Time:       Thu Nov  4 17:40:48 2021
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/DRC/N1/G2_INV/_calibreDRC.rul_
 Rule File Title:           
@@ -33,11 +33,11 @@ Keep Empty Checks:         YES
 LAYER IL ..... TOTAL Original Geometry Count = 10 (10)
 LAYER SDC .... TOTAL Original Geometry Count = 2  (8)
 LAYER GATE ... TOTAL Original Geometry Count = 11 (20)
+LAYER VM0 .... TOTAL Original Geometry Count = 10 (10)
 LAYER M1 ..... TOTAL Original Geometry Count = 14 (14)
+LAYER VM1 .... TOTAL Original Geometry Count = 11 (11)
 LAYER ACT .... TOTAL Original Geometry Count = 4  (7)
 LAYER GC ..... TOTAL Original Geometry Count = 4  (4)
-LAYER VM0 .... TOTAL Original Geometry Count = 10 (10)
-LAYER VM1 .... TOTAL Original Geometry Count = 11 (11)
 LAYER M2 ..... TOTAL Original Geometry Count = 12 (12)
 LAYER VM2 .... TOTAL Original Geometry Count = 4  (4)
 LAYER M3 ..... TOTAL Original Geometry Count = 2  (2)
@@ -97,17 +97,23 @@ RULECHECK RULE_GC009A .... TOTAL Result Count = 0 (0)
 RULECHECK RULE_GC010 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_GC011 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_GC012 ..... TOTAL Result Count = 0 (0)
-RULECHECK RULE_M1 ........ TOTAL Result Count = 4 (4)
+RULECHECK RULE_VM001 ..... TOTAL Result Count = 0 (0)
+RULECHECK RULE_VM002 ..... TOTAL Result Count = 2 (2)
+RULECHECK RULE_M101 ...... TOTAL Result Count = 8 (8)
+RULECHECK RULE_M102 ...... TOTAL Result Count = 0 (0)
+RULECHECK RULE_VM101 ..... TOTAL Result Count = 1 (1)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL G2_INV_N1 .......... TOTAL Result Count = 4 (4)
-    RULECHECK RULE_M1 ... TOTAL Result Count = 4 (4)
+CELL G2_INV_N1 ............. TOTAL Result Count = 11 (11)
+    RULECHECK RULE_VM002 ... TOTAL Result Count = 2  (2)
+    RULECHECK RULE_M101 .... TOTAL Result Count = 8  (8)
+    RULECHECK RULE_VM101 ... TOTAL Result Count = 1  (1)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
 TOTAL Original Layer Geometries: 84 (102)
-TOTAL DRC RuleChecks Executed:   40
-TOTAL DRC Results Generated:     4 (4)
+TOTAL DRC RuleChecks Executed:   44
+TOTAL DRC Results Generated:     11 (11)
