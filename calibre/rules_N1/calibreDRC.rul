@@ -425,8 +425,11 @@ RULE_IL006{
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL007{
  @ RULE_IL007
- @ Vertical spacing of IL is 48
-
+ @ Vertical spacing of IL in line with each other is 48
+ IL_HORIZ_EDGES = IL ANGLE == 0
+ EXTERNAL IL_HORIZ_EDGES < 0.048 PROJECTING
+ 
+}
 
 
 
@@ -632,7 +635,7 @@ M2_HE = M2 ANGLE == 0
 RULE_M201{
 @ RULE_M201
 @ Minimum horizontal width of M2 is 28nm
-INTERNAL M1_VE < 0.028
+INTERNAL M2_VE < 0.028
 }
 
 RULE_M202{
@@ -642,7 +645,67 @@ EXT M2 < 0.036
 }
 
 RULE_M203{
-@ RULE M202
+@ RULE M203
 @ Minimum vertical width of M2 is 28nm
 INTERNAL M2_HE < 0.028
+}
+
+////////////////////////////////////////////////////////////////////////////////////
+//                VM2 Rules
+////////////////////////////////////////////////////////////////////////////////////
+VM2_VE = VM2 ANGLE == 90
+VM2_HE = VM2 ANGLE == 0
+
+RULE_VM201{
+@ RULE_VM201
+@ Minimum horizontal width of VM2 polygons is 28nm
+INTERNAL VM2_VE < 0.028
+}
+
+RULE_VM202{
+@ RULE_VM202
+@ Minimum vertical width of VM2 poygons is 28nm
+INTERNAL VM2_HE < 0.028
+}
+
+RULE_VM203{
+@ RULE_VM203
+@ VM1 must be fully inside M3
+NOT INSIDE VM2 M3
+}
+
+RULE_VM204{
+@ RULE VM204
+@ Minimum spacing between VM2 polygons is 36nm
+EXT VM2 < 0.036
+}
+
+RULE_VM205{
+@ RULE VM205
+@ Minimum enclosure between VM2 and M2 is 2nm
+ENC VM2 M2 < 0.002 
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+//                M3 Rules
+////////////////////////////////////////////////////////////////////////////////////
+M3_VE = M3 ANGLE == 90
+M3_HE = M3 ANGLE == 0
+
+RULE_M301{
+@ RULE_M301
+@ Minimum horizontal width of M3 is 28nm
+INTERNAL M3_VE < 0.028
+}
+
+RULE_M302{
+@ RULE M302
+@ Minimum spacing between M3 polygons is 36nm
+EXT M3 < 0.036
+}
+
+RULE_M303{
+@ RULE M303
+@ Minimum vertical width of M3 is 28nm
+INTERNAL M3_HE < 0.028
 }

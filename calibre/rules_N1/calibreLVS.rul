@@ -14,7 +14,7 @@ LVS SOFTCHK gate_conn ALL
 LVS Report Option S
 
 /* ------------------------- Layer Stack File ------------------------- */
-include $PDK_DIR/calibre/layers.inc
+include $PDK_DIR/calibre/rules_N1/layers.inc
 
 
 /* ------------------------- Connectivity Extraction ------------------------- */

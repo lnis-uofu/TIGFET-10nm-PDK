@@ -10,8 +10,8 @@
 *.EQUATION
 *.SCALE METER
 *.MEGA
-.PARAM
-*.INC '/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/hspiceD/spice.spc'
+*.PARAM
+
 
 ************************************************************************
 * Library Name: TIGFET10nm
@@ -19,7 +19,7 @@
 * View Name:    schematic
 ************************************************************************
 
-.HDL /home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/veriloga/veriloga.va
+.HDL 'veriloga.va'
 
 .SUBCKT TIGFET_PCELL_SP15CP15_N1 d pgd cg pgs s
  XMOS d pgd cg pgs s TIGFET_PCELL

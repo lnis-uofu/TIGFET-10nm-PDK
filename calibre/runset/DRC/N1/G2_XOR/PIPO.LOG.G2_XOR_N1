@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 26-Oct-2021  17:41:00
+Started at: 10-Nov-2021  12:38:02
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -10,14 +10,15 @@ CADENCE Design Systems, Inc.
 ********************************************************************************
 Info: Cellview Rev Num:99,  Tech Rev Num:59
 
+WARNING (XSTRM-20): Output Stream file '/home/u1081888/TIGFET-10nm-PDK/calibre/runset/DRC/N1/G2_XOR/G2_XOR_N1.calibre.db' already exists. It will be overwritten.
 INFO (XSTRM-288): Performing automatic layer mapping because either the layer mapping information is not provided or the XST_AUTO_LM  value is used with the -layerMap option. Additionally, the  'xStrmOut_layerMap.txt' file has been generated and the mapping information has been added to it.
 
 Summary of Options :
 library                                 TIGFET10nm
-strmFile                                /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_XOR/G2_XOR_N1.calibre.db
+strmFile                                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/DRC/N1/G2_XOR/G2_XOR_N1.calibre.db
 topCell                                 G2_XOR_N1
 view                                    layout
-runDir                                  /home/u1081888/TIGFET-10nm-PDK/runset/DRC/N1/G2_XOR/
+runDir                                  /home/u1081888/TIGFET-10nm-PDK/calibre/runset/DRC/N1/G2_XOR/
 logFile                                 PIPO.LOG.G2_XOR_N1
 summaryFile                             PIPO.SUM.G2_XOR_N1
 case                                    Preserve
@@ -34,7 +35,7 @@ Summary of Objects Translated:
 	Array Instances:                        0
 	Polygons:                               4
 	Paths:                                  0
-	Rectangles:                             77
+	Rectangles:                             69
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -54,5 +55,5 @@ Summary of Objects Translated:
 	TextDisplay:                            0
 	Cells:                                  3
 
-Elapsed Time: 0.6s   User Time: 0.2s   CPU Time: 0.1s   Peak VM: 5360KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5144KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

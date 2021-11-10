@@ -3,12 +3,9 @@
 dv_start notcompared                              
 dv_global
 dv_discrep 1 {Warning: Unknown statement}
-dv_discrep_line {Can't understand statement at line 4 in file "/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/hspiceD/spice.spc"}
+dv_discrep_line {Can't understand statement ".HDL" at line 22 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/netlist.sp"}
 dv_discrep_line {}
-dv_discrep 2 {Warning: Unknown statement}
-dv_discrep_line {Can't understand statement ".HDL" at line 6 in file "/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/hspiceD/spice.spc"}
-dv_discrep_line {}
-dv_discrep 3 {Error: Unmatched statement}
-dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL" at line 9 in file "/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/hspiceD/spice.spc"}
+dv_discrep 2 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL" at line 26 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/netlist.sp"}
 dv_discrep_line {}
 dv_end

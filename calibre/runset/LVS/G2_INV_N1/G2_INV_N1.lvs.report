@@ -1,10 +1,9 @@
 
-LVS Netlist Compiler - Errors and Warnings for "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/G2_INV_N1.src.net"
-------------------------------------------------------------------------------------------------------------------------------
+LVS Netlist Compiler - Errors and Warnings for "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/netlist.sp"
+-----------------------------------------------------------------------------------------------------------------------
 
-Warning: Can't understand statement at line 4 in file "/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/hspiceD/spice.spc"
-Warning: Can't understand statement ".HDL" at line 6 in file "/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/hspiceD/spice.spc"
-Error: No matching ".SUBCKT" statement for "TIGFET_PCELL" at line 9 in file "/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/hspiceD/spice.spc"
+Warning: Can't understand statement ".HDL" at line 22 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/netlist.sp"
+Error: No matching ".SUBCKT" statement for "TIGFET_PCELL" at line 26 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/netlist.sp"
 
 
 
@@ -21,9 +20,9 @@ Error: No matching ".SUBCKT" statement for "TIGFET_PCELL" at line 9 in file "/ho
 
 REPORT FILE NAME:         G2_INV_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/G2_INV_N1.sp ('G2_INV_N1')
-SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/G2_INV_N1.src.net ('G2_INV_N1')
+SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/netlist.sp ('G2_INV_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/_calibreLVS.rul_
-CREATION TIME:            Thu Nov  4 14:43:03 2021
+CREATION TIME:            Tue Nov  9 14:31:01 2021
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
