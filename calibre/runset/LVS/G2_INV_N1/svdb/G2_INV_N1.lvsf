@@ -1,8 +1,8 @@
 # Automagically generated file: Please do not edit!
 lvs_LvsOutFile RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1
 lvs_LvsfVersion 4
-lvs_LvsInputSummary {0 1 1}
-lvs_LvsComparisonSummary {2 0 0 0}
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {5 0 4 0}
 lvs_SourceCase NO
 lvs_LayoutCase NO
 lvs_PowerName VDD
@@ -10,3 +10,4 @@ lvs_GroundName VSS
 lvs_LvsOutFile LVS_REPORT G2_INV_N1.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/netlist.sp
 lvs_LvsOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/LVS/G2_INV_N1/_calibreLVS.rul_
+lvs_LvsRunTimes 1636665504 1636665505

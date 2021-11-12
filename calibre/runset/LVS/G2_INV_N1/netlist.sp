@@ -19,10 +19,10 @@
 * View Name:    schematic
 ************************************************************************
 
-.HDL 'veriloga.va'
+*.HDL 'veriloga.va'
 
 .SUBCKT TIGFET_PCELL_SP15CP15_N1 d pgd cg pgs s
- XMOS d pgd cg pgs s TIGFET_PCELL
+* XMOS d pgd cg pgs s TIGFET_PCELL
 .ENDS
 
 

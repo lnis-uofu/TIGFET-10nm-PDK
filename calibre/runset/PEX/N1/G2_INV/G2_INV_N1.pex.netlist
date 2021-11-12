@@ -1,0 +1,24 @@
+* File: G2_INV_N1.pex.netlist
+* Created: Thu Nov 11 15:07:31 2021
+* Program "Calibre xRC"
+* Version "v2021.2_37.20"
+* 
+.include "G2_INV_N1.pex.netlist.pex"
+.subckt G2_INV_N1 
+* 
+X0.X0_noxref N_noxref_1_X0.X0_noxref_D X0.noxref_3 X0.noxref_4 X0.noxref_5
++ noxref_2 TIGFET1
+X1.X0_noxref N_noxref_1_X1.X0_noxref_D X1.noxref_3 X1.noxref_4 X1.noxref_5
++ noxref_4 TIGFET1
+X2.X0_noxref noxref_2 X2.noxref_3 X2.noxref_4 X2.noxref_5
++ N_noxref_6_X2.X0_noxref_S TIGFET1
+X3.X0_noxref noxref_4 X3.noxref_3 X3.noxref_4 X3.noxref_5
++ N_noxref_6_X3.X0_noxref_S TIGFET1
+c_7 noxref_2 0 0.00742563f
+c_11 noxref_4 0 0.00731847f
+*
+.include "G2_INV_N1.pex.netlist.G2_INV_N1.pxi"
+*
+.ends
+*
+*
