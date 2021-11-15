@@ -384,22 +384,7 @@ RULE_IL002{
  IL_VERTICAL_EDGES = IL ANGLE == 90
  EXTERNAL IL_VERTICAL_EDGES < 0.040
 }
-////////////////////////////////////////////////////////////////////////////////////
-/*
-RULE_IL003A{
- @ RULE_IL003A
- @ Minimum spacing between IL and GATE is 10nm
- EXTERNAL IL GATE < 0.010
-}
-*/
-/*
-RULE_IL003{
-IL_VERTICAL_EDGES = IL ANGLE == 90
-GATE_VERTICAL_EDGES = GATE ANGLE == 90
-x = INT IL_VERTICAL_EDGES GATE_VERTICAL_EDGES > 0
 
-}
-*/
 ////////////////////////////////////////////////////////////////////////////////////
 RULE_IL004{
  @ RULE_IL004

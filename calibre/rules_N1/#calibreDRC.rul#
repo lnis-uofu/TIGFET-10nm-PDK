@@ -393,7 +393,7 @@ RULE_IL003A{
 }
 */
 /*
-RULE_IL003{
+RULE_ILkkk003{
 IL_VERTICAL_EDGES = IL ANGLE == 90
 GATE_VERTICAL_EDGES = GATE ANGLE == 90
 x = INT IL_VERTICAL_EDGES GATE_VERTICAL_EDGES > 0
@@ -549,7 +549,7 @@ NOT INSIDE VM0 M1
 }
 
 RULE_VM004{
-k@ RULE VM004
+@ RULE VM004
 @ Minimum spacing between VM0 polygons is 36nm
 EXT VM0 < 0.036
 }
@@ -684,7 +684,7 @@ RULE_VM205{
 @ RULE VM205
 @ Minimum enclosure between VM2 and M2 is 2nm
 ENC VM2 M2 < 0.002 
-}
+k}
 
 /////////////////////////////////////////////////////////////////////////////////////
 //                M3 Rules
