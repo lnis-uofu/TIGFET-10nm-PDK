@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 15-Nov-2021  16:16:57
+Started at: 18-Nov-2021  15:10:14
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -16,8 +16,8 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
 ---------------------------------------------------------------------------------------------------------------------------------------
 TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout                      0        0       0        6      0      0         0      0             0      0     0     0       0       
-TIGFET10nm/G1_INV_N1/layout     1        0       1        24     0      0         0      6             0      0     0     0       0       
-TIGFET10nm/G1_No_Connection_N1/layout                           2        0       2        10     0      0         0      0             0      0     0     0       0       
+TIGFET10nm/G2_No_Connection_N1/layout                           4        0       4        20     0      0         0      0             0      0     0     0       0       
+TIGFET10nm/G2_INV_N1/layout     1        0       0        47     0      0         0      0             0      0     0     0       0       
 ---------------------------------------------------------------------------------------------------------------------------------------
 
                        Individual Cell Statistics - Advanced Objects
@@ -25,8 +25,8 @@ TIGFET10nm/G1_No_Connection_N1/layout                           2        0      
 Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
 ---------------------------------------------------------------------------------------------------------------------------------------
 TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout                      0        0          0          0          0          0     0        0         0         0        
-TIGFET10nm/G1_INV_N1/layout     0        0          0          0          0          0     0        0         0         0        
-TIGFET10nm/G1_No_Connection_N1/layout                           0        0          0          0          0          0     0        0         0         0        
+TIGFET10nm/G2_No_Connection_N1/layout                           0        0          0          0          0          0     0        0         0         0        
+TIGFET10nm/G2_INV_N1/layout     0        0          0          0          0          0     0        0         0         0        
 ---------------------------------------------------------------------------------------------------------------------------------------
 
                        Statistics of Layers 
@@ -34,24 +34,23 @@ TIGFET10nm/G1_No_Connection_N1/layout                           0        0      
 Cadence         Cadence         Stream  Stream   
 Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
 ---------------------------------------------------------------------------------------------------------------------------------------
-GC              drawing         4       0         0        3        0        0        0             0    0   0   0     0      0      
+VM0             drawing         6       0         0        10       0        0        0             0    0   0   0     0      0      
+GC              drawing         4       0         0        4        0        0        0             0    0   0   0     0      0      
 SDC             drawing         3       0         0        2        0        0        0             0    0   0   0     0      0      
-M2              drawing         9       0         0        4        0        0        0             0    0   0   0     0      0      
-GATE            drawing         2       0         3        3        0        0        0             0    0   0   0     0      0      
-VM0             drawing         6       0         0        6        0        0        0             0    0   0   0     0      0      
-IL              drawing         5       0         0        6        0        0        0             0    0   0   0     0      0      
-VM1             drawing         8       0         0        2        0        0        0             0    0   0   0     0      0      
-text            drawing         230     0         0        0        0        0        6             0    0   0   0     0      0      
-M1              drawing         7       0         0        12       0        0        0             0    0   0   0     0      0      
-ACT             drawing         1       0         0        2        0        0        0             0    0   0   0     0      0      
+GATE            drawing         2       0         4        7        0        0        0             0    0   0   0     0      0      
+VM1             drawing         8       0         0        7        0        0        0             0    0   0   0     0      0      
+M2              drawing         9       0         0        12       0        0        0             0    0   0   0     0      0      
+M1              drawing         7       0         0        18       0        0        0             0    0   0   0     0      0      
+IL              drawing         5       0         0        10       0        0        0             0    0   0   0     0      0      
+ACT             drawing         1       0         0        3        0        0        0             0    0   0   0     0      0      
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 Summary of Objects Translated:
-	Scalar Instances:		3
+	Scalar Instances:		5
 	Array Instances:		0
-	Polygons:			3
+	Polygons:			4
 	Paths:				0
-	Rectangles:			40
+	Rectangles:			73
 	Lines:				0
 	Arcs:				0
 	Donuts:				0
@@ -68,7 +67,7 @@ Summary of Objects Translated:
 	CdsGen Vias:			0
 	Pathsegs:			0
 	Text:				0
-	TextDisplay:		6
+	TextDisplay:		0
 	Cells:				3
 Design Libraries: 
 

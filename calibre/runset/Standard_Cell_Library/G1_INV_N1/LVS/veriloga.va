@@ -1,0 +1,77 @@
+// VerilogA for NCSU_TechLib_FreePDK15, TIGFET_3GT, veriloga
+
+// ----------------------------------------------------------------------------
+// 
+// Filename:    tigfet_lib.va
+// Date:        2021-08-04
+// Version:     1.0
+// 
+// Description:
+// Silicon-nanowire TIGFET model. The I(d,s) current table model is based on 
+// TCAD simulations done for the TIGFET High-Performance (HP) mode and one
+// silicon-nanowire (SiNW). In DC analysis, this table model define the leakage 
+// power of TIGFET. Then, the model timing and energy accuracy is improved with 
+// the parasitic capacitance model, calibrated by COMSOL simulations, as 
+// presented in JEDS'21 paper ("Parasitic Capacitance Analysis of TIGFET").
+//
+// Actual model limitations:
+// - Stacked SiNW is fixed to 1 (nw=1), w.r.t TCAD simulations
+// - Only the HP mode is supported, w.r.t. TCAD simulations
+// - Supply voltage VDD is configured at 0.7V
+// 
+// ----------------------------------------------------------------------------
+// 
+// Example of model parameters:
+// - Ls   = 15 nm (source length = drain length)
+// - Lg   = 15 nm (gate length)
+// - Hg   = 10 nm (gate height)
+// - Lsp  = 15 nm (spacer length CG-PGS, CG-PGD)
+// - Lspk = 7.5 nm (spacer length PGS-S, PGD-D)
+// - r    = 4 nm (SiNW rayon)
+// - tox  = 6.92 nm (HfO2_thickness)
+// - Flow: SiO2 spacer, HfO2 gate oxide 
+// 
+// CchPG	    CchCG	    CofSPG	    CofCGPG	    CsideSPGS	CsideSCG	CsideSPGD	CsideCGPG   CsidePGPG	CifPGS	    CifCG	    CifPGD
+// 2.0773E-17   2.0773E-17	7.3147E-18	3.1676E-18	5.4909E-18	3.4560E-18	2.9791E-18	4.4738E-18  3.2964E-18	3.4268E-18	1.5846E-18	9.7927E-19 [COMSOL results]
+// 2.0763e-17   2.0763e-17  7.3028e-18  3.1661e-18  5.4895e-18  3.4659e-18  2.9434e-18  4.5154e-18  3.2916e-18  3.4267e-18  1.4277e-18  8.8870e-19 [Parasitic model]
+// 
+// ----------------------------------------------------------------------------
+
+`include "disciplines.vams"
+
+// Module name: TIGFET_SINW_HP_SP15
+// Model parameters:
+// - Lg   = 15 nm
+// - Lsp  = 15 nm
+// - Lspk = 8 nm
+module TIGFET(d, pgd, cg, pgs, s);
+    inout       d, pgd, cg, pgs, s;
+    electrical  d, pgd, cg, pgs, s;
+
+    parameter real Cch_pg     = 2.0763e-17;
+    parameter real Cch_cg     = 2.0763e-17;
+    parameter real Cof_spg    = 6.9637e-18;
+    parameter real Cof_cgpg   = 3.1661e-18;
+    parameter real Cside_spgs = 5.3932e-18;
+    parameter real Cside_scg  = 3.4529e-18;
+    parameter real Cside_spgd = 2.9376e-18;
+    parameter real Cside_cgpg = 4.5154e-18;
+    parameter real Cside_pgpg = 3.2916e-18;
+    parameter real Cif_spgs   = 3.4267e-18;
+    parameter real Cif_scg    = 1.4277e-18;
+    parameter real Cif_spgd   = 8.8870e-19;
+
+    analog begin
+        I(d,s)     <+ $table_model(V(pgd,s),V(pgs,s),V(cg,s),V(d,s),"Id_NW10n4G.tbl","1,1,1,1");
+        I(s,pgs)   <+ ddt(V(s,pgs))   * (Cside_spgs + Cif_spgs + Cch_pg + Cof_spg); // Cs_pgs
+        I(d,pgd)   <+ ddt(V(d,pgd))   * (Cside_spgs + Cif_spgs + Cch_pg + Cof_spg); // Cd_pgd
+        I(s,cg)    <+ ddt(V(s,cg))    * (Cside_scg  + Cif_scg  + Cch_cg);           // Cs_cg
+        I(d,cg)    <+ ddt(V(d,cg))    * (Cside_scg  + Cif_scg  + Cch_cg);           // Cd_cg
+        I(s,pgd)   <+ ddt(V(s,pgd))   * (Cside_spgd + Cif_spgd + Cch_pg);           // Cs_pgd
+        I(d,pgs)   <+ ddt(V(d,pgs))   * (Cside_spgd + Cif_spgd + Cch_pg);           // Cd_pgs
+        I(cg,pgs)  <+ ddt(V(cg,pgs))  * (Cside_cgpg + Cof_cgpg);                    // Ccg_pgs
+        I(cg,pgd)  <+ ddt(V(cg,pgd))  * (Cside_cgpg + Cof_cgpg);                    // Ccg_pgs
+        I(pgs,pgd) <+ ddt(V(pgs,pgd)) * (Cside_pgpg);                               // Cpg_pg
+    end
+endmodule
+

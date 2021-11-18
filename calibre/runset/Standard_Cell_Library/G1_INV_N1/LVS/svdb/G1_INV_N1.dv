@@ -1,0 +1,14 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G1_INV_N1.dv
+dv_start notcompared                              
+dv_global
+dv_discrep 1 {Warning: Unknown statement}
+dv_discrep_line {Can't understand statement ".HDL" at line 22 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/netlist.sp.net"}
+dv_discrep_line {}
+dv_discrep 2 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET" at line 26 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/netlist.sp.net"}
+dv_discrep_line {}
+dv_discrep 3 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET" at line 27 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/netlist.sp.net"}
+dv_discrep_line {}
+dv_end
