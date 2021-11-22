@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Nov 19 14:57:27 2021
+Execution Date/Time:       Mon Nov 22 14:42:49 2021
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G2_NAND2_N1/DRC/_calibreDRC.rul_
 Rule File Title:           
@@ -30,17 +30,17 @@ Keep Empty Checks:         YES
 ----------------------------------------------------------------------------------
 --- ORIGINAL LAYER STATISTICS
 ---
-LAYER IL ..... TOTAL Original Geometry Count = 9  (9)
+LAYER IL ..... TOTAL Original Geometry Count = 10 (10)
 LAYER SDC .... TOTAL Original Geometry Count = 2  (6)
 LAYER GATE ... TOTAL Original Geometry Count = 11 (17)
-LAYER VM0 .... TOTAL Original Geometry Count = 9  (9)
-LAYER M1 ..... TOTAL Original Geometry Count = 11 (11)
-LAYER VM1 .... TOTAL Original Geometry Count = 0  (0)
-LAYER M2 ..... TOTAL Original Geometry Count = 1  (1)
+LAYER VM0 .... TOTAL Original Geometry Count = 10 (10)
+LAYER M1 ..... TOTAL Original Geometry Count = 18 (18)
+LAYER VM1 .... TOTAL Original Geometry Count = 2  (2)
+LAYER M2 ..... TOTAL Original Geometry Count = 2  (2)
 LAYER VM2 .... TOTAL Original Geometry Count = 0  (0)
 LAYER M3 ..... TOTAL Original Geometry Count = 0  (0)
 LAYER ACT .... TOTAL Original Geometry Count = 2  (4)
-LAYER GC ..... TOTAL Original Geometry Count = 4  (4)
+LAYER GC ..... TOTAL Original Geometry Count = 5  (5)
 LAYER VM3 .... TOTAL Original Geometry Count = 0  (0)
 LAYER M4 ..... TOTAL Original Geometry Count = 0  (0)
 LAYER VM4 .... TOTAL Original Geometry Count = 0  (0)
@@ -100,7 +100,7 @@ RULECHECK RULE_VM003 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_VM004 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_VM005 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_M101 ...... TOTAL Result Count = 0 (0)
-RULECHECK RULE_M102 ...... TOTAL Result Count = 1 (1)
+RULECHECK RULE_M102 ...... TOTAL Result Count = 0 (0)
 RULECHECK RULE_M103 ...... TOTAL Result Count = 0 (0)
 RULECHECK RULE_VM101 ..... TOTAL Result Count = 0 (0)
 RULECHECK RULE_VM102 ..... TOTAL Result Count = 0 (0)
@@ -121,13 +121,11 @@ RULECHECK RULE_M303 ...... TOTAL Result Count = 0 (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL G2_NAND2_N1 .......... TOTAL Result Count = 1 (1)
-    RULECHECK RULE_M102 ... TOTAL Result Count = 1 (1)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 49 (61)
+TOTAL Original Layer Geometries: 62 (74)
 TOTAL DRC RuleChecks Executed:   60
-TOTAL DRC Results Generated:     1 (1)
+TOTAL DRC Results Generated:     0 (0)

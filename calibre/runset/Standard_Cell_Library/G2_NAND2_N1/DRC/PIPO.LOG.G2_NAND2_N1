@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 19-Nov-2021  14:57:26
+Started at: 22-Nov-2021  14:42:47
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -35,7 +35,7 @@ Summary of Objects Translated:
 	Array Instances:                        0
 	Polygons:                               4
 	Paths:                                  0
-	Rectangles:                             45
+	Rectangles:                             58
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -55,5 +55,5 @@ Summary of Objects Translated:
 	TextDisplay:                            0
 	Cells:                                  3
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5136KB
+Elapsed Time: 0.5s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5528KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
