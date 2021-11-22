@@ -1,0 +1,3 @@
+mgc_rve_context_lcv "TIGFET10nm" "G2_INV_N1" "layout" 5000
+mp 4 0.237 0.217 0.265 0.217 0.265 0.245 0.237 0.245
+mgc_rve_zoom 0.231 0.211 0.271 0.251 1
