@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 22-Nov-2021  15:32:16
+Started at: 22-Nov-2021  16:18:57
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -16,8 +16,7 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
 ---------------------------------------------------------------------------------------------------------------------------------------
 TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout                      0        0       0        6      0      0         0      0             0      0     0     0       0       
-TIGFET10nm/G2_No_Connection_N1/layout                           4        0       4        20     0      0         0      0             0      0     0     0       0       
-TIGFET10nm/G2_INV_N1/layout     1        0       0        33     0      0         0      0             0      0     0     0       0       
+TIGFET10nm/G2_INV_N1/layout     4        0       4        53     0      0         0      0             0      0     0     0       0       
 ---------------------------------------------------------------------------------------------------------------------------------------
 
                        Individual Cell Statistics - Advanced Objects
@@ -25,7 +24,6 @@ TIGFET10nm/G2_INV_N1/layout     1        0       0        33     0      0       
 Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
 ---------------------------------------------------------------------------------------------------------------------------------------
 TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout                      0        0          0          0          0          0     0        0         0         0        
-TIGFET10nm/G2_No_Connection_N1/layout                           0        0          0          0          0          0     0        0         0         0        
 TIGFET10nm/G2_INV_N1/layout     0        0          0          0          0          0     0        0         0         0        
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -46,7 +44,7 @@ ACT             drawing         1       0         0        3        0        0  
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 Summary of Objects Translated:
-	Scalar Instances:		5
+	Scalar Instances:		4
 	Array Instances:		0
 	Polygons:			4
 	Paths:				0
@@ -68,7 +66,7 @@ Summary of Objects Translated:
 	Pathsegs:			0
 	Text:				0
 	TextDisplay:		0
-	Cells:				3
+	Cells:				2
 Design Libraries: 
 
 DEFINE TIGFET10nm	/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm
