@@ -9,8 +9,6 @@
  )
 ( model
 ( "TIGFET10nm/G1_INV_N1/schematic" "G1_INV_N1" )
-( "TIGFET10nm/G1_No_Connection_N1/schematic" "G1_No_Connection_N1" )
  )
-( "G1_INV_N1" "ihnl/cds1/map" )
-( "G1_No_Connection_N1" "ihnl/cds0/map" )
+( "G1_INV_N1" "ihnl/cds0/map" )
  )

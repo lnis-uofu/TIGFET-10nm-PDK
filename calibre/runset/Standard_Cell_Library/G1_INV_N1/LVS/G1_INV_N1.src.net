@@ -4,7 +4,7 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G1_INV_N1
 * View Name:     schematic
-* Netlisted on:  Nov 15 15:55:23 2021
+* Netlisted on:  Nov 23 18:13:44 2021
 ************************************************************************
 
 *.EQUATION
@@ -16,24 +16,13 @@
 
 ************************************************************************
 * Library Name: TIGFET10nm
-* Cell Name:    G1_No_Connection_N1
-* View Name:    schematic
-************************************************************************
-
-.SUBCKT G1_No_Connection_N1 A Ap B Bp Vdd Vss X
-*.PININFO A:I Ap:I B:I Bp:I X:O Vdd:B Vss:B
-XI1 B X Bp Bp Vss / TIGFET_PCELL_SP15CP15_N1
-XI0 A Vdd Ap Ap X / TIGFET_PCELL_SP15CP15_N1
-.ENDS
-
-************************************************************************
-* Library Name: TIGFET10nm
 * Cell Name:    G1_INV_N1
 * View Name:    schematic
 ************************************************************************
 
-.SUBCKT G1_INV_N1 IN OUT Vdd Vss
-*.PININFO IN:I OUT:O Vdd:B Vss:B
-XI0 Vss IN IN Vdd Vdd Vss OUT / G1_No_Connection_N1
+.SUBCKT G1_INV_N1 A Vdd Vss Z
+*.PININFO A:I Z:O Vdd:B Vss:B
+XI2 A Z Vss Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI1 A Z Vdd Vdd Vss / TIGFET_PCELL_SP15CP15_N1
 .ENDS
 
