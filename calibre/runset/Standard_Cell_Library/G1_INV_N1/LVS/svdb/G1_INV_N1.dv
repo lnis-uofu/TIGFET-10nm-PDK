@@ -1,0 +1,69 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G1_INV_N1.dv
+dv_start unmatched                                
+dv_cell {G1_INV_N1} {G1_INV_N1} unmatched
+dv_obj_count -transformed_nets {9 4} -transformed_inst {2 2} -transformed_port {0 4}
+dv_discrep 1 {Incorrect Nets} -inst_count { 2 3}
+dv_discrep_line {Net } -lnet {1} {                                                     } -snet {A} {}
+dv_discrep_line {    } -lnet {6} {                                                    }
+dv_discrep_line {--- 2 Connections On This Net ---                         --- 3 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -linst {X0/X0} {} -lloc {(0.088,0.088)} {:}  {D} {                                      ** unmatched connection **}
+dv_discrep_line {} -linst {X1/X0} {} -lloc {(0.226,0.088)} {:}  {S} {                                      ** unmatched connection **}
+dv_discrep_line {}
+dv_discrep_line {** unmatched connection **                                } -sinst {XI1/X0} {:}  {D} {}
+dv_discrep_line {** unmatched connection **                                } -sinst {XI2/X0} {:}  {D} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 2 0}
+dv_discrep_line {Net } -lnet {4} {                                                     ** no similar net **}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X0/3} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X0/4} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X0/5} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X1/3} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 7 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X1/4} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 8 {Incorrect Nets} -inst_count { 1 0}
+dv_discrep_line {Net } -lnet {X1/5} {                                                  ** no similar net **}
+dv_discrep_line {}
+dv_discrep 9 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** no similar net **                                      } -snet {VDD} {}
+dv_discrep_line {}
+dv_discrep 10 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** no similar net **                                      } -snet {VSS} {}
+dv_discrep_line {}
+dv_discrep 11 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** no similar net **                                      } -snet {Z} {}
+dv_discrep_line {}
+dv_discrep 12 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {VDD} { on net: } -snet {VDD} {}
+dv_discrep_line {}
+dv_discrep 13 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {VSS} { on net: } -snet {VSS} {}
+dv_discrep_line {}
+dv_discrep 14 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {A} { on net: } -snet {A} {}
+dv_discrep_line {}
+dv_discrep 15 {Incorrect Ports}
+dv_discrep_line {** missing port **                                        } -sport {Z} { on net: } -snet {Z} {}
+dv_discrep_line {}
+dv_discrep -3 {Unmatched Objects}
+dv_discrep_line {}
+dv_discrep_line {} -linst {X0/X0} {} -lloc {(0.088,0.088)} {  tigfet1                               ** unmatched instance **}
+dv_discrep_line {} -linst {X1/X0} {} -lloc {(0.226,0.088)} {  tigfet1                               ** unmatched instance **}
+dv_discrep_line {}
+dv_discrep_line {** unmatched instance **                                  } -sinst {XI2/X0} {  tigfet1}
+dv_discrep_line {** unmatched instance **                                  } -sinst {XI1/X0} {  tigfet1}
+dv_discrep_line {}
+dv_end
