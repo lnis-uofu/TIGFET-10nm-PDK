@@ -1,4 +1,11 @@
 
+LVS Netlist Compiler - Errors and Warnings for "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/G1_INV_N1.src.net"
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Error: No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 25 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/G1_INV_N1.src.net"
+Error: No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 26 in file "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/G1_INV_N1.src.net"
+
+
 
 
                   ##################################################
@@ -13,9 +20,9 @@
 
 REPORT FILE NAME:         G1_INV_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/G1_INV_N1.sp ('G1_INV_N1')
-SOURCE NAME:              _source.net_ ('G1_INV_N1')
+SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/G1_INV_N1.src.net ('G1_INV_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS/_calibreLVS.rul_
-CREATION TIME:            Wed Dec  1 14:32:03 2021
+CREATION TIME:            Thu Dec  2 15:30:46 2021
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G1_INV_N1/LVS
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
@@ -26,25 +33,13 @@ CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                 #   #         ########################  
+                  # #          #                      #  
+                   #           #     NOT COMPARED     #  
+                  # #          #                      #  
+                 #   #         ########################  
 
 
-  Error:    Different numbers of ports.
-  Error:    Different numbers of nets.
-  Error:    Connectivity errors.
-
-
-**************************************************************************************************************
-                                      CELL  SUMMARY
-**************************************************************************************************************
-
-  Result         Layout                        Source
-  -----------    -----------                   --------------
-  INCORRECT      G1_INV_N1                     G1_INV_N1
 
 
 
@@ -131,159 +126,6 @@ o LVS Setup:
    LVS REDUCTION PRIORITY                 PARALLEL
    
    LVS SHORT EQUIVALENT NODES             NO
-
-
-
-                   CELL COMPARISON RESULTS ( TOP LEVEL )
-
-
-
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
-
-
-  Error:    Different numbers of ports (see below).
-  Error:    Different numbers of nets (see below).
-  Error:    Connectivity errors.
-
-LAYOUT CELL NAME:         G1_INV_N1
-SOURCE CELL NAME:         G1_INV_N1
-
---------------------------------------------------------------------------------------------------------------
-
-NUMBERS OF OBJECTS
-------------------
-
-                Layout    Source         Component Type
-                ------    ------         --------------
- Ports:              0         4    *
-
- Nets:               9         4    *
-
- Instances:          2         2         tigfet1 (5 pins)
-                ------    ------
- Total Inst:         2         2
-
-
-       * = Number of objects in layout different from number in source.
-
-
-
-**************************************************************************************************************
-                                 INCORRECT OBJECTS
-**************************************************************************************************************
-
-
-LEGEND:
--------
-
-  ne  = Naming Error (same layout name found in source
-        circuit, but object was matched otherwise).
-
-
-**************************************************************************************************************
-                                   INCORRECT NETS
-
-DISC#  LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-  1    Net 1                                                     A
-           6                                                    
-       --- 2 Connections On This Net ---                         --- 3 Connections On This Net ---
-       --------------------------                                --------------------------
-       
-       X0/X0(0.088,0.088):D                                      ** unmatched connection **
-       X1/X0(0.226,0.088):S                                      ** unmatched connection **
-       
-       ** unmatched connection **                                XI1/X0:D
-       ** unmatched connection **                                XI2/X0:D
-       
-
---------------------------------------------------------------------------------------------------------------
-
-  2    Net 4                                                     ** no similar net **
-
---------------------------------------------------------------------------------------------------------------
-
-  3    Net X0/3                                                  ** no similar net **
-
---------------------------------------------------------------------------------------------------------------
-
-  4    Net X0/4                                                  ** no similar net **
-
---------------------------------------------------------------------------------------------------------------
-
-  5    Net X0/5                                                  ** no similar net **
-
---------------------------------------------------------------------------------------------------------------
-
-  6    Net X1/3                                                  ** no similar net **
-
---------------------------------------------------------------------------------------------------------------
-
-  7    Net X1/4                                                  ** no similar net **
-
---------------------------------------------------------------------------------------------------------------
-
-  8    Net X1/5                                                  ** no similar net **
-
---------------------------------------------------------------------------------------------------------------
-
-  9    ** no similar net **                                      VDD
-
---------------------------------------------------------------------------------------------------------------
-
- 10    ** no similar net **                                      VSS
-
---------------------------------------------------------------------------------------------------------------
-
- 11    ** no similar net **                                      Z
-
-
-**************************************************************************************************************
-                                   INCORRECT PORTS
-
-DISC#  LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
- 12    ** missing port **                                        VDD on net: VDD
- 13    ** missing port **                                        VSS on net: VSS
- 14    ** missing port **                                        A on net: A
- 15    ** missing port **                                        Z on net: Z
-
-
-
-**************************************************************************************************************
-                               INFORMATION AND WARNINGS
-**************************************************************************************************************
-
-
-                  Matched    Matched    Unmatched    Unmatched    Component
-                   Layout     Source       Layout       Source    Type
-                  -------    -------    ---------    ---------    ---------
-   Ports:               0          0            0            4
-
-   Nets:                2          1            7            3
-
-   Instances:           0          0            2            2    tigfet1
-                  -------    -------    ---------    ---------
-   Total Inst:          0          0            2            2
-
-
-
-**************************************************************************************************************
-                                  UNMATCHED OBJECTS
-       LAYOUT                                                    SOURCE
-**************************************************************************************************************
-
-       X0/X0(0.088,0.088)  tigfet1                               ** unmatched instance **
-       X1/X0(0.226,0.088)  tigfet1                               ** unmatched instance **
-
-       ** unmatched instance **                                  XI2/X0  tigfet1
-       ** unmatched instance **                                  XI1/X0  tigfet1
 
 
 **************************************************************************************************************
