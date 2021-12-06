@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 02-Dec-2021  15:49:42
+Started at: 03-Dec-2021  14:30:12
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -16,7 +16,7 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
 ---------------------------------------------------------------------------------------------------------------------------------------
 TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout                      0        0       0        6      0      0         0      0             0      0     0     0       0       
-TIGFET10nm/G1_INV_N1/layout     2        0       3        31     0      0         0      4             0      0     0     0       0       
+TIGFET10nm/G1_INV_N1/layout     2        0       3        30     0      0         0      4             0      0     0     0       0       
 ---------------------------------------------------------------------------------------------------------------------------------------
 
                        Individual Cell Statistics - Advanced Objects
@@ -32,7 +32,6 @@ TIGFET10nm/G1_INV_N1/layout     0        0          0          0          0     
 Cadence         Cadence         Stream  Stream   
 Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
 ---------------------------------------------------------------------------------------------------------------------------------------
-ACT             pin             1       251       0        1        0        0        0             0    0   0   0     0      0      
 GC              drawing         4       0         0        3        0        0        0             0    0   0   0     0      0      
 SDC             drawing         3       0         0        2        0        0        0             0    0   0   0     0      0      
 M2              drawing         9       0         0        2        0        0        0             0    0   0   0     0      0      
@@ -50,7 +49,7 @@ Summary of Objects Translated:
 	Array Instances:		0
 	Polygons:			3
 	Paths:				0
-	Rectangles:			37
+	Rectangles:			36
 	Lines:				0
 	Arcs:				0
 	Donuts:				0
