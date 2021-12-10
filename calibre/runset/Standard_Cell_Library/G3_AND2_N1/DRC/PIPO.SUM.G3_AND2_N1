@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 29-Nov-2021  15:41:40
+Started at: 10-Dec-2021  13:07:45
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -16,7 +16,7 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
 ---------------------------------------------------------------------------------------------------------------------------------------
 TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout                      0        0       0        6      0      0         0      0             0      0     0     0       0       
-TIGFET10nm/G3_AND2_N1/layout    5        0       9        89     0      0         0      4             0      0     0     0       0       
+TIGFET10nm/G3_AND2_N1/layout    5        0       8        89     0      0         0      4             0      0     0     0       0       
 ---------------------------------------------------------------------------------------------------------------------------------------
 
                        Individual Cell Statistics - Advanced Objects
@@ -35,7 +35,7 @@ Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Tex
 GC              drawing         4       0         0        8        0        0        0             0    0   0   0     0      0      
 SDC             drawing         3       0         0        2        0        0        0             0    0   0   0     0      0      
 M2              drawing         9       0         1        4        0        0        0             0    0   0   0     0      0      
-GATE            drawing         2       0         8        7        0        0        0             0    0   0   0     0      0      
+GATE            drawing         2       0         7        7        0        0        0             0    0   0   0     0      0      
 VM0             drawing         6       0         0        18       0        0        0             0    0   0   0     0      0      
 IL              drawing         5       0         0        18       0        0        0             0    0   0   0     0      0      
 VM1             drawing         8       0         0        6        0        0        0             0    0   0   0     0      0      
@@ -47,7 +47,7 @@ ACT             drawing         1       0         0        4        0        0  
 Summary of Objects Translated:
 	Scalar Instances:		5
 	Array Instances:		0
-	Polygons:			9
+	Polygons:			8
 	Paths:				0
 	Rectangles:			95
 	Lines:				0
