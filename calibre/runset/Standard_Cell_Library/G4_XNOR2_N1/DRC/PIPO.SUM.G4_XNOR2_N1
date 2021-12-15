@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 10-Dec-2021  14:00:27
+Started at: 15-Dec-2021  16:08:19
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -16,7 +16,7 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
 ---------------------------------------------------------------------------------------------------------------------------------------
 TIGFET10nm/TIGFET_PCELL_SP15CP15_N1/layout                      0        0       0        6      0      0         0      0             0      0     0     0       0       
-TIGFET10nm/G4_XNOR2_N1/layout   8        0       17       112    0      0         0      11            0      0     0     0       0       
+TIGFET10nm/G4_XNOR2_N1/layout   8        0       17       112    0      0         0      9             0      0     0     0       0       
 ---------------------------------------------------------------------------------------------------------------------------------------
 
                        Individual Cell Statistics - Advanced Objects
@@ -40,7 +40,7 @@ GATE            drawing         2       0         14       6        0        0  
 VM0             drawing         6       0         0        22       0        0        0             0    0   0   0     0      0      
 IL              drawing         5       0         0        22       0        0        0             0    0   0   0     0      0      
 VM1             drawing         8       0         0        10       0        0        0             0    0   0   0     0      0      
-text            drawing         230     0         0        0        0        0        11            0    0   0   0     0      0      
+text            drawing         230     0         0        0        0        0        9             0    0   0   0     0      0      
 M1              drawing         7       0         0        31       0        0        0             0    0   0   0     0      0      
 VM2             drawing         10      0         0        2        0        0        0             0    0   0   0     0      0      
 ACT             drawing         1       0         0        7        0        0        0             0    0   0   0     0      0      
@@ -68,7 +68,7 @@ Summary of Objects Translated:
 	CdsGen Vias:			0
 	Pathsegs:			0
 	Text:				0
-	TextDisplay:		11
+	TextDisplay:		9
 	Cells:				2
 Design Libraries: 
 
