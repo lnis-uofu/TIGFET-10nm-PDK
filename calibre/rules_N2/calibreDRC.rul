@@ -155,9 +155,9 @@ CONNECT M9 M10 by VM9
 // ________RULE_ACT001
 RULE_ACT001{
  @ RULE_ACT001
- @ Minimum vertical width of ACT layer is 24nm
+ @ Minimum vertical width of ACT layer is 68nm
  ACT_HORIZONTAL_EDGES = ACT ANGLE == 0
- INTERNAL ACT_HORIZONTAL_EDGES < 0.024
+ INTERNAL ACT_HORIZONTAL_EDGES < 0.068
 }
 
 /*
