@@ -3,21 +3,21 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Sat Dec 18 17:50:29 2021
+Execution Date/Time:       Sat Dec 18 17:56:21 2021
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
-Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G2_INV2_N2/_calibreDRC.rul_
+Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_INV2_N1/DRC/_calibreDRC.rul_
 Rule File Title:           
 Layout System:             GDS
-Layout Path(s):            G2_INV2_N2.calibre.db
-Layout Primary Cell:       G2_INV2_N2
-Current Directory:         /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G2_INV2_N2
+Layout Path(s):            G2_INV2_N1.calibre.db
+Layout Primary Cell:       G2_INV2_N1
+Current Directory:         /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_INV2_N1/DRC
 User Name:                 u1081888
 Maximum Results/RuleCheck: 1000
 Maximum Result Vertices:   4096
-DRC Results Database:      G2_INV2_N2.drc.results (ASCII)
+DRC Results Database:      G2_INV2_N1.drc.results (ASCII)
 Layout Depth:              ALL
 Text Depth:                PRIMARY
-Summary Report File:       G2_INV2_N2.drc.summary (REPLACE)
+Summary Report File:       G2_INV2_N1.drc.summary (REPLACE)
 Geometry Flagging:         ACUTE = NO  SKEW = NO  ANGLED = NO  OFFGRID = NO
                            NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
 Excluded Cells:           
