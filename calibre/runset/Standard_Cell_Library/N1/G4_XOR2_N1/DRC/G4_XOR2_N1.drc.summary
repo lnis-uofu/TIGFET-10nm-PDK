@@ -3,14 +3,14 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Wed Dec 15 16:44:53 2021
+Execution Date/Time:       Thu Dec 23 10:41:37 2021
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
-Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G4_XOR2_N1/DRC/_calibreDRC.rul_
+Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G4_XOR2_N1/DRC/_calibreDRC.rul_
 Rule File Title:           
 Layout System:             GDS
 Layout Path(s):            G4_XOR2_N1.calibre.db
 Layout Primary Cell:       G4_XOR2_N1
-Current Directory:         /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G4_XOR2_N1/DRC
+Current Directory:         /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G4_XOR2_N1/DRC
 User Name:                 u1081888
 Maximum Results/RuleCheck: 1000
 Maximum Result Vertices:   4096
