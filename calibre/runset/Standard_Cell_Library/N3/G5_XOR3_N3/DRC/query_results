@@ -1,0 +1,3 @@
+mgc_rve_context_lcv "TIGFET10nm" "G5_XOR3_N3" "layout" 5000
+mp 4 0.414 0.116 0.442 0.116 0.442 0.144 0.414 0.144
+mgc_rve_zoom 0.408 0.11 0.448 0.15 1
