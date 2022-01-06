@@ -1,0 +1,301 @@
+G3_MUXI2_N3 5000
+RULE_ACT001
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_ACT001
+Minimum vertical width of ACT layer is 112nm
+RULE_ACT003
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_ACT003
+Minimum vertical spacing of ACT is 80nm
+RULE_ACT004
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_ACT004
+Minimum horizontal width of ACT is 110nm
+RULE_ACT005
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_ACT005
+Horizontal spacing of ACT  must be 80nm
+RULE_ACT006
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_ACT006
+Minimum notch of ACT is 166nm
+RULE_ACT008A
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_ACT008A
+Minimum area of ACT is 0.004608 um2
+RULE_ACT008B
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_ACT008B
+Minimum enclosed area of ACT is 0.004608 um2
+RULE_GATE001
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GATE001
+Minimum horizontal width of GATE is 20nm
+RULE_GATE005
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GATE005
+Minimum extension of ACT past GATE is 10nm
+RULE_GATE006
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GATE006
+Minimum extension of GATE past ACT is 10nm
+RULE_SDC001
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC001
+Horizontal Width of SDC is 28nm
+RULE_SDC002
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC002
+Horizontal spacing of SDC is 110nm
+RULE_SDC003A
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC003A
+Minimum spacing of SDC to GATE is 10nm
+RULE_SDC004
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC004
+Minimum extenxion of ACT past SDC in horizontal direction is 2nm
+RULE_SDC005
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC005
+Minimum Vertical length of SDC is 44nm
+RULE_SDC006
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC006
+Minimum Vertical spacing of SDC is 62nm
+RULE_SDC007
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC007
+Minimum Vertical extension of SDC past ACT is 0nm
+RULE_SDC008
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_SDC008
+SDC layer may not bend
+RULE_IL001
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_IL001
+Horizontal width of IL is 24nm
+RULE_IL002
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_IL002
+Horizontal spacing of IL is 40nm
+RULE_IL004
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_IL004
+Minimum horizontal enclosure of SDC around IL is 2 nm
+RULE_IL005
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_IL005
+Minimum Vertical overlap of SDC and IL is 58nm
+RULE_IL006
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_IL006
+Vertical length of IL is 68nm
+RULE_IL007
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_IL007
+Vertical spacing of IL in line with each other is 48
+RULE_GC001
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC001A
+Minimum vertical width of GC is 44nm
+RULE_GC002
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC001B
+Minimum horizontal length of GC is 20nm
+RULE_GC003
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC003
+Minimum vertical spacing of GC is 40nm
+RULE_GC004
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC004
+Minimum horizontal spacing of GC is 40nm
+RULE_GC005
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC005
+Minimum vertical spacing of GC to ACT is 6nm
+RULE_GC006
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC006
+Minimum horizontal extension of GC past GATE is 2nm
+RULE_GC007
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC007
+Minimum horizontal space of GC to IL is 4nm
+RULE_GC008
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC008
+Minimum vertical space of GC to IL is 4nm
+RULE_GC009A
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC009A
+Minimum horizontal space of SDC to GATE is 10nm
+RULE_GC010
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC010
+Minimum horizontal overlap of GC and IL is 24nm
+RULE_GC011
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC011
+Minimum vertical extension of IL past GC is 4nm
+RULE_GC012
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_GC012
+GC may not bend
+RULE_VM001
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM001
+Minimum horizontal width of VM0 polygons is 28nm
+RULE_VM002
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM002
+Minimum vertical width of VM0 poygons is 28nm
+RULE_VM003
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM003
+VM0 must be fully inside  M1
+RULE_VM004
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE VM004
+Minimum spacing between VM0 polygons is 36nm
+RULE_VM005
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE VM005
+Minimum enclosure between VM0 and IL is 2nm
+RULE_M101
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_M101
+Minimum horizontal width of M1 is 28nm
+RULE_M102
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE M102
+Minimum spacing between M1 polygons is 36nm
+RULE_M103
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE M102
+Minimum vertical width of M1 is 28nm
+RULE_VM101
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM101
+Minimum horizontal width of VM1 polygons is 28nm
+RULE_VM102
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM102
+Minimum vertical width of VM1 poygons is 28nm
+RULE_VM103
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM103
+VM1 must be fully inside M2
+RULE_VM104
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE VM104
+Minimum spacing between VM1 polygons is 36nm
+RULE_VM105
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE VM105
+Minimum enclosure between VM1 and M1 is 2nm
+RULE_M201
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_M201
+Minimum horizontal width of M2 is 28nm
+RULE_M202
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE M202
+Minimum spacing between M2 polygons is 36nm
+RULE_M203
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE M203
+Minimum vertical width of M2 is 28nm
+RULE_VM201
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM201
+Minimum horizontal width of VM2 polygons is 28nm
+RULE_VM202
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM202
+Minimum vertical width of VM2 poygons is 28nm
+RULE_VM203
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_VM203
+VM1 must be fully inside M3
+RULE_VM204
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE VM204
+Minimum spacing between VM2 polygons is 36nm
+RULE_VM205
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE VM205
+Minimum enclosure between VM2 and M2 is 2nm
+RULE_M301
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE_M301
+Minimum horizontal width of M3 is 28nm
+RULE_M302
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE M302
+Minimum spacing between M3 polygons is 36nm
+RULE_M303
+0 0 3 Jan  6 16:44:53 2022                     
+Rule File Pathname: /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/DRC/_calibreDRC.rul_
+RULE M303
+Minimum vertical width of M3 is 28nm
