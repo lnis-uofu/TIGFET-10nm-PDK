@@ -1,4 +1,0 @@
-* "cdl" description for "TIGFET10nm", "TEST", "cdlText" 
-
-.SUBCKT TEST d s cg pd pgs
-.ENDS
