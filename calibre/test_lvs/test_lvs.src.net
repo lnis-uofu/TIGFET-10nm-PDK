@@ -1,0 +1,40 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  TIGFET10nm
+* Top Cell Name: test_lvs
+* View Name:     schematic
+* Netlisted on:  Jan 18 14:40:16 2022
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: TIGFET10nm
+* Cell Name:    G1_INV1_N1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT G1_INV1_N1 A Vdd Vss Z
+*.PININFO A:I Z:O Vdd:B Vss:B
+XI2 A Z Vss Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI1 A Z Vdd Vdd Vss / TIGFET_PCELL_SP15CP15_N1
+.ENDS
+
+************************************************************************
+* Library Name: TIGFET10nm
+* Cell Name:    test_lvs
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT test_lvs A Vdd Vss Z
+*.PININFO A:I Z:O Vdd:B Vss:B
+XI2 A Z Vss Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI3 A Vdd Vss Z / G1_INV1_N1
+.ENDS
+
