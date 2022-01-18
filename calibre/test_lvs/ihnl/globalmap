@@ -1,8 +1,0 @@
-CADENCE IHNL11140
-$model
-TIGFET10nm/test_lvs/schematic test_lvs
-$endmodel
-$net
-$endnet
-$param
-$endparam

@@ -1,0 +1,17 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G2_AOI21_N1.dv
+dv_start notcompared                              
+dv_global
+dv_discrep 1 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 25 in file "G2_AOI21_N1.sp"}
+dv_discrep_line {}
+dv_discrep 2 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 26 in file "G2_AOI21_N1.sp"}
+dv_discrep_line {}
+dv_discrep 3 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 27 in file "G2_AOI21_N1.sp"}
+dv_discrep_line {}
+dv_discrep 4 {Error: Unmatched statement}
+dv_discrep_line {No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 28 in file "G2_AOI21_N1.sp"}
+dv_discrep_line {}
+dv_end
