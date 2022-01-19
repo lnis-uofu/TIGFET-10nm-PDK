@@ -1,0 +1,285 @@
+
+
+	Report Date/Time:  		                                        Jan 18 15:40:13 2022
+
+	Library Name:          	                                                  TIGFET10nm
+	TimeStamp:TIGFET10nm                                                      Jul  9 13:12:33 2019
+
+	Cadence Version:       	           1.2011-07-111635 sub-version  IC6.1.8-64b.500.16 
+
+	Tool Enablement Summary:
+
+	Layout                             Incomplete
+	DRD                                Incomplete
+	Toolbox                            Incomplete
+	Optimize                           Incomplete
+	Layout XL                          Incomplete
+	Abstract                           Incomplete
+	DRD-XL                             Incomplete
+	Wire Editor                        Incomplete
+	DRD-GXL                            Incomplete
+	Yield Optimize                     Incomplete
+	VCAR                               Incomplete
+	VSR                                Incomplete
+	Analog Placement                   Incomplete
+	Floorplanner                       Incomplete
+	Modgen                             Incomplete
+	Digital Placement                  Incomplete
+	Migrate                            Incomplete
+	LEF 5.8*                           Incomplete
+	PVS                                Incomplete
+
+	Tool Requirements Summary:
+
+	Tier                           Tool   Check Status     Required Constraints   Req. Constraints Found
+	VLS-L                        Layout     Incomplete                       48                       13
+	                                DRD     Incomplete                       48                       13
+	                            Toolbox     Incomplete                       48                       13
+	                           Optimize     Incomplete                       48                       13
+	VLS-XL                    Layout XL     Incomplete                       48                       13
+	                           Abstract     Incomplete                       48                       13
+	                             DRD-XL     Incomplete                       48                       13
+	                        Wire Editor     Incomplete                       48                       13
+	VLS-GXL                     DRD-GXL     Incomplete                       48                       13
+	                     Yield Optimize     Incomplete                       48                       13
+	                               VCAR     Incomplete                       48                       13
+	                                VSR     Incomplete                       48                       13
+	                   Analog Placement     Incomplete                       48                       13
+	                       Floorplanner     Incomplete                       48                       13
+	                             Modgen     Incomplete                       48                       13
+	                  Digital Placement     Incomplete                       48                       13
+	                            Migrate     Incomplete                       48                       13
+	                           LEF 5.8*     Incomplete                       48                       13
+	                                PVS     Incomplete                       48                       13
+
+	Layer Summary  
+
+	Layer Name     Function             Required Constraints Required Constraints Found
+	GATE           metal                                   2                          1
+	GC             metal                                   2                          1
+	IL             metal                                   2                          0
+	M1             metal                                   2                          1
+	M10            metal                                   2                          1
+	M2             metal                                   2                          1
+	M3             metal                                   2                          1
+	M4             metal                                   2                          1
+	M5             metal                                   2                          1
+	M6             metal                                   2                          1
+	M7             metal                                   2                          1
+	M8             metal                                   2                          1
+	M9             metal                                   2                          1
+	SDC            metal                                   2                          1
+	VM0            cut                                     2                          0
+	VM1            cut                                     2                          0
+	VM2            cut                                     2                          0
+	VM3            cut                                     2                          0
+	VM4            cut                                     2                          0
+	VM5            cut                                     2                          0
+	VM6            cut                                     2                          0
+	VM7            cut                                     2                          0
+	VM8            cut                                     2                          0
+	VM9            cut                                     2                          0
+
+	Layer Summary For Optional Constraints       
+
+	Layer Name     Function             Optional Constraints Optional Constraints Found
+	GATE           metal                                  84                          1
+	GC             metal                                  84                          1
+	IL             metal                                  84                          0
+	M1             metal                                  84                          1
+	M10            metal                                  84                          1
+	M2             metal                                  84                          1
+	M3             metal                                  84                          1
+	M4             metal                                  84                          1
+	M5             metal                                  84                          1
+	M6             metal                                  84                          1
+	M7             metal                                  84                          1
+	M8             metal                                  84                          1
+	M9             metal                                  84                          1
+	SDC            metal                                  84                          1
+	VM0            cut                                    61                          0
+	VM1            cut                                    61                          0
+	VM2            cut                                    61                          0
+	VM3            cut                                    61                          0
+	VM4            cut                                    61                          0
+	VM5            cut                                    61                          0
+	VM6            cut                                    61                          0
+	VM7            cut                                    61                          0
+	VM8            cut                                    61                          0
+	VM9            cut                                    61                          0
+
+	Techfile Section Summary: 
+
+	Section                            Errors  Warnings  Notices
+
+	controls                                0         1        2
+
+	layerDefinitions                        0         0        1
+
+	layerRules                              0         1        6
+
+	viaDefs                                 0         0        0
+
+	devices                                 0         3        2
+
+	constraintGroups                        1         1        4
+
+	routingGrids                            0         0        0
+
+	placementGrids                          0         0        0
+
+	Techfile Section Details: 
+
+	Techfile Section:  controls
+
+	    Errors:  none
+
+	    Warnings:
+
+	        No techParams specified.  Turbo Toolbox needs techParams function properly.
+
+	    Notices:
+
+	        Default Grid Snap Resulution set to 0.001.
+
+	        Default Spacing measurements are in euclidian.
+
+	Techfile Section:  layerDefinitions
+
+	    Errors:  none
+
+	    Warnings:  none
+
+	    Notices:
+
+	        techLayerProperties do not appear to be specified.
+
+	Techfile Section:  layerRules
+
+	    Errors:  none
+
+	    Warnings:
+
+	        cutClass recommended for process level t.
+
+	    Notices:
+
+	        stampLabelLayers not specified.
+
+	        labelLayers not specified.
+
+	        incompatibleLayers not specified.
+
+	        equivalentLayers not specified.
+
+	        currentDensityTables not specified.
+
+	        currentDensity not specified.
+
+	Techfile Section:  viaDefs
+
+	    Errors:  none
+
+	    Warnings:  none
+
+	    Notices:  none
+
+	Techfile Section:  devices
+
+	    Errors:  none
+
+	    Warnings:
+
+	        cdsMos not specified
+
+	        cdsVias not specified
+
+	        Extract Devices not specified
+
+	    Notices:
+
+	        Found tcCreateCDSDeviceClass ("cdsVia").
+
+	        MPP template not specified
+
+	Techfile Section: constraintGroups
+
+		Group: foundry
+
+		    Errors: 		  none
+
+		    Warnings:
+
+		            interconnect constraint errorLayer missing from "foundry" group.
+
+		    Notices:		  none
+
+	Techfile Section: constraintGroups
+
+		Group: virtuosoDefaultExtractorSetup
+
+		    Errors: 		  none
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        userDefined virtuosoDefaultExtractorSetup validLayers does not contain 'poly in constraint Group.
+
+		        userDefined virtuosoDefaultExtractorSetup validLayers does not contain 'diffusion in constraint Group.
+
+	Techfile Section: constraintGroups
+
+		Group: LEFDefaultRouteSpec
+
+		    Errors: 
+
+		            interconnect constraint validVias not in "LEFDefaultRouteSpec" group.
+
+		    Warnings:		  none
+
+		    Notices:
+
+		        LEFDefaultRouteSpec LEFDefaultRouteSpec validLayers does not contain 'poly in constraint Group.
+
+		        LEFDefaultRouteSpec LEFDefaultRouteSpec validLayers does not contain 'diffusion in constraint Group.
+
+	Constraints Report
+
+	Techfile Constraints by Layer
+
+Layer                                              Constraint           Value                               Group  Op Note                                         
+
+GATE                                                 minWidth            0.02                             foundry                         
+GC                                                   minWidth           0.044                             foundry                         
+M1                                                   minWidth           0.028                             foundry                         
+M2                                                   minWidth           0.028                             foundry                         
+M3                                                   minWidth           0.028                             foundry                         
+M4                                                   minWidth           0.028                             foundry                         
+M5                                                   minWidth           0.028                             foundry                         
+M6                                                   minWidth           0.028                             foundry                         
+M7                                                   minWidth           0.028                             foundry                         
+M8                                                   minWidth           0.028                             foundry                         
+M9                                                   minWidth           0.028                             foundry                         
+M10                                                  minWidth           0.028                             foundry                         
+SDC                                                  minWidth           0.028                             foundry                         
+
+	Constraints Report
+
+	Techfile Layers by Constraint
+
+Constraint                                    Layer                     Value                               Group  Op Note                                         
+
+minWidth                                       GATE                      0.02                             foundry                                                  
+                                                 GC                     0.044                             foundry                                                  
+                                                 M1                     0.028                             foundry                                                  
+                                                 M2                     0.028                             foundry                                                  
+                                                 M3                     0.028                             foundry                                                  
+                                                 M4                     0.028                             foundry                                                  
+                                                 M5                     0.028                             foundry                                                  
+                                                 M6                     0.028                             foundry                                                  
+                                                 M7                     0.028                             foundry                                                  
+                                                 M8                     0.028                             foundry                                                  
+                                                 M9                     0.028                             foundry                                                  
+                                                M10                     0.028                             foundry                                                  
+                                                SDC                     0.028                             foundry                                                  
