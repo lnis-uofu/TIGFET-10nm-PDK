@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 18-Jan-2022  14:07:00
+Started at: 19-Jan-2022  16:11:00
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -32,15 +32,16 @@ TIGFET10nm/G1_INV1_N1/layout    0        0          0          0          0     
 Cadence         Cadence         Stream  Stream   
 Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
 ---------------------------------------------------------------------------------------------------------------------------------------
+M1              pin             7       251       0        4        0        0        0             0    0   0   0     0      0      
 GC              drawing         4       0         0        3        0        0        0             0    0   0   0     0      0      
 SDC             drawing         3       0         0        2        0        0        0             0    0   0   0     0      0      
-M2              drawing         9       0         0        2        0        0        0             0    0   0   0     0      0      
 GATE            drawing         2       0         3        3        0        0        0             0    0   0   0     0      0      
 VM0             drawing         6       0         0        6        0        0        0             0    0   0   0     0      0      
 IL              drawing         5       0         0        6        0        0        0             0    0   0   0     0      0      
 VM1             drawing         8       0         0        2        0        0        0             0    0   0   0     0      0      
 text            drawing         230     0         0        0        0        0        4             0    0   0   0     0      0      
-M1              drawing         7       0         0        10       0        0        0             0    0   0   0     0      0      
+M1              drawing         7       0         0        6        0        0        0             0    0   0   0     0      0      
+M2              pin             9       251       0        2        0        0        0             0    0   0   0     0      0      
 ACT             drawing         1       0         0        2        0        0        0             0    0   0   0     0      0      
 ---------------------------------------------------------------------------------------------------------------------------------------
 

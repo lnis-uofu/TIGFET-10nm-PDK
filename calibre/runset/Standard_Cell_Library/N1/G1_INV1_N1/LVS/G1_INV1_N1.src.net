@@ -4,7 +4,7 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G1_INV1_N1
 * View Name:     schematic
-* Netlisted on:  Jan 18 14:07:01 2022
+* Netlisted on:  Jan 19 15:57:19 2022
 ************************************************************************
 
 *.EQUATION
@@ -12,6 +12,8 @@
 *.MEGA
 .PARAM
 
+.SUBCKT TIGFET_PCELL_SP15CP15_N1 d pgd cg pgs s
+.ENDS
 
 
 ************************************************************************

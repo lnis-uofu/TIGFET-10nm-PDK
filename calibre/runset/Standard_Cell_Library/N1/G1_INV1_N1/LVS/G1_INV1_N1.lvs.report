@@ -1,0 +1,304 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         G1_INV1_N1.lvs.report
+LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G1_INV1_N1/LVS/G1_INV1_N1.sp ('G1_INV1_N1')
+SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G1_INV1_N1/LVS/G1_INV1_N1.src.net ('G1_INV1_N1')
+RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G1_INV1_N1/LVS/_calibreLVS.rul_
+CREATION TIME:            Wed Jan 19 16:11:03 2022
+CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G1_INV1_N1/LVS
+USER NAME:                u1081888
+CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of ports.
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      G1_INV1_N1                    G1_INV1_N1
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD"
+   LVS GROUND NAME                        "VSS"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  YES
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             YES
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of ports (see below).
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         G1_INV1_N1
+SOURCE CELL NAME:         G1_INV1_N1
+
+--------------------------------------------------------------------------------------------------------------
+
+NUMBERS OF OBJECTS
+------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              0         4    *
+
+ Nets:               9         4    *
+
+ Instances:          2         0    *    tigfet1 (5 pins)
+                     0         2    *    TIGFET_PCELL_SP15CP15_N1 (5 pins)
+                ------    ------
+ Total Inst:         2         2
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net 1                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net 4                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net 6                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net X0/3                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    Net X0/4                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    Net X0/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    Net X1/3                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    Net X1/4                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    Net X1/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    ** no similar net **                                      VDD
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    ** no similar net **                                      VSS
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    ** no similar net **                                      A
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    ** no similar net **                                      Z
+
+
+**************************************************************************************************************
+                                   INCORRECT PORTS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 14    ** missing port **                                        VDD on net: VDD
+ 15    ** missing port **                                        VSS on net: VSS
+ 16    ** missing port **                                        A on net: A
+ 17    ** missing port **                                        Z on net: Z
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 18    X0/X0(0.088,0.088)  tigfet1                               ** missing instance **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    X1/X0(0.226,0.088)  tigfet1                               ** missing instance **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    ** missing instance **                                    XI2  TIGFET_PCELL_SP15CP15_N1
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    ** missing instance **                                    XI1  TIGFET_PCELL_SP15CP15_N1
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               0          0            0            4
+
+   Nets:                0          0            9            4
+
+   Instances:           0          0            2            0    tigfet1
+                        0          0            0            2    TIGFET_PCELL_SP15CP15_N1
+                  -------    -------    ---------    ---------
+   Total Inst:          0          0            2            2
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec
