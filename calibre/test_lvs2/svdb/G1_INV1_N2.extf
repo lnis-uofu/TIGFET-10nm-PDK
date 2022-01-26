@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1643162235 1643162236
+lvs_ExtOutFile RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/test_lvs2
+lvs_ExtOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/test_lvs2/_calibreLVS.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/test_lvs2/G1_INV1_N2.sp
+lvs_ExtOutFile EXTRACTION_REPORT G1_INV1_N2.lvs.report.ext
