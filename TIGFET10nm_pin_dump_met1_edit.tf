@@ -419,13 +419,13 @@ layerDefinitions(
   ( IL           blockage     IL               t nil t t nil )
   ( M1           drawing      M1               t t t t t )
   ( M1           net          M1Net            t t t nil t )
-  ( M1           pin          M1Pin            t t t t t )
+  ( M1           pin          M1Pin            t t t nil nil )
   ( M1           label        M1Lbl            t t t nil nil )
   ( M1           boundary     M1Bnd            t t t nil nil )
   ( M1           blockage     M1               t nil t t nil )
   ( M2           drawing      M2               t t t t t )
   ( M2           net          M2Net            t t t nil t )
-  ( M2           pin          M2Pin            t t t t t )
+  ( M2           pin          M2Pin            t t t nil nil )
   ( M2           label        M2Lbl            t t t nil nil )
   ( M2           boundary     M2Bnd            t t t nil nil )
   ( M2           blockage     M2               t nil t t nil )
@@ -747,20 +747,56 @@ layerRules(
  routingDirections(
  ;( layer                       direction     )
  ;( -----                       ---------     )
-  ( VM0                      	"horizontal" )
-  ( VM1                      	"horizontal" )
-  ( VM2                      	"horizontal" )
+  ( VM0                      	"vertical" )
+  ( VM1                      	"vertical" )
+  ( VM2                      	"vertical" )
   ( VM3                      	"vertical"   )
-  ( VM4                      	"horizontal" )
+  ( VM4                      	"vertical" )
   ( VM5                      	"vertical"   )
-  ( VM6                      	"horizontal" )
+  ( VM6                      	"vertical" )
   ( VM7                      	"vertical"   )
-  ( VM8                      	"horizontal" )
+  ( VM8                      	"vertical" )
   ( VM9                      	"vertical"   )
  ) ;routingDirections
 
 ) ;layerRules
 
+;********************************
+; VIADEFS
+;********************************
+viaDefs(
+
+ standardViaDefs(
+ ;( viaDefName	layer1	layer2	(cutLayer cutWidth cutHeight [resistancePerCut]) 
+ ;   (cutRows	cutCol	(cutSpace)) 
+ ;   (layer1Enc) (layer2Enc)	(layer1Offset)	(layer2Offset)	(origOffset) 
+ ;   [implant1	 (implant1Enc)	[implant2	(implant2Enc) [well/substrate]]]) 
+ ;( -------------------------------------------------------------------------- ) 
+  ( VM0     	M0     M1     	("VM0" 0.18 0.18 0.04)
+     (1 1 (0.18 0.18))
+     (0.015 0.04)	(0.03 0.05)	(0.0 0.0)	(0.0 0.0)	(0.0 0.0)
+  )
+ ) ;standardViaDefs
+
+ customViaDefs(
+ ;( viaDefName libName cellName viewName layer1 layer2 resistancePerCut)
+ ;( ---------- ------- -------- -------- ------ ------ ----------------)
+ ) ;customViaDefs
+
+ standardViaVariants(
+ ;( viaVariantName viaDefName (cutLayer cutWidth cutHeight) 
+ ;   (cutRows	cutCol	(cutSpace)) 
+ ;   (layer1Enc) (layer2Enc)	(layer1Offset)	(layer2Offset)	(origOffset) 
+ ;   (implant1Enc) (implant2Enc) (cut_pattern) ) 
+ ;( -------------------------------------------------------------------------- ) 
+ ) ;standardViaVariants
+
+ customViaVariants(
+ ;(viaVariantName viaDefName (paramName paramValue) ...)
+ ;( -------------------------------------------------------------------------- )
+ ) ;customViaVariants
+
+) ;viaDefs
 
 ;********************************
 ; CONSTRAINT GROUPS
@@ -772,7 +808,8 @@ constraintGroups(
   ( "virtuosoDefaultExtractorSetup"	nil
 
     interconnect(
-     ( validLayers   (SDC  GC  GATE  M1  M2  M3  M4  M5  M6  M7  M8  M9  M10  VM0  VM1  VM2  VM3  VM4  VM5  VM6  VM7  VM8  VM9  ) )
+     ( validLayers   (SDC  GC  GATE  M1  M2  M3  M4  M5  M6  M7  M8  M9  M10  ) )
+	(validVias   (VM0  VM1  VM2  VM3  VM4  VM5  VM6  VM7  VM8  VM9  ) )
     ) ;interconnect
   ) ;virtuosoDefaultExtractorSetup
 

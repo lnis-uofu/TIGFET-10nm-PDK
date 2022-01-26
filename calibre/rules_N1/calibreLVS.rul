@@ -16,13 +16,14 @@ LVS Report Option S
 /* ------------------------- Layer Stack File ------------------------- */
 include $PDK_DIR/calibre/rules_N1/layers.inc
 
-TEXT LAYER M1 M2
-PORT LAYER TEXT  M1 M2
+TEXT LAYER M1 M2 GATE
+PORT LAYER TEXT  M1 M2 GATE
 
 
 /* ------------------------- Connectivity Extraction ------------------------- */
 /* Back End of Line Layers For connectivity to pass from one layer to the other
 all the respective  layers must appear in the 'connect' statements.            */
+
 
 connect M1  IL by VM0
 connect M2  M1 by VM1
@@ -38,6 +39,7 @@ connect M10 M9 by VM9
 /* -------------------- Extracting TIGFET Teminals -------------------- */
 ngate = ACT and GATE
 nfins = ACT not ngate
+
 
 /* Following are the Middle-end-of-line connections */
 connect IL SDC
