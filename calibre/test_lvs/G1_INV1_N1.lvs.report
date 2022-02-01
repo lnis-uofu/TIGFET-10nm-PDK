@@ -15,7 +15,7 @@ REPORT FILE NAME:         G1_INV1_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/test_lvs/G1_INV1_N1.sp ('G1_INV1_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/test_lvs/G1_INV1_N1.src.net ('G1_INV1_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/test_lvs/_calibreLVS.rul_
-CREATION TIME:            Tue Feb  1 16:27:10 2022
+CREATION TIME:            Tue Feb  1 16:51:33 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/test_lvs
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
