@@ -1,0 +1,23 @@
+* File: G1_INV1_N1.pex.netlist.pex
+* Created: Mon Feb  7 09:58:32 2022
+* Program "Calibre xRC"
+* Version "v2021.2_37.20"
+* Nominal Temperature: 25C
+* Circuit Temperature: 25C
+* 
+.subckt PM_G1_INV1_N1_VDD 1 6 18 Vss
+c2 18 Vss 0.0209024f
+r3 6 18 9.5694
+r4 1 18 0.04668
+.ends
+
+.subckt PM_G1_INV1_N1_A 3 12 Vss
+c1 3 Vss 0.00350306f
+r2 3 12 0.0530455
+.ends
+
+.subckt PM_G1_INV1_N1_Z 1 8 Vss
+c2 8 Vss 0.00177449f
+r3 1 8 0.125036
+.ends
+

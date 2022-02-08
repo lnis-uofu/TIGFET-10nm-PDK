@@ -1,5 +1,3 @@
-
-
 LVS POWER NAME VDD
 LVS GROUND NAME VSS
 LVS REDUCE PARALLEL MOS yes
@@ -36,12 +34,7 @@ connect M8  M7 by VM7
 connect M9  M8 by VM8
 connect M10 M9 by VM9
 
-/*
-connect IL VM0
-connect VM0 M1
-connect M1 VM1
-connect VM1 M2
-*/
+
 /* -------------------- Extracting TIGFET Teminals -------------------- */
 ngate = ACT and GATE
 nfins = ACT not ngate
@@ -59,4 +52,3 @@ sconnect GC gate_conn
 sconnect GATE gate_conn
 
 device tigfet1 tgate SDC (d) gate_conn (pgd) gate_conn (cg) gate_conn (pgs) SDC (s)
-

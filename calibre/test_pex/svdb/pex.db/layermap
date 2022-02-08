@@ -1,0 +1,36 @@
+OK
+VERSION          2
+TIME_NUMBER  709067719
+LAYER_COUNT         30
+VIACOR_COUNT          0
+FIELD_NAMES drc_layer_nb layer_name
+         1 GATE
+         7 SDC
+        10 gate_conn
+        12 VM0
+        14 M1
+        16 IL
+        20 VM1
+        22 M2
+        26 VM2
+        28 M3
+        32 VM3
+        34 M4
+        38 VM4
+        40 M5
+        44 VM5
+        46 M6
+        50 VM6
+        52 M7
+        56 VM7
+        58 M8
+        62 VM8
+        64 M9
+        68 VM9
+        70 M10
+        76 GC
+        99 XCALIBRATE__GATEA
+       102 XCALIBRATE__GATEB
+       105 XCALIBRATE__GATEAB
+       108 XCALIBRATE__GATEC
+       114 XCALIBRATE__M1

@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/test_pex
+pex_PexParam LAYOUT_PRIMARY G1_INV1_N1
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {G1_INV1_N1 "" G1_INV1_N1.pdb "" } } 

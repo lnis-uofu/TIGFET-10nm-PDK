@@ -1,7 +1,5 @@
 DEFINE basic $CDSHOME/tools/dfII/etc/cdslib/basic 
 DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
 DEFINE TIGFET10nm  $PDK_DIR/TIGFET10nm
-DEFINE TIGFET10nm_IMAGE /research/ece/lnis/USERS/enginger/TIGFETS/TIGFET-10nm-PDK/TIGFET10nm_IMAGE
-DEFINE TIGFET10nm_TEST /research/ece/lnis/USERS/enginger/TIGFETS/TIGFET-10nm-PDK/TIGFET10nm_TEST
 #Removed by ddDeleteObj: DEFINE standard_cells_N4 /home/u1081888/TIGFET-10nm-PDK/standard_cells_N4
 #Removed by ddDeleteObj: DEFINE TIGFET_N4 /home/u1081888/TIGFET-10nm-PDK/TIGFET_N4

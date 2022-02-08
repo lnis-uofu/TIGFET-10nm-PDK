@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Mon Feb  7 09:58:14 2022 " "v2021.2_37.20" "-xrc -pdb -rcc -turbo 1 /home/u1081888/TIGFET-10nm-PDK/calibre/test_pex/_calibrePEX_edit.rul_"
+"Mon Feb  7 09:58:32 2022 " "v2021.2_37.20" "-xrc -fmt -all /home/u1081888/TIGFET-10nm-PDK/calibre/test_pex/_calibrePEX_edit.rul_"

@@ -1,0 +1,32 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  TIGFET10nm
+* Top Cell Name: TIGFET_PCELL_SP15CP15_N1
+* View Name:     auCdl
+* Netlisted on:  Feb  2 16:17:01 2022
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: TIGFET10nm
+* Cell Name:    TIGFET_PCELL_SP15CP15_N1
+* View Name:    auCdl
+************************************************************************
+
+.SUBCKT TIGFET_PCELL_SP15CP15_N1 d pgd cg pgs s
+*.PININFO cg:B d:B pgd:B pgs:B s:B
+.ENDS
+
