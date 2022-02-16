@@ -1,0 +1,789 @@
+# 15nm FreePDK(TM) xCalibrate Metal Stack Description File
+#
+# Copyright (c) 2013-2016 North Carolina State University. All Rights
+# Reserved.
+# 
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are
+# met:
+# 
+# 1. Redistributions of source code must retain the above copyright
+# notice, this list of conditions and the following disclaimer.
+# 
+# 2. Redistributions in binary form must reproduce the above copyright
+# notice, this list of conditions and the following disclaimer in the
+# documentation and/or other materials provided with the distribution.
+# 
+# 3. Neither the name of the copyright holder nor the names of its
+# contributors may be used to endorse or promote products derived from
+# this software without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+# "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+# LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+# HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+# SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+# LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+# DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+# THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+# Compact Technology Stack for the FreePDK15 Library
+# Does not include Multiple Patterning, for less complex rules and quicker PEX runs
+
+# Initial Declarations
+
+mipt_version = 2.0
+calibration_type = {ALL}
+process = FreePDK15_Library
+author = "Chinmay Sunil Tembe"
+date = "05/30/2015"
+
+background_dielectric = 1
+cap_unit = pf
+distance_unit = um
+
+
+# The following defines the compact technology stack for FreePDK15 Library
+# This stack can be used only for quicker simulations with the assumption that Multiple-Patterning rules for metal layers are omitted.
+# Their omission results in smaller files and faster PEX runs
+# Multiple Patterning rules for GATE layers are still kept in order to let the designer create dummy gates
+# Following layers are used in this file
+#
+# Front-End-of-Line layers
+# ACT, GATEA, GATEB, GATEAB, GATEC
+# 
+# Middle-End-of-Line layers
+# AIL1, AIL2, GIL
+#
+# Back-End-of-Line layers
+# V0, M1, V1
+# MINT1, MINT2, MINT3, MINT4, MINT5
+# MSMG1, MSMG2, MSMG3, MSMG4, MSMG5
+# VINT1, VINT2, VINT3, VINT4, VINT5
+# VSMG1, VSMG2, VSMG3, VSMG4, VSMG5
+# MG1, MG2, VG1
+
+
+
+
+
+# Base Layer - Thickness = 0um
+# For reference
+
+base = base_layer {
+thickness = 0
+ztop = -0.200
+}
+
+
+# Silicon Substrate - Thickness = 0.200um
+# Have to specify both ztop and zbottom for substrate layer
+# Dielectric constant assumed to be 11.9 (Silicon)
+# Resistivity assumed to be 5e-5
+
+substrate = si_sub {
+thickness = 0.200
+zbottom = -0.200
+ztop = 0
+resistivity = 5e-5
+eps = 11.9
+}
+
+# Diffusion Layer - Thickness = 0.001um (Just to get poly over diffusion)
+# This diffusion layer of minimum thickness is so that poly (GATEA, GATEB, GATEAB, GATEC) flows over the diffusion - ACT
+# Resistivity and other properties assumed to be same as that of ACT
+
+
+diffusion = for_poly_over_diff {
+min_width = 0.096
+min_spacing = 0.032
+resistivity = 5e-5
+thickness = 0.001
+zbottom = 0
+}
+
+
+# Active Layer (Fins) - Thickness = 0.030um, resistivity assumed to be same as substrate - 5e-5
+
+diffusion = ACT {
+thickness = 0.030
+min_width = 0.096
+min_spacing = 0.032
+resistivity = 5e-5
+zbottom = 0.001
+}
+
+# Local Interconnect Layer AIL1 - Thickness = 0.050um
+
+li = AIL1 {
+thickness = 0.050
+min_width = 0.028
+min_spacing = 0.036
+r_sheet = 1.4
+zbottom = 0.031
+}
+
+
+# Local Interconnect Layer AIL2 - Thickness = 0.085um
+
+li = AIL2 {
+thickness = 0.085
+min_width = 0.024
+min_spacing = 0.040
+r_sheet = 0.8235
+zbottom = 0.081
+}
+
+
+# Poly Layer (Gate) - Thickness = 0.030um over ACT (which itself is 0.030um)
+# Total thickness = 0.060um because poly extends over ACT which for 0.030um
+# All four layers can be used - GATEA, GATEB, GATEAB for device definition - Multiple patterning
+# - GATEC is used as a metal cut
+
+poly = GATEA {
+thickness = 0.060
+min_width = 0.020
+min_spacing = 0.044
+r_sheet = 1.167
+zbottom = 0.001
+}
+
+poly = GATEB {
+thickness = 0.060
+min_width = 0.020
+min_spacing = 0.044
+r_sheet = 1.167
+zbottom = 0.001
+}
+
+poly = GATEAB {
+thickness = 0.060
+min_width = 0.020
+min_spacing = 0.044
+r_sheet = 1.167
+zbottom = 0.001
+}
+
+poly = GATEC {
+thickness = 0.060
+min_width = 0.020
+min_spacing = 0.044
+r_sheet = 1.167
+zbottom = 0.001
+}
+
+
+
+# ACT Dielectric - Thickness = 0.031um
+# Dielectric layer for diffusion under gate oxide
+
+dielectric = diel_ACT {
+diel_type = planar
+thickness = 0.031
+eps = 7
+zbottom = 0
+}
+
+
+# Gate Oxide Layer - Thickness = 0.001um, dielectric constant assumed to be 3.9
+
+dielectric = gate_oxide_layer {
+thickness = 0.001
+diel_type = planar
+eps = 3.9
+}
+
+
+# Gate Dielectric - Thickness = 0.029um (0.001um is gate oxide)
+# Dielectric layer for poly GATEA/GATEB/GATEAB/GATEC over diffusion ACT
+
+dielectric = diel_GATE {
+diel_type = planar
+thickness = 0.029
+eps = 7
+}
+
+
+
+# Local Interconnect Layer GIL - Thickness = 0.105um
+
+li = GIL {
+thickness = 0.105
+min_width = 0.056
+min_spacing = 0.040
+r_sheet = 0.667
+}
+
+
+# Local Interconnect dielectric1 - Thickness = 0.020um (part of GIL common to AIL1)
+# Dielectric has properties of AIL1 dielectric
+
+dielectric = GIL_diel1 {
+thickness = 0.020
+diel_type = planar
+eps = 7
+}
+
+# Local Interconnect dielectric2 - Thickness = 0.085um (part of GIL common to AIL2)
+# Dielectric has properties of AIL2 dielectric
+
+dielectric = GIL_diel2 {
+thickness = 0.085
+diel_type = planar
+eps = 3.9
+}
+
+
+# Via V0 - Thickness = 0.060um, Width = 0.028um
+# Via connecting Middle-End-of-Line layers GIL, AIL1, AIL2 and Metal Layer M1
+
+via = V0 {
+measured_from = GIL
+measured_to = M1
+min_width = 0.028
+min_spacing = 0.036
+resistance = 1.167
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via V0 dielectric - Thickness = 0.060um
+
+dielectric = V0_diel {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer M1 - Thickness = 0.060um
+
+conductor = M1 {
+thickness = 0.060
+min_width = 0.028
+min_spacing = 0.036
+r_sheet = 1.167
+}
+
+# Conductor dielectric M1 - Thickness = 0.060um
+
+dielectric = diel_M1 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+# Via V1 dielectric - Thickness = 0.060um
+
+dielectric = diel_V1 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MINT1 - Thickness = 0.060um
+
+conductor = MINT1 {
+thickness = 0.060
+min_width = 0.028
+min_spacing = 0.036
+r_sheet = 1.167
+}
+
+# Conductor dielectric MINT1 - Thickness = 0.060um
+
+dielectric = diel_MINT1 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+# Via VINT1 dielectric - Thickness = 0.060um
+
+dielectric = diel_VINT1 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MINT2 - Thickness = 0.060um
+
+conductor = MINT2 {
+thickness = 0.060
+min_width = 0.028
+min_spacing = 0.036
+r_sheet = 1.167
+}
+
+# Conductor dielectric MINT2 - Thickness = 0.060um
+
+dielectric = diel_MINT2 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+# Via VINT2 dielectric - Thickness = 0.060um
+
+dielectric = diel_VINT2 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MINT3 - Thickness = 0.060um
+
+conductor = MINT3 {
+thickness = 0.060
+min_width = 0.028
+min_spacing = 0.036
+r_sheet = 1.167
+}
+
+# Conductor dielectric MINT3 - Thickness = 0.060um
+
+dielectric = diel_MINT3 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+# Via VINT3 dielectric - Thickness = 0.060um
+
+dielectric = diel_VINT3 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MINT4 - Thickness = 0.060um
+
+conductor = MINT4 {
+thickness = 0.060
+min_width = 0.028
+min_spacing = 0.036
+r_sheet = 1.167
+}
+
+# Conductor dielectric MINT4 - Thickness = 0.060um
+
+dielectric = diel_MINT4 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+# Via VINT4 dielectric - Thickness = 0.060um
+
+dielectric = diel_VINT4 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MINT5 - Thickness = 0.060um
+
+conductor = MINT5 {
+thickness = 0.060
+min_width = 0.028
+min_spacing = 0.036
+r_sheet = 1.167
+}
+
+# Conductor dielectric MINT5 - Thickness = 0.060um
+
+dielectric = diel_MINT5 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+# Via VINT5 dielectric - Thickness = 0.060um
+
+dielectric = diel_VINT5 {
+thickness = 0.060
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MSMG1 - Thickness = 0.130um
+
+conductor = MSMG1 {
+thickness = 0.130
+min_width = 0.056
+min_spacing = 0.056
+r_sheet = 0.4046
+}
+
+# Conductor dielectric MSMG1 - Thickness = 0.130um
+
+dielectric = diel_MSMG1 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+# Via VSMG1 dielectric - Thickness = 0.130um
+
+dielectric = diel_VSMG1 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MSMG2 - Thickness = 0.130um
+
+conductor = MSMG2 {
+thickness = 0.130
+min_width = 0.056
+min_spacing = 0.056
+r_sheet = 0.4046
+}
+
+# Conductor dielectric MSMG2 - Thickness = 0.130um
+
+dielectric = diel_MSMG2 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+# Via VSMG2 dielectric - Thickness = 0.130um
+
+dielectric = diel_VSMG2 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MSMG3 - Thickness = 0.130um
+
+conductor = MSMG3 {
+thickness = 0.130
+min_width = 0.056
+min_spacing = 0.056
+r_sheet = 0.4046
+}
+
+# Conductor dielectric MSMG3 - Thickness = 0.130um
+
+dielectric = diel_MSMG3 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+# Via VSMG3 dielectric - Thickness = 0.130um
+
+dielectric = diel_VSMG3 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MSMG4 - Thickness = 0.130um
+
+conductor = MSMG4 {
+thickness = 0.130
+min_width = 0.056
+min_spacing = 0.056
+r_sheet = 0.4046
+}
+
+# Conductor dielectric MSMG4 - Thickness = 0.130um
+
+dielectric = diel_MSMG4 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+# Via VSMG4 dielectric - Thickness = 0.130um
+
+dielectric = diel_VSMG4 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+# Conductor layer MSMG5 - Thickness = 0.130um
+
+conductor = MSMG5 {
+thickness = 0.130
+min_width = 0.056
+min_spacing = 0.056
+r_sheet = 0.4046
+}
+
+# Conductor dielectric MSMG5 - Thickness = 0.130um
+
+dielectric = diel_MSMG5 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+# Via VSMG5 dielectric - Thickness = 0.130um
+
+dielectric = diel_VSMG5 {
+thickness = 0.130
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MG1 - Thickness = 0.260um
+
+conductor = MG1 {
+thickness = 0.260
+min_width = 0.112
+min_spacing = 0.112
+r_sheet = 0.07307
+}
+
+# Conductor dielectric MG1 - Thickness = 0.260um
+
+dielectric = diel_MG1 {
+thickness = 0.260
+diel_type = planar
+eps = 2.5
+}
+
+# Via VG1 dielectric - Thickness = 0.260um
+
+dielectric = diel_VG1 {
+thickness = 0.260
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Conductor layer MG2 - Thickness = 0.260um
+
+conductor = MG2 {
+thickness = 0.260
+min_width = 0.112
+min_spacing = 0.112
+r_sheet = 0.07307
+}
+
+# Conductor dielectric MG2 - Thickness = 0.260um
+
+dielectric = diel_MG2 {
+thickness = 0.260
+diel_type = planar
+eps = 2.5
+}
+
+
+
+
+
+# Via V1 - Thickness = 0.060um, Width = 0.028um
+# Via connecting Metal Layers M1 and MINT1
+
+via = V1 {
+measured_from = M1
+measured_to = MINT1
+min_width = 0.028
+min_spacing = 0.036
+resistance = 1.167
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VINT1 - Thickness = 0.060um, Width = 0.028um
+# Via connecting Metal Layers MINT1 and MINT2
+
+via = VINT1 {
+measured_from = MINT1
+measured_to = MINT2
+min_width = 0.028
+min_spacing = 0.036
+resistance = 1.167
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VINT2 - Thickness = 0.060um, Width = 0.028um
+# Via connecting Metal Layers MINT2 and MINT3
+
+via = VINT2 {
+measured_from = MINT2
+measured_to = MINT3
+min_width = 0.028
+min_spacing = 0.036
+resistance = 1.167
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VINT3 - Thickness = 0.060um, Width = 0.028um
+# Via connecting Metal Layers MINT3 and MINT4
+
+via = VINT3 {
+measured_from = MINT3
+measured_to = MINT4
+min_width = 0.028
+min_spacing = 0.036
+resistance = 1.167
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VINT4 - Thickness = 0.060um, Width = 0.028um
+# Via connecting Metal Layers MINT4 and MINT5
+
+via = VINT4 {
+measured_from = MINT4
+measured_to = MINT5
+min_width = 0.028
+min_spacing = 0.036
+resistance = 1.167
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VINT5 - Thickness = 0.060um, Width = 0.028um
+# Via connecting Metal Layers MINT5 and MSMG1
+
+via = VINT5 {
+measured_from = MINT5
+measured_to = MSMG1
+min_width = 0.028
+min_spacing = 0.036
+resistance = 1.167
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VSMG1 - Thickness = 0.130um, Width = 0.056um
+# Via connecting Metal Layers MSMG1 and MSMG2
+
+via = VSMG1 {
+measured_from = MSMG1
+measured_to = MSMG2
+min_width = 0.056
+min_spacing = 0.072
+resistance = 0.4046
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VSMG2 - Thickness = 0.130um, Width = 0.056um
+# Via connecting Metal Layers MSMG2 and MSMG3
+
+via = VSMG2 {
+measured_from = MSMG2
+measured_to = MSMG3
+min_width = 0.056
+min_spacing = 0.072
+resistance = 0.4046
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VSMG3 - Thickness = 0.130um, Width = 0.056um
+# Via connecting Metal Layers MSMG3 and MSMG4
+
+via = VSMG3 {
+measured_from = MSMG3
+measured_to = MSMG4
+min_width = 0.056
+min_spacing = 0.072
+resistance = 0.4046
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VSMG4 - Thickness = 0.130um, Width = 0.056um
+# Via connecting Metal Layers MSMG4 and MSMG5
+
+via = VSMG4 {
+measured_from = MSMG4
+measured_to = MSMG5
+min_width = 0.056
+min_spacing = 0.072
+resistance = 0.4046
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VSMG5 - Thickness = 0.130um, Width = 0.056um
+# Via connecting Metal Layers MSMG5 and MG1
+
+via = VSMG5 {
+measured_from = MSMG5
+measured_to = MG1
+min_width = 0.056
+min_spacing = 0.072
+resistance = 0.4046
+enclosure_down = 0
+enclosure_up = 0
+}
+
+# Via VG1 - Thickness = 0.260um, Width = 0.112um
+# Via connecting Metal Layers MG1 and MG2
+
+via = VG1 {
+measured_from = MG1
+measured_to = MG2
+min_width = 0.112
+min_spacing = 0.144
+resistance = 0.07307
+enclosure_down = 0
+enclosure_up = 0
+}

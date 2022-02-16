@@ -2,9 +2,9 @@
 * auCdl Netlist:
 * 
 * Library Name:  TIGFET10nm
-* Top Cell Name: TIGFET_PCELL_SP15CP15_N1
-* View Name:     auCdl
-* Netlisted on:  Feb  2 16:17:01 2022
+* Top Cell Name: G1_INV1_N1
+* View Name:     layout
+* Netlisted on:  Feb  8 15:05:38 2022
 ************************************************************************
 
 *.BIPOLAR
@@ -22,11 +22,13 @@
 
 ************************************************************************
 * Library Name: TIGFET10nm
-* Cell Name:    TIGFET_PCELL_SP15CP15_N1
-* View Name:    auCdl
+* Cell Name:    G1_INV1_N1
+* View Name:    layout
 ************************************************************************
 
-.SUBCKT TIGFET_PCELL_SP15CP15_N1 d pgd cg pgs s
-*.PININFO cg:B d:B pgd:B pgs:B s:B
+.SUBCKT G1_INV1_N1 A Vdd Vss Z
+*.PININFO A:I Z:O Vdd:B Vss:B
+XI2  / TIGFET_PCELL_SP15CP15_N1
+XI1  / TIGFET_PCELL_SP15CP15_N1
 .ENDS
 

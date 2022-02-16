@@ -1,5 +1,6 @@
 hnlLastStopCellInfo = '(
-                        )
+                           ( "TIGFET10nm" "TIGFET_PCELL_SP15CP15_N1" "auCdl" "347" "1644357903" )
+                       )
 hnlLastMaxNameLength = 60
 hnlLastNamePrefix = "hnl_"
 hnlLastNetNamePrefix = "N"

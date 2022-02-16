@@ -4,7 +4,7 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G1_INV1_N1
 * View Name:     schematic
-* Netlisted on:  Feb  7 09:57:28 2022
+* Netlisted on:  Feb 10 22:01:53 2022
 ************************************************************************
 
 .INCLUDE  ~/TIGFET-10nm-PDK/calibre/tig.sp

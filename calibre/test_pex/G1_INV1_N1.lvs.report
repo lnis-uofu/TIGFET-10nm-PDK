@@ -15,7 +15,7 @@ REPORT FILE NAME:         G1_INV1_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/test_pex/svdb/G1_INV1_N1.sp ('G1_INV1_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/test_pex/G1_INV1_N1.src.net ('G1_INV1_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/test_pex/_calibrePEX_edit.rul_
-CREATION TIME:            Mon Feb  7 09:58:05 2022
+CREATION TIME:            Thu Feb 10 22:01:59 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/test_pex
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
@@ -189,5 +189,5 @@ o Initial Correspondence Points:
                                          SUMMARY
 **************************************************************************************************************
 
-Total CPU Time:      8 sec
-Total Elapsed Time:  9 sec
+Total CPU Time:      1 sec
+Total Elapsed Time:  1 sec
