@@ -3,4 +3,6 @@ test
 test_pex
 test_pex2
 *.C
+*.C#
 *.R
+*.R#
