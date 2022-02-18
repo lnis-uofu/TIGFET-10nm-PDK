@@ -1,0 +1,22 @@
+* File: G1_INV1_N1.pex.netlist
+* Created: Fri Feb 18 12:29:10 2022
+* Program "Calibre xRC"
+* Version "v2021.2_37.20"
+* 
+.include "G1_INV1_N1.pex.netlist.pex"
+.subckt G1_INV1_N1  VDD A VSS Z
+* 
+* Z	Z
+* VSS	VSS
+* A	A
+* VDD	VDD
+XI2.X0 N_Z_XI2.X0_D N_VSS_XI2.X0_PGD N_A_XI2.X0_CG N_VSS_XI2.X0_PGD
++ N_VDD_XI2.X0_S TIGFET1
+XI1.X0 N_Z_XI2.X0_D N_VDD_XI1.X0_PGD N_A_XI1.X0_CG N_VDD_XI1.X0_PGD
++ N_VSS_XI1.X0_S TIGFET1
+*
+.include "G1_INV1_N1.pex.netlist.G1_INV1_N1.pxi"
+*
+.ends
+*
+*

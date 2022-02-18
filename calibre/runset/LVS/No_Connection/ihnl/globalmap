@@ -1,8 +1,0 @@
-CADENCE IHNL11140
-$model
-TIGFET10nm/G2_No_Connection_N1/schematic G2_No_Connection_N1
-$endmodel
-$net
-$endnet
-$param
-$endparam

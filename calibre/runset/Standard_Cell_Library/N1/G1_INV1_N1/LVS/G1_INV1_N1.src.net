@@ -4,16 +4,15 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G1_INV1_N1
 * View Name:     schematic
-* Netlisted on:  Jan 19 15:57:19 2022
+* Netlisted on:  Feb 18 12:25:43 2022
 ************************************************************************
 
+.INCLUDE  ~/TIGFET-10nm-PDK/calibre/tig.sp
 *.EQUATION
 *.SCALE METER
 *.MEGA
 .PARAM
 
-.SUBCKT TIGFET_PCELL_SP15CP15_N1 d pgd cg pgs s
-.ENDS
 
 
 ************************************************************************
@@ -24,7 +23,7 @@
 
 .SUBCKT G1_INV1_N1 A Vdd Vss Z
 *.PININFO A:I Z:O Vdd:B Vss:B
-XI2 A Z Vss Vss Vdd / TIGFET_PCELL_SP15CP15_N1
-XI1 A Z Vdd Vdd Vss / TIGFET_PCELL_SP15CP15_N1
+XI2 Z Vss A Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI1 Z Vdd A Vdd Vss / TIGFET_PCELL_SP15CP15_N1
 .ENDS
 
