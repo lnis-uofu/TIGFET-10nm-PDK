@@ -1,3 +1,3 @@
-include $PDK_DIR/calibre/rules_N1/calibreLVS.rul
+include $PDK_DIR/calibre/rules_N3/calibreLVS.rul
 include $PDK_DIR/calibre/mipt/rules.C
 include $PDK_DIR/calibre/mipt/rules.R
