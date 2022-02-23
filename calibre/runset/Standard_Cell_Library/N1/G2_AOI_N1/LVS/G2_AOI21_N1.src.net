@@ -4,9 +4,10 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G2_AOI21_N1
 * View Name:     schematic
-* Netlisted on:  Jan 18 10:17:09 2022
+* Netlisted on:  Feb 23 15:27:27 2022
 ************************************************************************
 
+.INCLUDE  ~/TIGFET-10nm-PDK/calibre/rules_N1/tigfet.sp
 *.EQUATION
 *.SCALE METER
 *.MEGA
@@ -22,9 +23,9 @@
 
 .SUBCKT G2_AOI21_N1 A B C Vdd Vss Z
 *.PININFO A:I B:I C:I Z:O Vdd:B Vss:B
-XI5 C Z Vdd Vdd Vss / TIGFET_PCELL_SP15CP15_N1
-XI6 B Z Vss A Vdd / TIGFET_PCELL_SP15CP15_N1
-XI1 B Z Vdd C Vss / TIGFET_PCELL_SP15CP15_N1
-XI7 C Z Vss Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI5 Z Vdd C Vdd Vss / TIGFET_PCELL_SP15CP15_N1
+XI6 Z Vss B A Vdd / TIGFET_PCELL_SP15CP15_N1
+XI1 Z Vdd B C Vss / TIGFET_PCELL_SP15CP15_N1
+XI7 Z Vss C Vss Vdd / TIGFET_PCELL_SP15CP15_N1
 .ENDS
 

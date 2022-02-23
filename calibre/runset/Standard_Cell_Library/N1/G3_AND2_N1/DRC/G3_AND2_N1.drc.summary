@@ -3,14 +3,14 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Fri Dec 10 13:07:46 2021
+Execution Date/Time:       Wed Feb 23 10:35:34 2022
 Calibre Version:           v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
-Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G3_AND2_N1/DRC/_calibreDRC.rul_
+Rule File Pathname:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G3_AND2_N1/DRC/_calibreDRC.rul_
 Rule File Title:           
 Layout System:             GDS
 Layout Path(s):            G3_AND2_N1.calibre.db
 Layout Primary Cell:       G3_AND2_N1
-Current Directory:         /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/G3_AND2_N1/DRC
+Current Directory:         /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G3_AND2_N1/DRC
 User Name:                 u1081888
 Maximum Results/RuleCheck: 1000
 Maximum Result Vertices:   4096
@@ -31,12 +31,12 @@ Keep Empty Checks:         YES
 --- ORIGINAL LAYER STATISTICS
 ---
 LAYER IL ..... TOTAL Original Geometry Count = 18 (18)
-LAYER SDC .... TOTAL Original Geometry Count = 2  (10)
-LAYER GATE ... TOTAL Original Geometry Count = 14 (26)
+LAYER SDC .... TOTAL Original Geometry Count = 4  (20)
+LAYER GATE ... TOTAL Original Geometry Count = 17 (41)
 LAYER VM0 .... TOTAL Original Geometry Count = 18 (18)
-LAYER M1 ..... TOTAL Original Geometry Count = 28 (28)
+LAYER M1 ..... TOTAL Original Geometry Count = 26 (26)
 LAYER VM1 .... TOTAL Original Geometry Count = 6  (6)
-LAYER M2 ..... TOTAL Original Geometry Count = 5  (5)
+LAYER M2 ..... TOTAL Original Geometry Count = 9  (9)
 LAYER VM2 .... TOTAL Original Geometry Count = 0  (0)
 LAYER M3 ..... TOTAL Original Geometry Count = 0  (0)
 LAYER ACT .... TOTAL Original Geometry Count = 4  (8)
@@ -126,6 +126,6 @@ RULECHECK RULE_M303 ...... TOTAL Result Count = 0 (0)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 0
-TOTAL Original Layer Geometries: 103 (127)
+TOTAL Original Layer Geometries: 110 (154)
 TOTAL DRC RuleChecks Executed:   60
 TOTAL DRC Results Generated:     0 (0)

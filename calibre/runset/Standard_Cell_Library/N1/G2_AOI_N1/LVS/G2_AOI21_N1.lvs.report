@@ -1,13 +1,4 @@
 
-LVS Netlist Compiler - Errors and Warnings for "G2_AOI21_N1.sp"
----------------------------------------------------------------
-
-Error: No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 25 in file "G2_AOI21_N1.sp"
-Error: No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 26 in file "G2_AOI21_N1.sp"
-Error: No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 27 in file "G2_AOI21_N1.sp"
-Error: No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 28 in file "G2_AOI21_N1.sp"
-
-
 
 
                   ##################################################
@@ -21,10 +12,10 @@ Error: No matching ".SUBCKT" statement for "TIGFET_PCELL_SP15CP15_N1" at line 28
 
 
 REPORT FILE NAME:         G2_AOI21_N1.lvs.report
-LAYOUT NAME:              G2_AOI21_N1.sp ('G2_AOI21_N1')
+LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/LVS/G2_AOI21_N1.sp ('G2_AOI21_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/LVS/G2_AOI21_N1.src.net ('G2_AOI21_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/LVS/_calibreLVS.rul_
-CREATION TIME:            Tue Jan 18 10:17:12 2022
+CREATION TIME:            Wed Feb 23 15:27:29 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/LVS
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
@@ -35,13 +26,22 @@ CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 
 
 
-                 #   #         ########################  
-                  # #          #                      #  
-                   #           #     NOT COMPARED     #  
-                  # #          #                      #  
-                 #   #         ########################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        G2_AOI21_N1                   G2_AOI21_N1
 
 
 
@@ -128,6 +128,61 @@ o LVS Setup:
    LVS REDUCTION PRIORITY                 PARALLEL
    
    LVS SHORT EQUIVALENT NODES             NO
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         G2_AOI21_N1
+SOURCE CELL NAME:         G2_AOI21_N1
+
+--------------------------------------------------------------------------------------------------------------
+
+NUMBERS OF OBJECTS
+------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              6         6
+
+ Nets:               6         6
+
+ Instances:          4         4         tigfet1 (5 pins)
+                ------    ------
+ Total Inst:         4         4
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               6          6            0            0
+
+   Nets:                6          6            0            0
+
+   Instances:           4          4            0            0    tigfet1
+                  -------    -------    ---------    ---------
+   Total Inst:          4          4            0            0
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD VSS B A Z C
 
 
 **************************************************************************************************************
