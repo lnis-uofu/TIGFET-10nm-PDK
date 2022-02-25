@@ -1,0 +1,28 @@
+* File: G2_OAI21_N1.pex.netlist
+* Created: Wed Feb 23 15:42:41 2022
+* Program "Calibre xRC"
+* Version "v2021.2_37.20"
+* 
+.include "G2_OAI21_N1.pex.netlist.pex"
+.subckt G2_OAI21_N1  VSS VDD B A Z C
+* 
+* C	C
+* Z	Z
+* A	A
+* B	B
+* VDD	VDD
+* VSS	VSS
+XI1.X0 N_Z_XI1.X0_D N_VDD_XI1.X0_PGD N_B_XI1.X0_CG N_C_XI1.X0_PGS N_VSS_XI1.X0_S
++ TIGFET1
+XI6.X0 N_Z_XI6.X0_D N_VSS_XI6.X0_PGD N_B_XI6.X0_CG N_A_XI6.X0_PGS N_VDD_XI6.X0_S
++ TIGFET1
+XI5.X0 N_Z_XI1.X0_D N_VDD_XI5.X0_PGD N_A_XI5.X0_CG N_C_XI5.X0_PGS N_VSS_XI5.X0_S
++ TIGFET1
+XI7.X0 N_Z_XI6.X0_D N_VSS_XI7.X0_PGD N_C_XI7.X0_CG N_VSS_XI7.X0_PGS
++ N_VDD_XI7.X0_S TIGFET1
+*
+.include "G2_OAI21_N1.pex.netlist.G2_OAI21_N1.pxi"
+*
+.ends
+*
+*

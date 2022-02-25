@@ -1,6 +1,6 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1645230690 1645230691
+lvs_ExtRunTimes 1645831398 1645831399
 lvs_ExtOutFile RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G1_INV1_N2/LVS
 lvs_ExtOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G1_INV1_N2/LVS/_calibreLVS.rul_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}

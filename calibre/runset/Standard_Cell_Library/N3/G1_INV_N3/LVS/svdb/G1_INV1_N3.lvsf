@@ -10,4 +10,4 @@ lvs_GroundName VSS
 lvs_LvsOutFile LVS_REPORT G1_INV1_N3.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G1_INV_N3/LVS/G1_INV1_N3.src.net
 lvs_LvsOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G1_INV_N3/LVS/_calibreLVS.rul_
-lvs_LvsRunTimes 1645234651 1645234651
+lvs_LvsRunTimes 1645831554 1645831555

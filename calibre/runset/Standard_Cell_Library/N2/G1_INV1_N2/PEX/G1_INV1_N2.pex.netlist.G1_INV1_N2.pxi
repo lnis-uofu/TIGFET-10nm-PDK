@@ -1,5 +1,5 @@
 * File: G1_INV1_N2.pex.netlist.G1_INV1_N2.pxi
-* Created: Fri Feb 18 17:38:58 2022
+* Created: Fri Feb 25 16:24:20 2022
 * 
 x_PM_G1_INV1_N2_VDD N_VDD_XI6.X0_S N_VDD_XI4.X0_PGD N_VDD_c_4_p N_VDD_c_17_p
 + N_VDD_c_3_p N_VDD_c_5_p N_VDD_c_8_p VDD N_VDD_c_9_p Vss PM_G1_INV1_N2_VDD

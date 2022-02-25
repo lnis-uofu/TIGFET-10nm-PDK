@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G2_NAND2_N2.dv
+dv_start matched                                  
+dv_cell {G2_NAND2_N2} {G2_NAND2_N2} matched
+dv_obj_count -transformed_nets {5 5} -transformed_inst {3 3} -transformed_port {5 5}
+dv_end

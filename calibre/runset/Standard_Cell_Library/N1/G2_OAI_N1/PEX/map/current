@@ -1,0 +1,14 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "G2_OAI21_N1"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  hierDelim "."
+  netlistDir "/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_OAI_N1/PEX"
+ )
+( model
+( "TIGFET10nm/G2_OAI21_N1/schematic" "G2_OAI21_N1" )
+ )
+( "G2_OAI21_N1" "ihnl/cds0/map" )
+ )

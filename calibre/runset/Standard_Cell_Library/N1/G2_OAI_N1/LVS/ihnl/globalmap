@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+TIGFET10nm/G2_OAI21_N1/schematic G2_OAI21_N1
+$endmodel
+$net
+$endnet
+$param
+$endparam
