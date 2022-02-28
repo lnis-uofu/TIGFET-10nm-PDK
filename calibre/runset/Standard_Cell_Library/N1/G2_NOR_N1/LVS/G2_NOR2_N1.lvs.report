@@ -15,7 +15,7 @@ REPORT FILE NAME:         G2_NOR2_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_NOR_N1/LVS/G2_NOR2_N1.sp ('G2_NOR2_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_NOR_N1/LVS/G2_NOR2_N1.src.net ('G2_NOR2_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_NOR_N1/LVS/_calibreLVS.rul_
-CREATION TIME:            Tue Feb 22 17:15:01 2022
+CREATION TIME:            Mon Feb 28 09:27:47 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_NOR_N1/LVS
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021

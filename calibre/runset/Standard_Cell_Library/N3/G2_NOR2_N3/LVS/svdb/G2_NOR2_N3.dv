@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G2_NOR2_N3.dv
+dv_start matched                                  
+dv_cell {G2_NOR2_N3} {G2_NOR2_N3} matched
+dv_obj_count -transformed_nets {5 5} -transformed_inst {3 3} -transformed_port {5 5}
+dv_end

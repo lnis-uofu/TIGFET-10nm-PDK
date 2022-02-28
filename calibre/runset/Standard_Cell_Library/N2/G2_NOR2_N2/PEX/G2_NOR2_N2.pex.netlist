@@ -1,0 +1,25 @@
+* File: G2_NOR2_N2.pex.netlist
+* Created: Mon Feb 28 09:43:23 2022
+* Program "Calibre xRC"
+* Version "v2021.2_37.20"
+* 
+.include "G2_NOR2_N2.pex.netlist.pex"
+.subckt G2_NOR2_N2  VSS VDD B Z A
+* 
+* A	A
+* Z	Z
+* B	B
+* VDD	VDD
+* VSS	VSS
+XI3.X0 N_Z_XI3.X0_D N_VDD_XI3.X0_PGD N_B_XI3.X0_CG N_VDD_XI3.X0_PGS
++ N_VSS_XI3.X0_S TIGFET1
+XI4.X0 N_Z_XI4.X0_D N_VSS_XI4.X0_PGD N_B_XI4.X0_CG N_A_XI4.X0_PGS N_VDD_XI4.X0_S
++ TIGFET1
+XI5.X0 N_Z_XI5.X0_D N_VDD_XI5.X0_PGD N_A_XI5.X0_CG N_VDD_XI5.X0_PGS
++ N_VSS_XI5.X0_S TIGFET1
+*
+.include "G2_NOR2_N2.pex.netlist.G2_NOR2_N2.pxi"
+*
+.ends
+*
+*
