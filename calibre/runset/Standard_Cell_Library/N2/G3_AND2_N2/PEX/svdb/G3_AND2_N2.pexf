@@ -1,0 +1,5 @@
+# Automagically generated file: Please do not edit!
+pex_PexParam RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G3_AND2_N2/PEX
+pex_PexParam LAYOUT_PRIMARY G3_AND2_N2
+pex_PexParam TOOL xRC
+pex_PexParam CORNER_PDBS { {G3_AND2_N2 "" G3_AND2_N2.pdb "" } } 
