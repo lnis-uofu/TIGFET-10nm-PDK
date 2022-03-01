@@ -15,7 +15,7 @@ REPORT FILE NAME:         G3_OR2_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G3_OR2_N1/PEX/svdb/G3_OR2_N1.sp ('G3_OR2_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G3_OR2_N1/PEX/G3_OR2_N1.src.net ('G3_OR2_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G3_OR2_N1/PEX/_calibrePEX.rul_
-CREATION TIME:            Wed Feb 23 15:02:53 2022
+CREATION TIME:            Tue Mar  1 11:26:33 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G3_OR2_N1/PEX
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
