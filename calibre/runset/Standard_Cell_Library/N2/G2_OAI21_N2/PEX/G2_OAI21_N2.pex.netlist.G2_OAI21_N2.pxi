@@ -1,0 +1,134 @@
+* File: G2_OAI21_N2.pex.netlist.G2_OAI21_N2.pxi
+* Created: Wed Mar  2 11:29:59 2022
+* 
+x_PM_G2_OAI21_N2_VSS N_VSS_XI3.X0_S N_VSS_XI0.X0_PGD N_VSS_XI4.X0_S
++ N_VSS_XI2.X0_PGD N_VSS_XI2.X0_PGS N_VSS_c_29_p N_VSS_c_46_p N_VSS_c_1_p
++ N_VSS_c_9_p N_VSS_c_2_p N_VSS_c_21_p N_VSS_c_10_p N_VSS_c_22_p N_VSS_c_3_p
++ N_VSS_c_4_p N_VSS_c_8_p N_VSS_c_12_p N_VSS_c_11_p N_VSS_c_14_p VSS Vss
++ PM_G2_OAI21_N2_VSS
+x_PM_G2_OAI21_N2_VDD N_VDD_XI3.X0_PGD N_VDD_XI0.X0_S N_VDD_XI4.X0_PGD
++ N_VDD_XI2.X0_S N_VDD_c_84_p N_VDD_c_85_p N_VDD_c_52_n N_VDD_c_56_n
++ N_VDD_c_57_n N_VDD_c_58_n N_VDD_c_77_p N_VDD_c_60_n N_VDD_c_63_n N_VDD_c_66_n
++ VDD N_VDD_c_74_p Vss PM_G2_OAI21_N2_VDD
+x_PM_G2_OAI21_N2_B N_B_XI3.X0_CG N_B_XI0.X0_CG N_B_c_109_p N_B_c_101_n B
++ N_B_c_104_n N_B_c_105_n Vss PM_G2_OAI21_N2_B
+x_PM_G2_OAI21_N2_A N_A_XI0.X0_PGS N_A_XI4.X0_CG N_A_c_137_n N_A_c_145_n
++ N_A_c_123_n N_A_c_128_n N_A_c_130_n N_A_c_134_n A N_A_c_135_n Vss
++ PM_G2_OAI21_N2_A
+x_PM_G2_OAI21_N2_Z N_Z_XI3.X0_D N_Z_XI0.X0_D N_Z_XI4.X0_D N_Z_XI2.X0_D
++ N_Z_c_163_n N_Z_c_174_n N_Z_c_167_n Z Vss PM_G2_OAI21_N2_Z
+x_PM_G2_OAI21_N2_C N_C_XI3.X0_PGS N_C_XI4.X0_PGS N_C_XI2.X0_CG N_C_c_196_n
++ N_C_c_218_n N_C_c_198_n N_C_c_201_n N_C_c_202_n C Vss PM_G2_OAI21_N2_C
+cc_1 N_VSS_c_1_p N_VDD_c_52_n 9.5668e-19
+cc_2 N_VSS_c_2_p N_VDD_c_52_n 0.00165395f
+cc_3 N_VSS_c_3_p N_VDD_c_52_n 0.00691557f
+cc_4 N_VSS_c_4_p N_VDD_c_52_n 0.00189413f
+cc_5 N_VSS_c_2_p N_VDD_c_56_n 9.07068e-19
+cc_6 N_VSS_c_3_p N_VDD_c_57_n 0.0016897f
+cc_7 N_VSS_c_2_p N_VDD_c_58_n 4.55601e-19
+cc_8 N_VSS_c_8_p N_VDD_c_58_n 4.44911e-19
+cc_9 N_VSS_c_9_p N_VDD_c_60_n 3.02646e-19
+cc_10 N_VSS_c_10_p N_VDD_c_60_n 4.09912e-19
+cc_11 N_VSS_c_11_p N_VDD_c_60_n 4.66923e-19
+cc_12 N_VSS_c_12_p N_VDD_c_63_n 4.44911e-19
+cc_13 N_VSS_c_11_p N_VDD_c_63_n 4.55601e-19
+cc_14 N_VSS_c_14_p N_VDD_c_63_n 0.00176782f
+cc_15 N_VSS_c_9_p N_VDD_c_66_n 9.5668e-19
+cc_16 N_VSS_c_10_p N_VDD_c_66_n 0.00165395f
+cc_17 N_VSS_c_11_p N_VDD_c_66_n 0.00189413f
+cc_18 N_VSS_c_14_p N_VDD_c_66_n 0.00744813f
+cc_19 N_VSS_c_3_p N_B_c_101_n 5.69535e-19
+cc_20 N_VSS_XI0.X0_PGD N_A_XI0.X0_PGS 0.00176902f
+cc_21 N_VSS_c_21_p N_A_c_123_n 8.59446e-19
+cc_22 N_VSS_c_22_p N_A_c_123_n 3.44698e-19
+cc_23 N_VSS_c_3_p N_A_c_123_n 0.003788f
+cc_24 N_VSS_c_8_p N_A_c_123_n 0.00211252f
+cc_25 N_VSS_c_14_p N_A_c_123_n 0.00180094f
+cc_26 N_VSS_c_8_p N_A_c_128_n 7.40806e-19
+cc_27 N_VSS_c_14_p N_A_c_128_n 7.9739e-19
+cc_28 N_VSS_XI0.X0_PGD N_A_c_130_n 3.11814e-19
+cc_29 N_VSS_c_29_p N_A_c_130_n 0.00322564f
+cc_30 N_VSS_c_21_p N_A_c_130_n 3.44698e-19
+cc_31 N_VSS_c_22_p N_A_c_130_n 6.61253e-19
+cc_32 N_VSS_c_22_p N_A_c_134_n 2.86526e-19
+cc_33 N_VSS_c_3_p N_A_c_135_n 0.00310102f
+cc_34 N_VSS_c_1_p N_Z_c_163_n 3.43419e-19
+cc_35 N_VSS_c_9_p N_Z_c_163_n 3.43419e-19
+cc_36 N_VSS_c_2_p N_Z_c_163_n 3.48267e-19
+cc_37 N_VSS_c_10_p N_Z_c_163_n 3.48267e-19
+cc_38 N_VSS_c_1_p N_Z_c_167_n 3.48267e-19
+cc_39 N_VSS_c_9_p N_Z_c_167_n 3.48267e-19
+cc_40 N_VSS_c_2_p N_Z_c_167_n 5.71987e-19
+cc_41 N_VSS_c_10_p N_Z_c_167_n 5.71987e-19
+cc_42 N_VSS_c_8_p N_Z_c_167_n 3.27942e-19
+cc_43 N_VSS_c_14_p N_Z_c_167_n 6.37542e-19
+cc_44 N_VSS_XI0.X0_PGD N_C_c_196_n 6.82193e-19
+cc_45 N_VSS_XI2.X0_PGD N_C_c_196_n 6.82193e-19
+cc_46 N_VSS_c_46_p N_C_c_198_n 4.58946e-19
+cc_47 N_VSS_c_21_p N_C_c_198_n 2.87758e-19
+cc_48 N_VSS_c_22_p N_C_c_198_n 0.00236077f
+cc_49 N_VSS_XI2.X0_PGS N_C_c_201_n 8.15793e-19
+cc_50 N_VSS_c_21_p N_C_c_202_n 2.83343e-19
+cc_51 N_VSS_c_22_p N_C_c_202_n 2.87758e-19
+cc_52 N_VDD_c_52_n N_B_c_101_n 0.00231792f
+cc_53 N_VDD_c_56_n N_B_c_101_n 2.08521e-19
+cc_54 N_VDD_c_52_n N_B_c_104_n 3.66936e-19
+cc_55 N_VDD_c_52_n N_B_c_105_n 4.5927e-19
+cc_56 N_VDD_c_74_p N_A_XI4.X0_CG 0.00253477f
+cc_57 N_VDD_c_74_p N_A_c_137_n 6.39343e-19
+cc_58 N_VDD_c_56_n N_A_c_128_n 7.76297e-19
+cc_59 N_VDD_c_77_p N_A_c_128_n 5.10019e-19
+cc_60 N_VDD_c_66_n N_A_c_128_n 6.23587e-19
+cc_61 N_VDD_c_74_p N_A_c_128_n 3.18657e-19
+cc_62 N_VDD_c_66_n N_A_c_134_n 3.66936e-19
+cc_63 N_VDD_c_74_p N_A_c_134_n 6.82215e-19
+cc_64 N_VDD_c_52_n N_A_c_135_n 6.11072e-19
+cc_65 N_VDD_c_56_n N_Z_c_163_n 3.02646e-19
+cc_66 N_VDD_c_84_p N_Z_c_174_n 3.43419e-19
+cc_67 N_VDD_c_85_p N_Z_c_174_n 3.43419e-19
+cc_68 N_VDD_c_58_n N_Z_c_174_n 3.72199e-19
+cc_69 N_VDD_c_63_n N_Z_c_174_n 3.72199e-19
+cc_70 N_VDD_c_84_p N_Z_c_167_n 3.48267e-19
+cc_71 N_VDD_c_85_p N_Z_c_167_n 3.48267e-19
+cc_72 N_VDD_c_52_n N_Z_c_167_n 7.99049e-19
+cc_73 N_VDD_c_56_n N_Z_c_167_n 6.12187e-19
+cc_74 N_VDD_c_58_n N_Z_c_167_n 5.09542e-19
+cc_75 N_VDD_c_63_n N_Z_c_167_n 7.72285e-19
+cc_76 N_VDD_c_66_n N_Z_c_167_n 0.00141871f
+cc_77 N_VDD_c_52_n N_C_XI3.X0_PGS 6.13097e-19
+cc_78 N_VDD_c_66_n N_C_XI4.X0_PGS 6.32546e-19
+cc_79 N_VDD_XI3.X0_PGD N_C_c_196_n 6.82193e-19
+cc_80 N_VDD_XI4.X0_PGD N_C_c_196_n 6.82193e-19
+cc_81 N_VDD_c_66_n N_C_c_198_n 5.55044e-19
+cc_82 N_VDD_c_66_n N_C_c_202_n 5.04211e-19
+cc_83 N_B_c_105_n N_A_c_145_n 4.64013e-19
+cc_84 N_B_c_101_n N_A_c_123_n 0.0028587f
+cc_85 N_B_c_105_n N_A_c_123_n 2.87758e-19
+cc_86 N_B_c_109_p N_A_c_130_n 0.00249847f
+cc_87 N_B_c_101_n N_A_c_130_n 3.4348e-19
+cc_88 N_B_c_105_n N_A_c_130_n 6.82215e-19
+cc_89 N_B_c_104_n N_A_c_134_n 8.86454e-19
+cc_90 N_B_c_101_n N_A_c_135_n 7.33011e-19
+cc_91 N_B_c_101_n N_Z_c_167_n 0.00671f
+cc_92 N_B_c_104_n N_Z_c_167_n 9.58174e-19
+cc_93 N_B_c_105_n N_Z_c_167_n 0.00100281f
+cc_94 N_B_XI3.X0_CG N_C_XI3.X0_PGS 4.87172e-19
+cc_95 N_B_c_104_n N_C_XI3.X0_PGS 0.001089f
+cc_96 N_B_c_104_n N_C_c_196_n 6.02551e-19
+cc_97 N_B_c_105_n N_C_c_196_n 0.00129343f
+cc_98 N_B_c_105_n N_C_c_198_n 9.54365e-19
+cc_99 N_A_c_123_n N_Z_c_167_n 0.00174866f
+cc_100 N_A_c_128_n N_Z_c_167_n 0.00351012f
+cc_101 N_A_c_134_n N_Z_c_167_n 9.53427e-19
+cc_102 N_A_XI4.X0_CG N_C_XI4.X0_PGS 4.87172e-19
+cc_103 N_A_c_134_n N_C_XI4.X0_PGS 0.001089f
+cc_104 N_A_c_134_n N_C_c_196_n 0.00151445f
+cc_105 N_A_XI0.X0_PGS N_C_c_218_n 8.15793e-19
+cc_106 N_A_c_128_n N_C_c_198_n 5.38228e-19
+cc_107 N_A_c_134_n N_C_c_198_n 0.00209031f
+cc_108 N_A_c_128_n N_C_c_202_n 8.16123e-19
+cc_109 N_Z_c_163_n N_C_c_196_n 3.50149e-19
+cc_110 N_Z_c_174_n N_C_c_196_n 3.50149e-19
+cc_111 N_Z_c_167_n N_C_c_196_n 3.56555e-19
+cc_112 N_Z_c_167_n N_C_c_198_n 0.00102535f
+cc_113 N_Z_c_167_n N_C_c_202_n 0.00141616f
