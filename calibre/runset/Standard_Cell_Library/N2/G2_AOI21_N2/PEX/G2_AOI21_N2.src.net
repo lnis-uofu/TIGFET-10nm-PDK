@@ -1,0 +1,31 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  TIGFET10nm
+* Top Cell Name: G2_AOI21_N2
+* View Name:     schematic
+* Netlisted on:  Mar  2 10:50:39 2022
+************************************************************************
+
+.INCLUDE  ~/TIGFET-10nm-PDK/calibre/tigfet.sp
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: TIGFET10nm
+* Cell Name:    G2_AOI21_N2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT G2_AOI21_N2 A B C Vdd Vss Z
+*.PININFO A:I B:I C:I Z:O Vdd:B Vss:B
+XI11 Z Vdd C Vdd Vss / TIGFET_PCELL_SP15CP15_N2
+XI10 Z Vdd B C Vss / TIGFET_PCELL_SP15CP15_N2
+XI9 Z Vss C Vss Vdd / TIGFET_PCELL_SP15CP15_N2
+XI8 Z Vss B A Vdd / TIGFET_PCELL_SP15CP15_N2
+.ENDS
+

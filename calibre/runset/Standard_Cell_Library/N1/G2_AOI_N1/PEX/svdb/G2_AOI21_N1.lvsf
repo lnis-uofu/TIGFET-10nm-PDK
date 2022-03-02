@@ -10,4 +10,4 @@ lvs_GroundName VSS
 lvs_LvsOutFile LVS_REPORT G2_AOI21_N1.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/PEX/G2_AOI21_N1.src.net
 lvs_LvsOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/PEX/_calibrePEX.rul_
-lvs_LvsRunTimes 1645655295 1645655295
+lvs_LvsRunTimes 1646162699 1646162699

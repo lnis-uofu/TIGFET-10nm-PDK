@@ -4,10 +4,10 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G2_AOI21_N1
 * View Name:     schematic
-* Netlisted on:  Feb 23 15:28:12 2022
+* Netlisted on:  Mar  1 12:24:56 2022
 ************************************************************************
 
-.INCLUDE  ~/TIGFET-10nm-PDK/calibre/rules_N1/tigfet.sp
+.INCLUDE  ~/TIGFET-10nm-PDK/calibre/tigfet.sp
 *.EQUATION
 *.SCALE METER
 *.MEGA
