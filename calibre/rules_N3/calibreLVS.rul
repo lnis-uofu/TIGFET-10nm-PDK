@@ -14,8 +14,8 @@ LVS Report Option S
 /* ------------------------- Layer Stack File ------------------------- */
 include $PDK_DIR/calibre/rules_N1/layers.inc
 
-TEXT LAYER M1 M2 SDC GATE
-PORT LAYER TEXT  M1 M2 SDC GATE
+TEXT LAYER M1 M2 M3 SDC GATE
+PORT LAYER TEXT  M1 M2 M3 SDC GATE
 
 
 /* ------------------------- Connectivity Extraction ------------------------- */

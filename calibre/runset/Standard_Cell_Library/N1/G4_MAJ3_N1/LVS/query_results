@@ -1,0 +1,17 @@
+mgc_rve_context_lcv "TIGFET10nm" "G4_MAJ3_N1" "layout" 1000
+mgc_rve_highlight_index 0 "C" "#00000000FFFF"
+mgc_rve_layer "M1"
+mr 0.414 0.302 0.442 0.334
+mr 0.69 0.302 0.718 0.334
+mgc_rve_layer "IL"
+mr 0.414 0.284 0.442 0.352
+mr 0.69 0.284 0.718 0.352
+mgc_rve_layer "M2"
+mr 0.414 0.302 0.442 0.334
+mr 0.69 0.302 0.718 0.334
+mgc_rve_layer "M3"
+mp 8 0.414 0.302 0.442 0.302 0.442 0.317 0.69 0.317 0.69 0.302 0.718 0.302 0.718 0.345 0.414 0.345
+mgc_rve_layer "SDC"
+mr 0.414 0.284 0.442 0.352
+mr 0.69 0.284 0.718 0.352
+mgc_rve_zoom 0.349 0.27 0.783 0.366 1
