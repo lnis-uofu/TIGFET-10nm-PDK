@@ -10,3 +10,4 @@ cdlForForum
 .cadence/
 *.oa-
 *.bak
+.nfs*
