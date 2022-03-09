@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 10-Jan-2022  10:42:57
+Started at: 09-Mar-2022  15:22:13
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -15,8 +15,8 @@ Info: Cellview Rev Num:99,  Tech Rev Num:59
 ---------------------------------------------------------------------------------------------------------------------------------------
 Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
 ---------------------------------------------------------------------------------------------------------------------------------------
-TIGFET10nm/TIGFET_PCELL_SP15CP15_N3/layout                      0        0       0        6      0      0         0      0             0      0     0     0       0       
-TIGFET10nm/G3_MUXI2_N3/layout   6        0       12       122    0      0         0      9             0      0     0     0       0       
+TIGFET10nm/TIGFET_PCELL_SP15CP15_N3/layout                      0        0       0        11     0      0         5      0             0      0     0     0       0       
+TIGFET10nm/G3_MUXI2_N3/layout   6        0       11       137    0      0         6      0             0      0     0     0       0       
 ---------------------------------------------------------------------------------------------------------------------------------------
 
                        Individual Cell Statistics - Advanced Objects
@@ -33,15 +33,14 @@ Cadence         Cadence         Stream  Stream
 Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
 ---------------------------------------------------------------------------------------------------------------------------------------
 GC              drawing         4       0         0        11       0        0        0             0    0   0   0     0      0      
-SDC             drawing         3       0         0        2        0        0        0             0    0   0   0     0      0      
+SDC             drawing         3       0         0        4        0        2        0             0    0   0   0     0      0      
 M3              drawing         11      0         1        0        0        0        0             0    0   0   0     0      0      
-M2              drawing         9       0         1        7        0        0        0             0    0   0   0     0      0      
-GATE            drawing         2       0         9        10       0        0        0             0    0   0   0     0      0      
+M2              drawing         9       0         1        17       0        1        0             0    0   0   0     0      0      
+GATE            drawing         2       0         8        14       0        3        0             0    0   0   0     0      0      
 VM0             drawing         6       0         0        26       0        0        0             0    0   0   0     0      0      
 IL              drawing         5       0         0        20       0        0        0             0    0   0   0     0      0      
 VM1             drawing         8       0         0        9        0        0        0             0    0   0   0     0      0      
-text            drawing         230     0         0        0        0        0        9             0    0   0   0     0      0      
-M1              drawing         7       0         1        36       0        0        0             0    0   0   0     0      0      
+M1              drawing         7       0         1        40       0        5        0             0    0   0   0     0      0      
 VM2             drawing         10      0         0        2        0        0        0             0    0   0   0     0      0      
 ACT             drawing         1       0         0        5        0        0        0             0    0   0   0     0      0      
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -49,9 +48,9 @@ ACT             drawing         1       0         0        5        0        0  
 Summary of Objects Translated:
 	Scalar Instances:		6
 	Array Instances:		0
-	Polygons:			12
+	Polygons:			11
 	Paths:				0
-	Rectangles:			128
+	Rectangles:			148
 	Lines:				0
 	Arcs:				0
 	Donuts:				0
@@ -67,8 +66,8 @@ Summary of Objects Translated:
 	Custom Vias:			0
 	CdsGen Vias:			0
 	Pathsegs:			0
-	Text:				0
-	TextDisplay:		9
+	Text:				11
+	TextDisplay:		0
 	Cells:				2
 Design Libraries: 
 

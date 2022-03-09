@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1646864576 1646864577
+lvs_ExtOutFile RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/LVS
+lvs_ExtOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/LVS/_calibreLVS.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_MUXI2_N3/LVS/G3_MUXI2_N3.sp
+lvs_ExtOutFile EXTRACTION_REPORT G3_MUXI2_N3.lvs.report.ext
