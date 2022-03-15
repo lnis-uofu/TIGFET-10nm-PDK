@@ -1,0 +1,35 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  TIGFET10nm
+* Top Cell Name: G4_MUX2_N3
+* View Name:     schematic
+* Netlisted on:  Mar 15 11:34:01 2022
+************************************************************************
+
+.INCLUDE  ~/TIGFET-10nm-PDK/calibre/tigfet.sp
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: TIGFET10nm
+* Cell Name:    G4_MUX2_N3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT G4_MUX2_N3 A B SEL Vdd Vss Z
+*.PININFO A:I B:I SEL:I Z:O Vdd:B Vss:B
+XI17 ZI Vdd SELI B Vss / TIGFET_PCELL_SP15CP15_N3
+XI16 ZI Vdd SEL A Vss / TIGFET_PCELL_SP15CP15_N3
+XI15 ZI Vss SEL B Vdd / TIGFET_PCELL_SP15CP15_N3
+XI14 ZI Vss SELI A Vdd / TIGFET_PCELL_SP15CP15_N3
+XI13 SELI Vss SEL Vss Vdd / TIGFET_PCELL_SP15CP15_N3
+XI12 SELI Vdd SEL Vdd Vss / TIGFET_PCELL_SP15CP15_N3
+XI6 Z Vss ZI Vss Vdd / TIGFET_PCELL_SP15CP15_N3
+XI5 Z Vdd ZI Vdd Vss / TIGFET_PCELL_SP15CP15_N3
+.ENDS
+
