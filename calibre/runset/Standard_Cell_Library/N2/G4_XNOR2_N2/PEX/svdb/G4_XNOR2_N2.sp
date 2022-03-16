@@ -1,0 +1,23 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT tigfet1 d pgd cg pgs s
+.ENDS
+***************************************
+.SUBCKT TIGFET_PCELL_SP15CP15_N2 D S PGD CG PGS
+** N=5 EP=5 IP=0 FDC=1
+X0 D PGD CG PGS S tigfet1 $X=42 $Y=13 $D=0
+.ENDS
+***************************************
+.SUBCKT G4_XNOR2_N2 Vdd Vss A B Z
+** N=7 EP=5 IP=40 FDC=8
+X0 4 Vdd Vss B Vss TIGFET_PCELL_SP15CP15_N2 $T=180 61 1 180 $X=0 $Y=64
+X1 5 Vss Vdd A Vdd TIGFET_PCELL_SP15CP15_N2 $T=180 304 1 180 $X=0 $Y=307
+X2 4 Vss Vdd B Vdd TIGFET_PCELL_SP15CP15_N2 $T=124 61 0 0 $X=138 $Y=64
+X3 5 Vdd Vss A Vss TIGFET_PCELL_SP15CP15_N2 $T=124 304 0 0 $X=138 $Y=307
+X4 Z Vss B 5 B TIGFET_PCELL_SP15CP15_N2 $T=456 61 1 180 $X=276 $Y=64
+X5 Z Vdd A B A TIGFET_PCELL_SP15CP15_N2 $T=456 304 1 180 $X=276 $Y=307
+X6 Z Vss 4 A 4 TIGFET_PCELL_SP15CP15_N2 $T=400 61 0 0 $X=414 $Y=64
+X7 Z Vdd 5 4 5 TIGFET_PCELL_SP15CP15_N2 $T=400 304 0 0 $X=414 $Y=307
+.ENDS
+***************************************

@@ -4,10 +4,10 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G4_XNOR2_N1
 * View Name:     schematic
-* Netlisted on:  Feb 23 16:22:05 2022
+* Netlisted on:  Mar 16 10:26:58 2022
 ************************************************************************
 
-.INCLUDE  ~/TIGFET-10nm-PDK/calibre/rules_N1/tigfet.sp
+.INCLUDE  ~/TIGFET-10nm-PDK/calibre/tigfet.sp
 *.EQUATION
 *.SCALE METER
 *.MEGA
@@ -23,13 +23,13 @@
 
 .SUBCKT G4_XNOR2_N1 A B Vdd Vss Z
 *.PININFO A:I B:I Z:O Vdd:B Vss:B
-XI7 Z A B A Vdd / TIGFET_PCELL_SP15CP15_N1
-XI8 Z net1 net2 net1 Vdd / TIGFET_PCELL_SP15CP15_N1
-XI5 Z net2 A net2 Vss / TIGFET_PCELL_SP15CP15_N1
-XI11 Z B net1 B Vss / TIGFET_PCELL_SP15CP15_N1
-XI3 A Vss net1 Vss Vdd / TIGFET_PCELL_SP15CP15_N1
-XI9 A Vdd net1 Vdd Vss / TIGFET_PCELL_SP15CP15_N1
-XI1 B Vss net2 Vss Vdd / TIGFET_PCELL_SP15CP15_N1
-XI10 B Vdd net2 Vdd Vss / TIGFET_PCELL_SP15CP15_N1
+XI7 Z net2 net1 net2 Vdd / TIGFET_PCELL_SP15CP15_N1
+XI8 Z A B A Vdd / TIGFET_PCELL_SP15CP15_N1
+XI5 Z B net2 B Vss / TIGFET_PCELL_SP15CP15_N1
+XI11 Z net1 A net1 Vss / TIGFET_PCELL_SP15CP15_N1
+XI3 net2 Vss A Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI9 net2 Vdd A Vdd Vss / TIGFET_PCELL_SP15CP15_N1
+XI1 net1 Vss B Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI10 net1 Vdd B Vdd Vss / TIGFET_PCELL_SP15CP15_N1
 .ENDS
 

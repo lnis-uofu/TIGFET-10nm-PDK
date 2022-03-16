@@ -15,7 +15,7 @@ REPORT FILE NAME:         G4_XNOR2_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G4_XNOR2_N1/LVS/G4_XNOR2_N1.sp ('G4_XNOR2_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G4_XNOR2_N1/LVS/G4_XNOR2_N1.src.net ('G4_XNOR2_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G4_XNOR2_N1/LVS/_calibreLVS.rul_
-CREATION TIME:            Fri Feb 25 16:06:54 2022
+CREATION TIME:            Wed Mar 16 10:27:01 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G4_XNOR2_N1/LVS
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
@@ -26,14 +26,13 @@ CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Connectivity errors.
 
 
 **************************************************************************************************************
@@ -42,7 +41,7 @@ CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
 
   Result         Layout                        Source
   -----------    -----------                   --------------
-  INCORRECT      G4_XNOR2_N1                   G4_XNOR2_N1
+  CORRECT        G4_XNOR2_N1                   G4_XNOR2_N1
 
 
 
@@ -136,14 +135,13 @@ o LVS Setup:
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Connectivity errors.
 
 LAYOUT CELL NAME:         G4_XNOR2_N1
 SOURCE CELL NAME:         G4_XNOR2_N1
@@ -162,76 +160,6 @@ NUMBERS OF OBJECTS
  Instances:          8         8         tigfet1 (5 pins)
                 ------    ------
  Total Inst:         8         8
-
-
-
-**************************************************************************************************************
-                                 INCORRECT OBJECTS
-**************************************************************************************************************
-
-
-LEGEND:
--------
-
-  ne  = Naming Error (same layout name found in source
-        circuit, but object was matched otherwise).
-
-
-**************************************************************************************************************
-                                   INCORRECT NETS
-
-DISC#  LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-  1    Net A                                                     A
-       --- 6 Connections On This Net ---                         --- 6 Connections On This Net ---
-       --------------------------                                --------------------------
-       
-       X3/X0(0.166,0.278):CG                                     ** missing connection **
-       X1/X0(0.138,0.278):CG                                     ** missing connection **
-       
-       ** missing connection **                                  XI9/X0:D
-       ** missing connection **                                  XI3/X0:D
-       
-
---------------------------------------------------------------------------------------------------------------
-
-  2    Net B                                                     B
-       --- 6 Connections On This Net ---                         --- 6 Connections On This Net ---
-       --------------------------                                --------------------------
-       
-       X2/X0(0.166,0.110):CG                                     ** missing connection **
-       X0/X0(0.138,0.110):CG                                     ** missing connection **
-       
-       ** missing connection **                                  XI10/X0:D
-       ** missing connection **                                  XI1/X0:D
-       
-
---------------------------------------------------------------------------------------------------------------
-
-  3    Net 4                                                     net2
-       --- 5 Connections On This Net ---                         --- 5 Connections On This Net ---
-       --------------------------                                --------------------------
-       
-       X2/X0(0.166,0.110):D                                      ** missing connection **
-       X0/X0(0.138,0.110):D                                      ** missing connection **
-       
-       ** missing connection **                                  XI10/X0:CG
-       ** missing connection **                                  XI1/X0:CG
-       
-
---------------------------------------------------------------------------------------------------------------
-
-  4    Net 5                                                     net1
-       --- 5 Connections On This Net ---                         --- 5 Connections On This Net ---
-       --------------------------                                --------------------------
-       
-       X3/X0(0.166,0.278):D                                      ** missing connection **
-       X1/X0(0.138,0.278):D                                      ** missing connection **
-       
-       ** missing connection **                                  XI9/X0:CG
-       ** missing connection **                                  XI3/X0:CG
-       
 
 
 
@@ -255,60 +183,6 @@ DISC#  LAYOUT NAME                                               SOURCE NAME
 o Initial Correspondence Points:
 
    Ports:        VDD VSS A B Z
-
-
-**************************************************************************************************************
-                             DETAILED INSTANCE CONNECTIONS
-
-       LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-          (This section contains detailed information about connections of
-           matched instances that are involved in net discrepancies).
-
---------------------------------------------------------------------------------------------------------------
-
-       X0/X0(0.138,0.110)  tigfet1                               XI1/X0  tigfet1
-         PGD: VSS                                                  PGD: VSS
-         PGS: VSS                                                  PGS: VSS
-         S: VDD                                                    S: VDD
-         D: 4                                                      ** net2 **
-         CG: B                                                     ** B **
-         ** B **                                                   D: B
-         ** 4 **                                                   CG: net2
-
---------------------------------------------------------------------------------------------------------------
-
-       X1/X0(0.138,0.278)  tigfet1                               XI9/X0  tigfet1
-         PGD: VDD                                                  PGD: VDD
-         PGS: VDD                                                  PGS: VDD
-         S: VSS                                                    S: VSS
-         D: 5                                                      ** net1 **
-         CG: A                                                     ** A **
-         ** A **                                                   D: A
-         ** 5 **                                                   CG: net1
-
---------------------------------------------------------------------------------------------------------------
-
-       X2/X0(0.166,0.110)  tigfet1                               XI10/X0  tigfet1
-         PGD: VDD                                                  PGD: VDD
-         PGS: VDD                                                  PGS: VDD
-         S: VSS                                                    S: VSS
-         D: 4                                                      ** net2 **
-         CG: B                                                     ** B **
-         ** B **                                                   D: B
-         ** 4 **                                                   CG: net2
-
---------------------------------------------------------------------------------------------------------------
-
-       X3/X0(0.166,0.278)  tigfet1                               XI3/X0  tigfet1
-         PGD: VSS                                                  PGD: VSS
-         PGS: VSS                                                  PGS: VSS
-         S: VDD                                                    S: VDD
-         D: 5                                                      ** net1 **
-         CG: A                                                     ** A **
-         ** A **                                                   D: A
-         ** 5 **                                                   CG: net1
 
 
 **************************************************************************************************************
