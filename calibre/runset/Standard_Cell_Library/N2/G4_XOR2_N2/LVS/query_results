@@ -1,0 +1,11 @@
+mgc_rve_context_lcv "TIGFET10nm" "G4_XOR2_N2" "layout" 1000
+mgc_rve_highlight_index 0 "1" "#FFFF00000000"
+mgc_rve_layer "M1"
+mr 0 0.092 0.028 0.124
+mgc_rve_layer "IL"
+mr 0 0.064 0.028 0.152
+mgc_rve_layer "M2"
+mr 0 0.092 0.028 0.124
+mgc_rve_layer "SDC"
+mr 0 0.064 0.028 0.152
+mgc_rve_zoom -0.006 0.046 0.034 0.17 1
