@@ -1,0 +1,8 @@
+CADENCE IHNL11140
+$model
+TIGFET10nm/G5_XNOR3_N2/schematic G5_XNOR3_N2
+$endmodel
+$net
+$endnet
+$param
+$endparam

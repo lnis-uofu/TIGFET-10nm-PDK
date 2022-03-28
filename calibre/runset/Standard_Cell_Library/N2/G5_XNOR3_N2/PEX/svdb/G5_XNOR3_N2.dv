@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G5_XNOR3_N2.dv
+dv_start matched                                  
+dv_cell {G5_XNOR3_N2} {G5_XNOR3_N2} matched
+dv_obj_count -transformed_nets {9 9} -transformed_inst {10 10} -transformed_port {6 6}
+dv_end
