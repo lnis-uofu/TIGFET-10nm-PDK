@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 26-Dec-2021  12:46:56
+Started at: 31-Mar-2022  10:36:22
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -32,9 +32,9 @@ INFO (XSTRM-223): 2. Translating cellView TIGFET10nm/G5_XOR3_N1/layout as STRUCT
 Summary of Objects Translated:
 	Scalar Instances:                       10
 	Array Instances:                        0
-	Polygons:                               21
+	Polygons:                               22
 	Paths:                                  0
-	Rectangles:                             183
+	Rectangles:                             210
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -50,9 +50,9 @@ Summary of Objects Translated:
 	Custom Vias:                            0
 	CdsGen Vias:                            0
 	Pathsegs:                               0
-	Text:                                   0
-	TextDisplay:                            12
+	Text:                                   6
+	TextDisplay:                            5
 	Cells:                                  2
 
-Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5280KB
+Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 4988KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

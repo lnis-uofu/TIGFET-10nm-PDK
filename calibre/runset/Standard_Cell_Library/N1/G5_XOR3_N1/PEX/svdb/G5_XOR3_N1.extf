@@ -1,8 +1,8 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1645208478 1645208479
+lvs_ExtRunTimes 1648744828 1648744829
 lvs_ExtOutFile RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX
-lvs_ExtOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX/_calibrePEX_edit.rul_
+lvs_ExtOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX/_calibrePEX.rul_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
 lvs_ExtOutFile LAYOUT_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX/svdb/G5_XOR3_N1.sp
