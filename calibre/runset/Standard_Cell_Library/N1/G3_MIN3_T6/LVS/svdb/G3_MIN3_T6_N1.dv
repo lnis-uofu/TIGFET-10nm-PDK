@@ -1,0 +1,46 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/G3_MIN3_T6_N1.dv
+dv_start unmatched                                
+dv_cell {G3_MIN3_T6_N1} {G3_MIN3_T6_N1} unmatched
+dv_obj_count -transformed_nets {6 6} -transformed_inst {6 6} -transformed_port {6 6}
+dv_discrep 1 {Incorrect Nets} -inst_count { 7 7}
+dv_discrep_line {Net } -lnet {VDD} {                                                   } -snet {VDD} {}
+dv_discrep_line {--- 7 Connections On This Net ---                         --- 7 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -linst {X4/X0} {} -lloc {(0.372,0.084)} {:}  {S} {                                      ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sinst {XI7/X0} {:}  {S} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 7 7}
+dv_discrep_line {Net } -lnet {VSS} {                                                   } -snet {VSS} {}
+dv_discrep_line {--- 7 Connections On This Net ---                         --- 7 Connections On This Net ---}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -linst {X5/X0} {} -lloc {(0.372,0.238)} {:}  {S} {                                      ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sinst {XI8/X0} {:}  {S} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep -1 {Detailed Instance Connections}
+dv_discrep_line {}
+dv_discrep_line {} -linst {X4/X0} {} -lloc {(0.372,0.084)} {  tigfet1                               } -sinst {XI8/X0} {  tigfet1}
+dv_discrep_line {  } -lport {D} {: } -lnet {Z} {                                                      } -sport {D} {: } -snet {Z} {}
+dv_discrep_line {  } -lport {PGD} {: } -lnet {VSS} {                                                  } -sport {PGD} {: } -snet {VSS} {}
+dv_discrep_line {  } -lport {CG} {: } -lnet {C} {                                                     } -sport {CG} {: } -snet {C} {}
+dv_discrep_line {  } -lport {PGS} {: } -lnet {A} {                                                    } -sport {PGS} {: } -snet {A} {}
+dv_discrep_line {  } -lport {S} {: } -lnet {VDD} {                                                    ** } -snet {VDD} { **}
+dv_discrep_line {  ** } -lnet {VSS} { **                                                 } -sport {S} {: } -snet {VSS} {}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -linst {X5/X0} {} -lloc {(0.372,0.238)} {  tigfet1                               } -sinst {XI7/X0} {  tigfet1}
+dv_discrep_line {  } -lport {D} {: } -lnet {Z} {                                                      } -sport {D} {: } -snet {Z} {}
+dv_discrep_line {  } -lport {PGD} {: } -lnet {VDD} {                                                  } -sport {PGD} {: } -snet {VDD} {}
+dv_discrep_line {  } -lport {CG} {: } -lnet {C} {                                                     } -sport {CG} {: } -snet {C} {}
+dv_discrep_line {  } -lport {PGS} {: } -lnet {A} {                                                    } -sport {PGS} {: } -snet {A} {}
+dv_discrep_line {  } -lport {S} {: } -lnet {VSS} {                                                    ** } -snet {VSS} { **}
+dv_discrep_line {  ** } -lnet {VDD} { **                                                 } -sport {S} {: } -snet {VDD} {}
+dv_discrep_line {}
+dv_end
