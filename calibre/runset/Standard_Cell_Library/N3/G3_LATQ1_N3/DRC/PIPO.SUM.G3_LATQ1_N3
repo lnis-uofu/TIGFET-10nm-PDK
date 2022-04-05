@@ -1,0 +1,72 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
+          : sub-version  IC6.1.8-64b.500.16 
+Started at: 05-Apr-2022  11:57:47
+User Name : u1081888
+Host Name : lnissrv2
+Directory : /home/u1081888/TIGFET-10nm-PDK
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+TIGFET10nm/TIGFET_PCELL_SP15CP15_N3/layout                      0        0       0        11     0      0         5      0             0      0     0     0       0       
+TIGFET10nm/G3_LATQ1_N3/layout   6        0       11       93     0      0         5      0             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
+---------------------------------------------------------------------------------------------------------------------------------------
+TIGFET10nm/TIGFET_PCELL_SP15CP15_N3/layout                      0        0          0          0          0          0     0        0         0         0        
+TIGFET10nm/G3_LATQ1_N3/layout   0        0          0          0          0          0     0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+VM0             drawing         6       0         0        16       0        0        0             0    0   0   0     0      0      
+GC              drawing         4       0         0        8        0        0        0             0    0   0   0     0      0      
+SDC             drawing         3       0         0        4        0        2        0             0    0   0   0     0      0      
+GATE            drawing         2       0         10       7        0        3        0             0    0   0   0     0      0      
+VM1             drawing         8       0         0        6        0        0        0             0    0   0   0     0      0      
+M2              drawing         9       0         0        14       0        1        0             0    0   0   0     0      0      
+M1              drawing         7       0         1        28       0        4        0             0    0   0   0     0      0      
+IL              drawing         5       0         0        16       0        0        0             0    0   0   0     0      0      
+ACT             drawing         1       0         0        5        0        0        0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		6
+	Array Instances:		0
+	Polygons:			11
+	Paths:				0
+	Rectangles:			104
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Standard Vias:			0
+	Custom Vias:			0
+	CdsGen Vias:			0
+	Pathsegs:			0
+	Text:				10
+	TextDisplay:		0
+	Cells:				2
+Design Libraries: 
+
+DEFINE TIGFET10nm	/home/u1081888/TIGFET-10nm-PDK/TIGFET10nm
