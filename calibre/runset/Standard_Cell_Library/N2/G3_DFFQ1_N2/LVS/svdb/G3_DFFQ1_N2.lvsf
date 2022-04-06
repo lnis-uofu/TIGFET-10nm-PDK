@@ -1,0 +1,13 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G3_DFFQ1_N2/LVS
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_SourceCase NO
+lvs_LayoutCase NO
+lvs_PowerName VDD
+lvs_GroundName VSS
+lvs_LvsOutFile LVS_REPORT G3_DFFQ1_N2.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G3_DFFQ1_N2/LVS/G3_DFFQ1_N2.src.net
+lvs_LvsOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G3_DFFQ1_N2/LVS/_calibreLVS.rul_
+lvs_LvsRunTimes 1649264992 1649264992

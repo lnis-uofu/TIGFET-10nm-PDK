@@ -1,0 +1,10 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1649265913 1649265914
+lvs_ExtOutFile RUNDIR /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_DFFQ1_N3/PEX
+lvs_ExtOutFile RULES_FILE /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_DFFQ1_N3/PEX/_calibrePEX.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G3_DFFQ1_N3/PEX/svdb/G3_DFFQ1_N3.sp
+lvs_ExtOutFile EXTRACTION_REPORT G3_DFFQ1_N3.lvs.report.ext
+lvs_ExtOutFile LAYOUT_PDSP {  svdb/G3_DFFQ1_N3.pdsp }

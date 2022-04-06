@@ -1,0 +1,33 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  TIGFET10nm
+* Top Cell Name: G3_DFFQ1_N1
+* View Name:     schematic
+* Netlisted on:  Apr  5 22:58:10 2022
+************************************************************************
+
+.INCLUDE  ~/TIGFET-10nm-PDK/calibre/tigfet.sp
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: TIGFET10nm
+* Cell Name:    G3_DFFQ1_N1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT G3_DFFQ1_N1 CK D Q Vdd Vss
+*.PININFO CK:I D:I Q:O Vdd:B Vss:B
+XI5 X Vss D CK Vdd / TIGFET_PCELL_SP15CP15_N1
+XI4 X Vdd D CKN Vss / TIGFET_PCELL_SP15CP15_N1
+XI3 Q Vdd X CK Vss / TIGFET_PCELL_SP15CP15_N1
+XI0 Q Vss X CKN Vdd / TIGFET_PCELL_SP15CP15_N1
+XI2 CKN Vss CK Vss Vdd / TIGFET_PCELL_SP15CP15_N1
+XI1 CKN Vdd CK Vdd Vss / TIGFET_PCELL_SP15CP15_N1
+.ENDS
+

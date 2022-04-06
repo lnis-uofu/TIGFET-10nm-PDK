@@ -1,0 +1,58 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
+          : sub-version  IC6.1.8-64b.500.16 
+Started at: 06-Apr-2022  11:10:32
+User Name : u1081888
+Host Name : lnissrv2
+Directory : /home/u1081888/TIGFET-10nm-PDK
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G3_DFFQ1_N2/PEX/G3_DFFQ1_N2.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-288): Performing automatic layer mapping because either the layer mapping information is not provided or the XST_AUTO_LM  value is used with the -layerMap option. Additionally, the  'xStrmOut_layerMap.txt' file has been generated and the mapping information has been added to it.
+
+Summary of Options :
+library                                 TIGFET10nm
+strmFile                                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G3_DFFQ1_N2/PEX/G3_DFFQ1_N2.calibre.db
+topCell                                 G3_DFFQ1_N2
+view                                    layout
+runDir                                  /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N2/G3_DFFQ1_N2/PEX/
+logFile                                 PIPO.LOG.G3_DFFQ1_N2
+summaryFile                             PIPO.SUM.G3_DFFQ1_N2
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating cellView TIGFET10nm/TIGFET_PCELL_SP15CP15_N2/layout as STRUCTURE TIGFET_PCELL_SP15CP15_N2.
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+INFO (XSTRM-223): 2. Translating cellView TIGFET10nm/G3_DFFQ1_N2/layout as STRUCTURE G3_DFFQ1_N2.
+
+Summary of Objects Translated:
+	Scalar Instances:                       6
+	Array Instances:                        0
+	Polygons:                               12
+	Paths:                                  0
+	Rectangles:                             120
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           0
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   10
+	TextDisplay:                            0
+	Cells:                                  2
+
+Elapsed Time: 0.4s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5264KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.
