@@ -1,0 +1,25 @@
+* File: G2_NAND2_N3.pex.netlist
+* Created: Sun Apr 10 19:03:25 2022
+* Program "Calibre xRC"
+* Version "v2021.2_37.20"
+* 
+.include "G2_NAND2_N3.pex.netlist.pex"
+.subckt G2_NAND2_N3  VSS VDD A Z B
+* 
+* B	B
+* Z	Z
+* A	A
+* VDD	VDD
+* VSS	VSS
+XI13.X0 N_Z_XI13.X0_D N_VDD_XI13.X0_PGD N_A_XI13.X0_CG N_B_XI13.X0_PGS
++ N_VSS_XI13.X0_S TIGFET1
+XI14.X0 N_Z_XI14.X0_D N_VSS_XI14.X0_PGD N_A_XI14.X0_CG N_VSS_XI14.X0_PGS
++ N_VDD_XI14.X0_S TIGFET1
+XI15.X0 N_Z_XI15.X0_D N_VSS_XI15.X0_PGD N_B_XI15.X0_CG N_VSS_XI15.X0_PGS
++ N_VDD_XI15.X0_S TIGFET1
+*
+.include "G2_NAND2_N3.pex.netlist.G2_NAND2_N3.pxi"
+*
+.ends
+*
+*
