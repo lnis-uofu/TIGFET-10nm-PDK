@@ -15,7 +15,7 @@ REPORT FILE NAME:         G2_AOI21_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/PEX/svdb/G2_AOI21_N1.sp ('G2_AOI21_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/PEX/G2_AOI21_N1.src.net ('G2_AOI21_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/PEX/_calibrePEX.rul_
-CREATION TIME:            Tue Mar  1 12:24:59 2022
+CREATION TIME:            Mon Apr 11 11:24:10 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G2_AOI_N1/PEX
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
@@ -182,7 +182,7 @@ NUMBERS OF OBJECTS
 
 o Initial Correspondence Points:
 
-   Ports:        VDD VSS B A Z C
+   Ports:        VDD VSS B C Z A
 
 
 **************************************************************************************************************
