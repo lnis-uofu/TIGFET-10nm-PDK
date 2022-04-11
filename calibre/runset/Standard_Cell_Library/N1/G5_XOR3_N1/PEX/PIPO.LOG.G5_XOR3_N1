@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.8-64b 01/19/2021 19:08 (sjfhw317) $
           : sub-version  IC6.1.8-64b.500.16 
-Started at: 31-Mar-2022  10:40:26
+Started at: 10-Apr-2022  19:25:44
 User Name : u1081888
 Host Name : lnissrv2
 Directory : /home/u1081888/TIGFET-10nm-PDK
@@ -53,5 +53,5 @@ Summary of Objects Translated:
 	TextDisplay:                            5
 	Cells:                                  2
 
-Elapsed Time: 0.3s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5448KB
+Elapsed Time: 0.4s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 5404KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '0' warning(s) found.

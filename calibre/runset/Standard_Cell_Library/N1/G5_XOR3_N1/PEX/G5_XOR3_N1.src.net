@@ -4,7 +4,7 @@
 * Library Name:  TIGFET10nm
 * Top Cell Name: G5_XOR3_N1
 * View Name:     schematic
-* Netlisted on:  Mar 31 10:40:27 2022
+* Netlisted on:  Apr 10 19:25:45 2022
 ************************************************************************
 
 .INCLUDE  ~/TIGFET-10nm-PDK/calibre/tigfet.sp

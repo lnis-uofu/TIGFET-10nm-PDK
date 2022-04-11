@@ -15,7 +15,7 @@ REPORT FILE NAME:         G5_XOR3_N1.lvs.report
 LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX/svdb/G5_XOR3_N1.sp ('G5_XOR3_N1')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX/G5_XOR3_N1.src.net ('G5_XOR3_N1')
 RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX/_calibrePEX.rul_
-CREATION TIME:            Thu Mar 31 10:40:30 2022
+CREATION TIME:            Sun Apr 10 19:25:48 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N1/G5_XOR3_N1/PEX
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
