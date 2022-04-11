@@ -12,10 +12,10 @@
 
 
 REPORT FILE NAME:         G4_XNOR2_N3.lvs.report
-LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G4_XNOR2_N3/PEX/G4_XNOR2_N3.sp ('G4_XNOR2_N3')
+LAYOUT NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G4_XNOR2_N3/PEX/svdb/G4_XNOR2_N3.sp ('G4_XNOR2_N3')
 SOURCE NAME:              /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G4_XNOR2_N3/PEX/G4_XNOR2_N3.src.net ('G4_XNOR2_N3')
-RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G4_XNOR2_N3/PEX/_calibreLVS.rul_
-CREATION TIME:            Wed Mar 16 11:28:31 2022
+RULE FILE:                /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G4_XNOR2_N3/PEX/_calibrePEX.rul_
+CREATION TIME:            Sun Apr 10 19:31:14 2022
 CURRENT DIRECTORY:        /home/u1081888/TIGFET-10nm-PDK/calibre/runset/Standard_Cell_Library/N3/G4_XNOR2_N3/PEX
 USER NAME:                u1081888
 CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
@@ -67,7 +67,7 @@ o LVS Setup:
    LVS ALL CAPACITOR PINS SWAPPABLE       NO
    LVS DISCARD PINS BY DEVICE             NO
    LVS SOFT SUBSTRATE PINS                NO
-   LVS INJECT LOGIC                       YES
+   LVS INJECT LOGIC                       NO
    LVS EXPAND UNBALANCED CELLS            YES
    LVS FLATTEN INSIDE CELL                NO
    LVS EXPAND SEED PROMOTIONS             NO
@@ -190,4 +190,4 @@ o Initial Correspondence Points:
 **************************************************************************************************************
 
 Total CPU Time:      0 sec
-Total Elapsed Time:  0 sec
+Total Elapsed Time:  1 sec
