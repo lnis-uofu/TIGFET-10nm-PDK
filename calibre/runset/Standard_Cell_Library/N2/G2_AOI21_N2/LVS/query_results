@@ -1,7 +1,0 @@
-mgc_rve_context_lcv "TIGFET10nm" "G2_AOI21_N2" "layout" 1000
-mgc_rve_highlight_index 0 "7" "#00000000FFFF"
-mgc_rve_layer "GATE"
-mr 0.073 0.066 0.093 0.154
-mgc_rve_layer "gate_conn"
-mr 0.073 0.076 0.093 0.144
-mgc_rve_zoom 0.069 0.048 0.097 0.172 1
